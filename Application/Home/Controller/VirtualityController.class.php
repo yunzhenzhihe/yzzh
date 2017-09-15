@@ -66,7 +66,7 @@ class VirtualityController extends PublicController {
                     if ($v['ext'] == 'mtl') {
 
                         $cate = $goodscate->field('model_mtl')->where($map)->select();
-                        if (!$cate) {//如果goodscate表中没有mtl文件路径
+                        if (!$cate) {//如果goodscate表中没有mtl文件路径就插入，防止重复插入
                             $data['model_mtl'] = $v['savepath'] . $v['savename'];
                             if ($goodscate->where($map)->save($data)) {
 
@@ -92,7 +92,7 @@ class VirtualityController extends PublicController {
                                     }
                                     foreach ($result[1] as $k => $val) {
                                         $data1['mtl_title'] = $result[1][$k];
-                                        if (!$mtl_id) {
+                                        if (!$mtl_id) {//如果数据库中没有 id是返回的id 否则是查出来的id
                                             $path['id'][$k] = $mtl->add($data1);
                                         } else {
                                             $path['id'] = $id['id'];
@@ -109,16 +109,17 @@ class VirtualityController extends PublicController {
                         }else{
                             $mtl = M('mtl_title');
                             $mtl_id = $mtl->field('id')->where($data1)->select();
-                            foreach ($mtl_id[0] as $ke => $v) {
 
-                                $path['id'] = $v;
+                            foreach ($mtl_id as $ke => $v) {
+                                $path['id'][$ke] = $mtl_id[$ke]['id'];
                             }
+
                             $path['path'] = $cate[0]['model_mtl'];
                             $path['cate_id'] = I('post.id');
                             $this->ajaxReturn($path, 'Mtl', 1);
                         }
                     }
-                }else{
+                }else{//上传贴图
                     $map['value'] = I('post.value');
                     $map['cate_id'] = I('post.cate_id');
                     $map['company_id'] = session('company_id');
