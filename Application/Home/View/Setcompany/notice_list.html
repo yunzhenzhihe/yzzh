@@ -1,0 +1,99 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+	 		 
+        <h3 class="yt_margintop15 yt_marginbottom20 ">系统消息</h3>	
+					 <?php if($recordlist==null) : ?>	
+							 <div class="news-blocks yt_margintop15 ">
+								<h4>无数据...</h4>
+							 </div>	
+					<?php else : ?>  				
+               <!--       <table class="table table-striped table-bordered table-hover table-full-width  row-border order-column      " id="yt_table">   
+                        <thead >
+                           <tr>
+							  <volist name="table_head" id="vo">	
+							      <th>{$vo['value']}</th>
+							  </volist>	
+							     
+                           </tr>
+                        </thead>					
+                        <tbody>
+						<volist name="recordlist" id="vo">	
+						  <tr class="">						  
+							  <volist name="table_head" id="vo1">
+   							       <td>									  
+										 {$vo[$vo1['key']]}	
+								   </td> 
+							  </volist>	
+					  
+						   </tr>
+						  </volist>	
+						  
+                        </tbody>
+                     </table>-->
+					 
+					<volist name="recordlist" id="vo" >										
+							 <div class="news-blocks">
+								<h4>{$vo['title']}</h4>
+								<div class="news-block-tags">
+								 <strong>{$vo['creat_time']}</strong>
+								</div>
+								<p  class="yt_line-height20"  >{$vo['memo']}</p>                      
+							 </div>											 
+					</volist>	
+
+								
+					 <div class="row">
+						<div class="col-md-12 yt_margintop15 ">
+
+									 <span class="col-md-4 " >
+										  <select  class="input-sm   " id="NumberOfRows" onchange="YTnumberofrows(this.options[this.selectedIndex].value)" >
+												<volist name="selectrowslist" id="vo" >	
+													 <option  value="{$vo}" >每页显示&nbsp;{$vo}&nbsp;条</option> 
+												</volist>		
+										  </select>				  
+									 </span>										 																	 
+									 <span class="pagelink col-md-6 yt_margintop-0 "  >
+										 {$page} 	
+										 <input id="select_interval_days"  value="{$Think.session.select_interval_days}"  type="hidden"   /> <!--查询间隔天数天 --> 
+									 </span>						 						 
+						  </div>
+					   </div>						 
+					  <?php endif ?>	
+
+            <!-- END PAGE CONTENT-->
+ 			
+         </div>
+
+		 
+            <!-- END PAGE CONTENT-->
+			
+         </div>
+         <!-- END PAGE -->
+      </div>
+   </div>
+  
+   
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+   
+<script>
+    jQuery(document).ready(function() {       			
+		App.initnocheckboxes();	 
+	//    YtUiScripts.initTable2();
+		showSelect('#NumberOfRows','{$Think.cookie.NumberOfRows}');				
+      });
+</script>
+
+</body>
+</html>

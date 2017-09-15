@@ -2,7 +2,7 @@
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK IT ]
 // +----------------------------------------------------------------------
-// | Copyright (c) 2006-2013 http://thinkphp.cn All rights reserved.
+// | Copyright (c) 2006-2014 http://thinkphp.cn All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
@@ -204,15 +204,29 @@ abstract class Controller {
      * @access protected
      * @param mixed $data 要返回的数据
      * @param String $type AJAX返回数据格式
+     * @param int $json_option 传递给json_encode的option参数
      * @return void
      */
-    protected function ajaxReturn($data,$type='') {
+    protected function ajaxReturn($data,$type='',$json_option=10) {
+	   //2016-04-15 开始重构
+		if ( ( $json_option==0 ) || ( $json_option==1 )  ) {   //为了兼容3.1.3的ajaxreturn  重新写的一段函数 如果判断是老的提交方式就 做数据的重构
+	        $data = array(
+	             'status' => $json_option,   // 操作状态
+                 'info' => $type,   // 提示信息               
+				 'data' => $data    // 返回数据
+            );	
+			$type='';
+		} else if  ( $json_option==10 ) { 
+			$json_option==0 ;
+		}
+	   //2016-04-15 结束重构
+	
         if(empty($type)) $type  =   C('DEFAULT_AJAX_RETURN');
         switch (strtoupper($type)){
             case 'JSON' :
                 // 返回JSON数据格式到客户端 包含状态信息
                 header('Content-Type:application/json; charset=utf-8');
-                exit(json_encode($data));
+                exit(json_encode($data,$json_option));
             case 'XML'  :
                 // 返回xml格式数据
                 header('Content-Type:text/xml; charset=utf-8');
@@ -221,7 +235,7 @@ abstract class Controller {
                 // 返回JSON数据格式到客户端 包含状态信息
                 header('Content-Type:application/json; charset=utf-8');
                 $handler  =   isset($_GET[C('VAR_JSONP_HANDLER')]) ? $_GET[C('VAR_JSONP_HANDLER')] : C('DEFAULT_JSONP_HANDLER');
-                exit($handler.'('.json_encode($data).');');  
+                exit($handler.'('.json_encode($data,$json_option).');');  
             case 'EVAL' :
                 // 返回可执行的js脚本
                 header('Content-Type:text/html; charset=utf-8');

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.0
+Version: 1.5.2
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+   <meta charset="utf-8" />
+   <title>云天售后服务软件</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="" name="author" />
+   <meta name="MobileOptimized" content="320">
+   
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/font-awesome/css/font-awesome.min.css" /> 
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/bootstrap/css/bootstrap.min.css" />     
+   <link type="text/css" rel="stylesheet" href="__PUBLIC__/Minify/index.php?g=web_css" />
+   
+  <!-- 
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/data-tables/jquery.dataTables.css" /> 
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/data-tables/DT_bootstrap.css" />
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/select2/select2-bootstrap.css" />  -->
+
+
+   <link rel="shortcut icon" href="__PUBLIC__/assets/img/yt.ico" />  
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY  -->
+<body class="page-header-fixed page-full-width"> 
+   <div class="header navbar navbar-inverse navbar-fixed-top">   
+   
+      <!-- BEGIN TOP NAVIGATION BAR -->
+      <div class="header-inner container">
+         <!-- BEGIN LOGO -->  
+         <a class="navbar-brand " >
+         <img src="__PUBLIC__/assets/img/logo.png" alt="logo" class="img-responsive yt_margintop-5 " />
+         </a>
+         <!-- END LOGO -->
+         <!-- BEGIN RESPONSIVE MENU TOGGLER --> 
+         <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <img src="__PUBLIC__/assets/img/menu-toggler.png" alt="" />
+         </a> 
+         <!-- END RESPONSIVE MENU TOGGLER -->
+
+      </div>
+      <!-- END TOP NAVIGATION BAR -->
+   </div>
+   <!-- END HEADER -->
+   <div class="clearfix"></div>
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+	 		 
+        <h3 class="yt_margintop15 yt_marginbottom15 ">软件付费模式</h3>		 		 
+		 <table class="table  table-bordered " >  
+			<tbody>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐名称：</TD>						
+						<TD width="70%" >{$Think.session.plan_name}</TD>	
+					 </TR>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐截止日：</TD>						
+						<TD width="70%" >{$Think.session.plan_date}</TD>	
+					 </TR>							 
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐容量：</TD>						
+						<TD width="70%" >（客户数量+销售记录数量+售后记录数量+图片数量）〈{$Think.session.plan_count}条	</TD>	
+					 </TR>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >实际使用量：</TD>						
+						<TD width="70%" >{$Think.session.count_total}（其中：客户数量{$Think.session.count_customer}条，销售记录{$Think.session.count_sales}条，售后记录{$Think.session.count_service}条，图片数量{$Think.session.count_images}条）	</TD>	
+					 </TR>					 
+			 </tbody>		
+		 </table>		
+         <h3 class="yt_margintop15 yt_marginbottom15 ">软件付费记录</h3>	
+					 <?php if($recordlist==null) : ?>	
+							 <div class="news-blocks yt_margintop15 ">
+								<h4>无数据...</h4>
+							 </div>	
+					<?php else : ?>  				
+                      <table class="table table-striped table-bordered table-hover table-full-width  row-border order-column      " id="yt_table">   
+                        <thead >
+                           <tr>
+							  <volist name="table_head" id="vo">	
+							      <th>{$vo['value']}</th>
+							  </volist>	
+							     
+                           </tr>
+                        </thead>					
+                        <tbody>
+						<volist name="recordlist" id="vo">	
+						  <tr class="">
+							  <volist name="table_head" id="vo1">
+   							       <td>									  
+										{$vo[$vo1['key']]}	
+								   </td> 
+							  </volist>	
+					  
+						   </tr>
+						  </volist>	
+						  
+                        </tbody>
+                     </table>
+					  <?php endif ?>	
+
+                  <h3 class="yt_margintop15 yt_marginbottom15 ">操作</h3>
+					<div class="col-md-12 " >
+						  <div class="col-md-6   ">	
+							 <h4 >		
+									{$text}						 
+							 </h4>											
+						  </div>	
+						 <?php if($flag=="true") : ?>	
+							  <div class="col-md-6  yt_text_center  id='pc' ">	
+							     <h4 >
+								   充值网址：{$Think.session.url_planadd} 	
+								 </h4>	 
+							 </div>	
+						<?php else : ?> 
+							  <div class="col-md-6  yt_text_center   id='web'  ">	
+								   <a class="btn blue" target="_blank" href="{$Think.session.url_planadd}" >充值 <i class="icon-plus"></i>	</a> 							   
+							 </div>							
+						<?php endif ?>						 
+					</div> 	
+		 
+            <!-- END PAGE CONTENT-->
+ 			
+         </div>
+         <!-- END PAGE -->
+      </div>
+   </div>
+  
+   
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+   
+   <script>
+    jQuery(document).ready(function() {    
+       //  App.init();
+		// Portfolio.init();
+	
+      });
+	  
+     var sUserAgent  =  navigator .userAgent.toLowerCase();  
+	 if  ( ( sUserAgent .match(/android/i) == "android" ) || ( sUserAgent .match(/iphone os/i) == "iphone os" ) )  {
+	     ("#web").hide();	  	 
+	 }	else {	
+	      $("#pc").hide();			
+	 }	
+   </script>
+
+</body>
+</html>

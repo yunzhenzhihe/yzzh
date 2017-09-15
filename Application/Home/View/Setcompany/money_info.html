@@ -1,0 +1,103 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+	 		 
+        <h3 class="yt_margintop15 yt_marginbottom15 ">软件付费模式</h3>		 		 
+		 <table class="table  table-bordered " >  
+			<tbody>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐名称：</TD>						
+						<TD width="70%" >{$Think.session.plan_name}</TD>	
+					 </TR>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐截止日：</TD>						
+						<TD width="70%" >{$Think.session.plan_date}</TD>	
+					 </TR>							 
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐容量：</TD>						
+						<TD width="70%" >（客户数量+销售记录数量+售后记录数量+图片数量）〈{$Think.session.plan_count}条	</TD>	
+					 </TR>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >实际使用量：</TD>						
+						<TD width="70%" >{$Think.session.count_total}（其中：客户数量{$Think.session.count_customer}条，销售记录{$Think.session.count_sales}条，售后记录{$Think.session.count_service}条，图片数量{$Think.session.count_images}条）	</TD>	
+					 </TR>					 
+			 </tbody>		
+		 </table>		
+         <h3 class="yt_margintop15 yt_marginbottom15 ">软件付费记录</h3>	
+					 <?php if($recordlist==null) : ?>	
+							 <div class="news-blocks yt_margintop15 ">
+								<h4>无数据...</h4>
+							 </div>	
+					<?php else : ?>  				
+                      <table class="table table-striped table-bordered table-hover table-full-width  row-border order-column      " id="yt_table">   
+                        <thead >
+                           <tr>
+							  <volist name="table_head" id="vo">	
+							      <th>{$vo['value']}</th>
+							  </volist>	
+							     
+                           </tr>
+                        </thead>					
+                        <tbody>
+						<volist name="recordlist" id="vo">	
+						  <tr class="">
+							  <volist name="table_head" id="vo1">
+   							       <td>									  
+										{$vo[$vo1['key']]}	
+								   </td> 
+							  </volist>	
+					  
+						   </tr>
+						  </volist>	
+						  
+                        </tbody>
+                     </table>
+					  <?php endif ?>	
+
+        <h3 class="yt_margintop15 yt_marginbottom15 ">操作</h3>
+					<div class="col-md-12 " >
+						  <div class="col-md-6   ">	
+								
+						  </div>	 										  
+						  <div class="col-md-6  yt_text_center   ">	
+							   <a class="btn blue" target="_blank" href="{$Think.session.url_planadd}">充值 <i class="icon-plus"></i>	</a> 
+						 </div>									 																 
+					</div> 	
+		 
+            <!-- END PAGE CONTENT-->
+ 			
+         </div>
+
+		 
+            <!-- END PAGE CONTENT-->
+ 			
+         </div>
+         <!-- END PAGE -->
+      </div>
+   </div>
+  
+   
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+   
+   <script>
+    jQuery(document).ready(function() {    
+       //  App.init();
+		// Portfolio.init();
+		$('input[type="checkbox"]').attr('disabled', 'disabled');		
+      });
+
+   </script>
+
+</body>
+</html>

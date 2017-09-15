@@ -1,0 +1,30 @@
+body{margin:0; padding:0; font-size:12px;background: url(../images/login.png);}
+#center_middle{margin:auto;width:248px; margin-top:0px;}
+#center_middle_register{margin:auto; margin-top:0px;}
+
+input,label{height:20px; font-size:14px; display:block; } 
+#btn{margin-left:130px; margin-top:10px;height:25px; margin-right:28px; text-align:center;font-size:14px;}
+#btn a{display:block; line-height:25px; background: url(../images/admin_login_08.gif); border: solid 1px #b6b6b6; width:80px; float:left; margin-left:15px; text-decoration:none; color:#000;}
+
+#btn1{margin-left:20px; margin-top:15px;height:25px; font-size:14px;}
+#btn1 a{line-height:25px; float:left; margin-left:20px;  }
+
+label, input { display:block;}
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
+
+.dialog_label60{ width:60px; float:left; margin-top:17px; margin-left:23px; }
+.dialog_label80{ width:80px; float:left; margin-top:17px; margin-left:23px; }
+.dialog_input130{ width:130px; float:left; margin-top:12px; }
+.dialog_input300{ width:300px; float:left; margin-top:12px; }
+
+A:link {
+	COLOR: #0077bb; TEXT-DECORATION: none
+}
+
+A:visited {
+	COLOR: #0077bb; TEXT-DECORATION: none
+}
+
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none  
+}

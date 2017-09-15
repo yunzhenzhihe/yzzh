@@ -1,0 +1,240 @@
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header" />
+<script type="text/javascript" src="__PUBLIC__/js/swfupload.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/handlers.js"></script>
+<script type="text/javascript">
+    var path='__PUBLIC__';
+    var url='__URL__';
+    var swfu;
+    window.onload = function () {
+        swfu = new SWFUpload({
+            upload_url: "__URL__/uploadImg",
+            post_params: {"PHPSESSID": "<?php echo session_id();?>"},
+            file_size_limit : "2 MB",
+            file_types : "*.jpg;*.png;*.gif;*.bmp",
+            file_types_description : "JPG Images",
+            file_upload_limit : "100",
+            file_queue_error_handler : fileQueueError,
+            file_dialog_complete_handler : fileDialogComplete,
+            upload_progress_handler : uploadProgress,
+            upload_error_handler : uploadError,
+            upload_success_handler : uploadSuccess,
+            upload_complete_handler : uploadComplete,
+            button_image_url : "__PUBLIC__/images/upload.png",
+            button_placeholder_id : "spanButtonPlaceholder",
+            button_width: 113,
+            button_height: 33,
+            button_text : '',
+            button_text_style : '.spanButtonPlaceholder { font-family: Helvetica, Arial, sans-serif; font-size: 14pt;} ',
+            button_text_top_padding: 0,
+            button_text_left_padding: 0,
+            button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+            button_cursor: SWFUpload.CURSOR.HAND,
+            flash_url : "__PUBLIC__/swf/swfupload.swf",
+            custom_settings : {
+                upload_target : "divFileProgressContainer"
+            },
+            debug: false
+        });
+    };
+</script>
+         <!-- BEGIN PAGE HEADER-->
+		<div class="yt-head-row">
+			 <div class="row">
+				<div class="col-md-12">
+				   <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+
+				   <ul class="page-breadcrumb breadcrumb">
+
+					  
+					  <li>
+						 <span>图片管理	</span>
+						 <i class="icon-angle-right"></i>
+					  </li>
+					  <li><span>公司图片管理</span></li>			   					  
+				   </ul>
+			   
+				   
+				   <!-- END PAGE TITLE & BREADCRUMB-->
+				</div>
+			 </div>
+		</div>
+         <!-- END PAGE HEADER-->
+		 
+         <!-- BEGIN PAGE CONTENT-->
+         <div class="row">
+            <div class="col-md-12">
+										<!-- BEGIN FILTER -->           
+
+              <?php if($image_list==null) : ?>
+                      <div class="col-md-3 col-sm-4 mix category_1">
+                         <div class="mix-inner">
+                                <h4>&nbsp;&nbsp;无图片..</h4>
+                         </div>
+                      </div>
+                <?php else : ?>
+                    <volist name="image_list" id="vo" >
+                          <div class="col-md-3 col-sm-4 mix category_1 yt_margintop15 "    >
+                             <div class="mix-inner " >
+                                   <a class="fancybox-button   " href="{$Think.session.images_path}{$vo['image_url']}{$vo['image_name']}" title="" data-rel="fancybox-button" ><img class="img-responsive yt_img-responsive" src="{$Think.session.images_path}{$vo['image_url']}{$vo['image_name']} "  alt=""></a>
+                                   <h4>{$vo['image_desc']}</h4>
+                                   <h5>{$vo['creat_time']}/{$vo['creat_name']}</h5>
+                                    <a class="btn blue btn-sm tooltips "  href="JavaScript:del_image('{$vo['id']}','{$vo['image_name']}','{$parent_id}')  "   data-original-title="删除图片" ><i class="icon-remove"></i></a>
+                                    <a class="btn blue btn-sm tooltips yt_marginleft5  "  href="JavaScript:edit_imagedesc('{$vo['id']}','{$vo['image_desc']}')  "   data-original-title="编辑图片描述"><i class="icon-edit"></i></a>
+                                    <a class="btn blue btn-sm tooltips " href="JavaScript:prompt('图片链接','{$Think.session.images_path}{$vo['image_url']}{$vo['image_name']}')  "  data-original-title="图片链接"><i class="icon-link"></i></a>
+                             </div>
+                          </div>
+                    </volist>
+                <?php endif ?>
+
+                <div class="yt-head-row">
+                     <div class="row">
+                        <div class="col-md-12">
+                            <ul class="page-breadcrumb breadcrumb">
+                           </ul>
+                        </div>
+                     </div>
+                </div>
+
+                 <div class="row">
+                    <div class="col-md-12 yt_margintop-10 ">
+                                 <span class="col-md-4 " >
+                                      <select  class="input-sm   " id="NumberOfRows" onchange="YTnumberofrows(this.options[this.selectedIndex].value)" >
+                                            <volist name="selectrowslist" id="vo" >
+                                                 <option  value="{$vo}" >每页显示&nbsp;{$vo}&nbsp;条</option>
+                                            </volist>
+                                      </select>
+                                 </span>
+                                 <span class="pagelink col-md-6 yt_margintop5 "  >
+                                     {$page}
+                                 </span>
+                      </div>
+                   </div>
+
+                    <div class="yt-head-row">
+                         <div class="row">
+                            <div class="col-md-12">
+                                <ul class="page-breadcrumb breadcrumb">
+                               </ul>
+                            </div>
+                         </div>
+                    </div>
+
+
+										<!-- END FILTER -->   					 															
+            </div>			
+         </div>
+
+				<div class="row  " >		
+				   	<div class="col-md-12 yt_margintop-30 ">		
+                        <h4 class="form-section">添加图片</h4>
+
+								<form class="form-horizontal" role="form">
+									<div class="form-group">
+										<label class="col-sm-3 control-label yt_color_red">上传文件：</label>
+										<div class="uploader-list-container" >
+
+												<span id="spanButtonPlaceholder"></span>
+												<div id="divFileProgressContainer"></div>
+												<div id="thumbnails">
+													<ul id="pic_list" style="margin: 5px;"></ul>
+													<div style="clear: both;"></div>
+												</div>
+											</div>
+								</form>
+
+							 <div class="note note-info">
+								<h4 class="block">上传图片注意事项</h4>
+								<p>
+								   1.只能上传 .jpg  .gif  .png  .jpeg 这4种格式图片文件
+								</p>
+								<p>
+								  2.每张图片大小不超过&nbsp;<span class="yt_color_red" >{$Think.cookie.images_maxsize_kb}</span>
+								</p>
+							 </div>
+					</div>		
+				</div>				 
+		 
+		 
+		 
+
+      </div>
+    <!--   END PAGE -->
+		 <!-- BEGIN DIALOG_FORM  -->
+		 <div id="yt_dialog_form" class="modal fade" tabindex="-1" aria-hidden="true" data-width="720" >
+				  <div class="modal-header" id="yt_modal-header" >
+					 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					 <h4 class="modal-title" id="yt_dialog_title">修改图片描述</h4>
+				  </div>
+				  <div class="modal-body " >
+						<form class="form-horizontal" role="form">
+						  <div class="form-group">
+							<label for="image_desc" class="col-sm-3 control-label">图片描述<span class="required" >*</span></label>
+							<div class="col-sm-8 " >
+							  <input type="text" class="form-control" id="image_desc" name="inputdatabox" >
+							</div>
+						  </div>
+							<input id="edit_record_id" type="hidden" />                                     
+						</form>								
+				  </div>
+				  <div class="modal-footer">
+					 <button type="button" data-dismiss="modal" class="btn default" id="yt_dialog_btn_cancel">取消</button>
+					 <button type="button" class="btn green" id="yt_dialog_btn_ok">确认</button>  
+				  </div>
+		 </div>
+		 <!-- END DIALOG_FORM  -->			 
+		 
+		 
+	
+   </div>
+		 
+
+  <include file="Framefile:yt_footer" />
+  
+ <script src="__PUBLIC__/js/yt_ajaxfileupload.js" type="text/javascript"></script>   
+   <!-- BEGIN PAGE LEVEL PLUGINS 图片 -->
+<script type="text/javascript" src="__PUBLIC__/assets/plugins/jquery-mixitup/jquery.mixitup.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script> 
+<script src="__PUBLIC__/assets/scripts/portfolio.js"></script>   <!-- 图片 -->
+<!-- END PAGE LEVEL PLUGINS 图片 --> 
+
+
+
+  <script>
+    jQuery(document).ready(function() {       
+		App.initnocheckboxes();
+        $('#yt_left_menu_images').addClass("active");  
+		$('#yt_left_menu_images_companyimage').addClass("active");
+
+		$('#yt_left_menu_images_arrow .arrow ').remove();
+		$('#yt_left_menu_images_arrow ').append( '<span class="selected"></span> ');
+		$('#yt_left_menu_images_arrow ').append( '<span class="arrow open"></span>	');	 
+		
+        showSelect('#NumberOfRows','{$Think.cookie.NumberOfRows}');
+      });
+	  
+
+  </script>
+  <script type="text/javascript">   
+  
+	function ZYTshowimagesurl(title,url) {    //打开显示链接对话框
+    	prompt(title,url);
+	}
+
+     function dialogcheckdata() {  
+         var checkvalid = true;
+	       checkvalid = checkvalid && checkLength( $( "#image_desc" ), "图片描述", StringLength000, StringLength100 );
+	     return checkvalid;
+	  }	;		  	  		  	  	
+</script>
+  
+ <include file="Framefile:yt_dialog_data" /> 
+</body>
+</html>
+		 
+		 
+		 
+		 
+		 
+ 

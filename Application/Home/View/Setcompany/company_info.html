@@ -1,0 +1,86 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+	 		 
+		 <h3 class="yt_margintop5 yt_marginbottom15 ">公司信息</h3>		 
+		 <table class="table  table-bordered " >  
+			<tbody>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >公司名称：</TD>						
+						<TD width="70%" >{$user.company_name}</TD>	
+					 </TR>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >公司地址：</TD>						
+						<TD width="70%" >{$user.s_province}&nbsp;&nbsp;{$user.s_city}&nbsp;&nbsp;{$user.s_county}&nbsp;&nbsp;{$user.company_address}</TD>	
+					 </TR>							 
+					 <TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >注册时间：</TD>						
+						<TD width="70%" >{$user.creat_date}	</TD>	
+					 </TR>	
+					 <TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >公司联系人姓名：</TD>						
+						<TD width="70%" >{$user.name}	</TD>	
+					 </TR>		
+					 <TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >公司联系人电话：</TD>						
+						<TD width="70%" >{$user.phone}	</TD>	
+					 </TR>		
+					 <TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >公司联系人邮件：</TD>						
+						<TD width="70%" >{$user.mail}	</TD>	
+					 </TR>							 
+			 </tbody>		
+		 </table>	
+        <h3 class="yt_margintop15 yt_marginbottom15 ">软件付费模式</h3>		 		 
+		 <table class="table  table-bordered " >  
+			<tbody>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐名称：</TD>						
+						<TD width="70%" >{$Think.session.plan_name}</TD>	
+					 </TR>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐截止日：</TD>						
+						<TD width="70%" >{$Think.session.plan_date}</TD>	
+					 </TR>							 
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >套餐容量：</TD>						
+						<TD width="70%" >（客户数量+销售记录数量+售后记录数量+图片数量）〈{$Think.session.plan_count}条	</TD>	
+					 </TR>	
+					<TR >
+						<TD width="30%" align="right"  style="vertical-align:middle;"  >实际使用量：</TD>						
+						<TD width="70%" >{$Think.session.count_total}（其中：客户数量{$Think.session.count_customer}条，销售记录{$Think.session.count_sales}条，售后记录{$Think.session.count_service}条，图片数量{$Think.session.count_images}条）	</TD>	
+					 </TR>					 
+			 </tbody>		
+		 </table>			 
+            <!-- END PAGE CONTENT-->
+ 			
+         </div>
+         <!-- END PAGE -->
+      </div>
+   </div>
+  
+   
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+   
+   <script>
+    jQuery(document).ready(function() {    
+       //  App.init();
+		// Portfolio.init();
+		$('input[type="checkbox"]').attr('disabled', 'disabled');		
+      });
+
+   </script>
+
+</body>
+</html>

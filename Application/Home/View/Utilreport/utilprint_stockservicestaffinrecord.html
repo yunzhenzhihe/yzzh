@@ -1,0 +1,107 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">
+	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+		 
+            <!-- BEGIN PAGE HEADER-->
+            <div class="row">
+               <div class="col-md-12">
+                  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                  <h3 class="page-title">
+                     打印退料单 &nbsp;&nbsp;
+					 <button  class="btn green yt_margintop10 yt_floatright btn-xs "  onClick=" YTreporttoimg('5') "  >
+						   保存图片 <i class="icon-save"></i>   
+					 </button>		
+					 </h3>
+                  <!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+			
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+				   <div class="row">
+						<div class="col-md-12">
+							<object id="LODOP" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width="100%" height="650"> 
+							  <param name="Caption" value="内嵌显示区域">
+							  <param name="Border" value="1">
+							  <param name="Color" value="#C0C0C0">  
+							  <embed id="LODOP_EM" TYPE="application/x-print-lodop" width=100% height=650 PLUGINSPAGE="install_lodop.exe">
+							</object> 				
+						</div>
+					</div>		
+					<div id="YTdiv" class='yt_nodisplay' >
+						<table border=1 width="100%" cellspacing="0" cellpadding="7" style="border-collapse:collapse" bordercolor="#000000">   
+							<thead>
+								<tr>
+								  <th>序号</th>										 
+								  <th>商品名称</th>	
+								  <th>商品分类</th>								  
+								  <th>单位</th>
+								  <th class="yt_text_right">数量</th>
+								  <th >商品描述</th>	
+								</tr>
+							</thead>
+							<tbody>	
+								 <volist name="goods_list" id="vo"  >	
+								   <tr>
+									   <td>	{$i}	</td> 			
+									   <td>	{$vo['goods_name']}	  </td> 
+									   <td>	{$vo['goods_type']}	 </td> 
+									   <td>	{$vo['goods_unit']}	 </td> 
+									   <td  align="right"  >{$vo['goods_quantity']}  </td> 	
+									   <td>	{$vo['goods_memo']}	</td> 		
+								</tr>									
+								</volist>	
+								   <tr>
+									   <td>		</td> 			
+									   <td>	合计</td> 	
+									   <td>  </td> 
+									   <td>  </td> 
+									   <td  align="right"  >	{$order_info['goods_totalquantity']} </td> 	
+									   <td>	</td> 										   
+								  </tr>																
+							</tbody>
+						</table>
+					</div>
+            <!-- END PAGE CONTENT-->
+         </div>
+         <!-- END PAGE -->
+		 
+      </div>
+   </div>
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+   <script>
+    jQuery(document).ready(function() {    
+        App.init();
+        YTprintpreview(); 
+      });
+
+	YTprinter_orient={$report_setup['orient5']} ;	
+	YTprinter_copies={$report_setup['copies5']} ;	
+	YTorder_number={$order_info['order_number']};	
+	YTreporttoimg_flag=true;	
+   </script>
+   
+<script language="javascript" type="text/javascript"> 
+	var LODOP; 
+	function CreatePage(){
+	  LODOP=getLodop(document.getElementById('LODOP'),document.getElementById('LODOP_EM')); 
+	  {$report_programcodes}	
+	};	
+		
+</script> 
+   
+
+</body>
+</html>

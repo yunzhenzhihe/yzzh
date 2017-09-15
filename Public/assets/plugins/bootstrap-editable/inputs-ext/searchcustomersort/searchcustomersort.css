@@ -1,0 +1,9 @@
+.editable-searchcustomersort {
+    display: block;
+    margin-bottom: 15px;  
+}
+
+.editable-searchcustomersort span {
+   width:160px;  
+   display: inline-block;
+}

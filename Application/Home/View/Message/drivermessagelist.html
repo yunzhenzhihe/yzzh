@@ -1,0 +1,47 @@
+
+		<TABLE id="grid" width="100%" class="tablesorter" cellSpacing="1" cellPadding="2"  rules="all" border="0" > 	
+		  <thead>
+             <TR class=table_head >
+                <Th style= "width:20% ">发布时间</Th>	
+                <Th style= "width:70% ">通知</Th>				
+				<Th style= "width:10% ">操作 </Th>				
+
+				<Th></Th>
+			</TR>	
+          </thead>	
+          <tbody>	
+
+          <?php if($drivermessagelist==null) : ?>
+		  		<TR  class="table_body"   >
+                <TD>无数据</TD>
+                <TD></TD>
+				<TD></TD>
+                <TD></TD>				
+				</TR>		
+            <?php else : ?>
+	        <volist name="drivermessagelist" id="vo">	
+                 <TR class=table_body>
+                <TD>{$vo['time']} </TD>
+				<TD >{$vo['msg']}</TD>
+				<TD> &nbsp;&nbsp; <a  href= "JavaScript:del_record('{$vo['id']}')  "  >删除</a></td>                  
+				<TD></TD>
+                 </TR>				 
+	        </volist>
+			<?php endif ?>
+          </tbody>			
+          </TABLE>
+          <div class=pagelink  id="pages" > {$page}  </DIV>
+
+		  
+ <script type="text/javascript">   
+        $(document).ready(function () {			
+			$("#grid").tablesorter({sortList: [[0,1]] ,    //排序列表  [0,0],[1,0] 按第一列,第二列进行升序排序  [列索引,排序方向] 0 asc 1 desc  "zebra", "resizable"
+			                      //  widgets: ['zebra'] ,  
+								  widgets: ['zebra'] ,  
+								  headers:{2:{sorter:false}   }     //列阻止排序 那些列不排序  headers:{2:{sorter:false} , 3:{sorter:false} }    2.3列阻止    "text"  文本 "digit"   数字  currency"   货币 "ipAddress" ip地址 "url    url地址  "isoDate" percent",  百分比 "shortDate"  "time",  "metadata"  元数据
+
+			} );   
+        });
+</script>			  
+
+ <include file="Framefile:table_ajaxpage" />  <!--  调整列宽 表格鼠标变色-->

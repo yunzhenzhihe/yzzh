@@ -1,0 +1,79 @@
+
+		 <!-- BEGIN DIALOG_FORM  -->
+		 <div id="imagedesc-form" class="modal fade" tabindex="-1" aria-hidden="true" data-width="550" >
+				  <div class="modal-header" id="yt_modal-header" >
+					 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					 <h4 class="modal-title" id="yt_dialog_title">修改图片描述</h4>
+				  </div>
+				  <div class="modal-body " >
+				  
+							<form>
+							<fieldset>	
+								<label  class="dialog_label"  for="form_image_desc" >图片描述</label>  
+								<input class="dialog_input" type="text" name="form_image_desc" id="form_image_desc"   /> 		
+							  <br class="clearfloat" />	  	  
+							</fieldset>	
+							</form>					  
+										  
+				  
+							
+				  </div>
+				  <div class="modal-footer">
+					 <button type="button" data-dismiss="modal" class="btn default" id="yt_dialog_btn_cancel">退出</button>
+					 <button type="button" class="btn green" id="yt_dialog_btn_ok">确认</button> 					 
+				  </div>
+		 </div>
+		 <!-- END DIALOG_FORM  -->	
+
+
+		 <!-- BEGIN DIALOG_FORM  -->
+		 <div id="dialog-images" class="modal fade" tabindex="-1" aria-hidden="true" data-width="550" >
+				  <div class="modal-header" id="yt_modal-header" >
+					 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					 <h4 class="modal-title" id="yt_dialog_title">图片处理</h4>
+				  </div>
+				  <div class="modal-body " >
+				  
+					  <h3 style="clear: both;" id="image_set"></h3>
+					  <div class="imageRow" >
+					  </div> 
+					  <br class="clearfloat" />	 
+					  <div class="upload_image_file_box" >  
+						  <div id="upload_image_file">  
+								<input name="file" type="file" id="file" size="28" class="upload_file" accept="image/gif, image/jpg, image/png, image/jpeg" />  
+								<div style="float:left; margin-top:11px; 	 " > <label style="width:60px; " for="image_desc" >图片描述</label>  </div>
+								<div style="float:left; margin-top:6px; "> <input style="width:146px; " type="text" name="inputimage_desc" id="image_desc"  /> </div>			
+								<input type="button" value="上传" onclick="return ajaxFileUpload();" class="upload_submit"/>   
+								<img   src="__PUBLIC__/images/loading.gif" id="loading" class="upload_loading" />
+							</div>
+							<br class="clearfloat" />
+							<br/>
+							<label>1.只能上传 .jpg  .gif  .png  .jpeg 这4种格式图片文件</label> 
+							<label>2.每张图片大小不超过<span id='images_maxsize'  style="color:#ff0000" ></span>,最多<span id='images_number' style="color:#ff0000" ></span>张图片</label> 
+							<label>3.图片描述文字长度小于100（50个汉字）</label> 
+					  </div>				  
+				  
+				  
+							
+				  </div>
+				  <div class="modal-footer">
+					 <button type="button" data-dismiss="modal" class="btn default" id="yt_dialog_btn_cancel">退出</button>
+				  </div>
+		 </div>
+		 <!-- END DIALOG_FORM  -->	
+
+
+<input id="url_upload"  value="__PUBLIC__/uploads/"  type="hidden" />	 
+
+<script>
+	  loadingImage= '__PUBLIC__/images/lightbox_loading.gif';  
+      closeImage= '__PUBLIC__/images/lightbox_close.png';
+ </script>
+
+    <script src="__PUBLIC__/js/yt_lightbox.js"></script>
+	<script src="__PUBLIC__/js/yt_ajaxfileupload.js"></script>  
+	<script src="__PUBLIC__/js/yt_dialog_image.js"></script>  
+	<link rel="stylesheet" href="__PUBLIC__/css/admin_image.css" type="text/css" media="screen" /> 
+	<link rel="stylesheet" href="__PUBLIC__/css/lightbox.css" type="text/css" media="screen" />
+
+	

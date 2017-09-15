@@ -1,0 +1,262 @@
+
+#container {margin:0 auto; width:100%;}
+#header { height:40px; background:#9c6; margin-bottom:0px;}
+#mainContent {margin-bottom:0px;}
+#sidebar { margin-left:0px;float:left; width:160px;background:#f4f4f4;}
+/*#switchSysBar { margin-left:6px;float:left;width:6px;background:#f4f4f4;}  */
+/*#content {margin-left:170px !important; margin-left:167px; height:auto !important; height:100px;}/*当content设定高度后，3像素会跑到content外侧，这样，我们用!important修正在ie下向左多浮动2像素，加上3像素的bug正好是5像素，所以在火狐和IE下显示是一样的*/
+  #content  {margin-left:170px !important; margin-left:167px; height:auto !important; height:100px;}/*当content设定高度后，3像素会跑到content外侧，这样，我们用!important修正在ie下向左多浮动2像素，加上3像素的bug正好是5像素，所以在火狐和IE下显示是一样的*/
+  #content_client  {margin-left:3px !important; margin-left:0px; height:auto !important; height:100px;}/*当content设定高度后，3像素会跑到content外侧，这样，我们用!important修正在ie下向左多浮动2像素，加上3像素的bug正好是5像素，所以在火狐和IE下显示是一样的*/
+  #footer { height:60px; background:#9c6;}
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
+
+
+body,input,label{
+font-size: 14px; font-family: '宋体', Simsun;  /* 调整&nbsp; 在不同的浏览器下不等宽 */
+}
+
+TABLE {
+	BORDER-COLLAPSE: collapse ;
+    BORDER-TOP-WIDTH: 0px; FONT-WEIGHT: normal; BORDER-LEFT-WIDTH: 0px; 
+	BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 0px; 
+	BORDER-BOTTOM-COLOR: #cccccc; WIDTH: 100%; 
+	BORDER-TOP-COLOR: #cccccc; FONT-STYLE: normal; 
+	BACKGROUND-COLOR: #cccccc; BORDER-RIGHT-WIDTH: 0px; 
+	TEXT-DECORATION: none; BORDER-RIGHT-COLOR: #cccccc;   
+	table-layout: automatic ;
+	FONT-WEIGHT: normal;
+}
+
+.table_head {
+   FONT-WEIGHT: bold; FONT-STYLE: normal; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none ;text-align: left; 
+}
+
+th { font-weight: normal; } 
+
+.table_body {
+     FONT-STYLE: normal; BACKGROUND-COLOR: white; TEXT-DECORATION: none ;text-align: left; 
+}
+
+A:link {
+	COLOR: #0077bb; TEXT-DECORATION: none
+}
+
+A:visited {
+	COLOR: #0077bb; TEXT-DECORATION: none
+}
+
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none  
+}
+
+
+.textbox {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 15px; BACKGROUND-COLOR: #fdfdfd;	
+}
+
+.select_info {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; COLOR: #333333; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #fdfdfd;
+	 width: 100px;
+}
+
+.button {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #f4f4f4 1px solid; BORDER-LEFT: #f4f4f4 1px solid; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #888888 1px solid;HEIGHT: 20px
+}
+
+.manage_head_one {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #cccccc 1px solid; COLOR: #000000; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #f4f4f4;line-height: 30px;
+}
+ 
+ .manage_head_two {
+	FONT-WEIGHT: normal;
+}
+
+.manage_head_three{
+	float:right; font-weight: normal;
+}
+
+.manage_head_four{
+	float:left; font-weight: normal; padding-top: 8px; 	padding-bottom:8px;
+}
+
+.manage {
+	padding-top: 8px;
+
+}
+
+.pagelink{
+	cursor:pointer;  TEXT-ALIGN:right ;margin-right :40px;  float:right; margin-top:0px; 
+}
+
+.NumberOfRows{
+	float:right; margin-right :20px ; margin-top:1px; font-weight: normal;
+}
+
+.NumberOfRows1{
+	float:right; margin-right :30px ; font-weight: normal;
+}
+
+
+
+label, input { display:block;} 
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:8px; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }   
+
+H1 {
+    font-family: '宋体', Simsun;  /* 调整&nbsp; 在不同的浏览器下不等宽 */
+	font-size: 14px;
+	margin: 0px;
+	width: 160px;
+	cursor: pointer;
+	height: 25px;
+	line-height: 20px;	
+	display:block;
+}
+H1 a {
+	display: block;
+	width: 160px;
+	color: #000;
+	height: 25px;
+	text-decoration: none;
+	moz-outline-style: none;
+
+	line-height: 25px;
+	text-align: left; 
+	margin: 0px;
+	padding: 0px;
+	margin-left :0px;	
+}
+
+H1 a:link {
+     COLOR: #0077bb; 
+	 FONT-WEIGHT:  bold; 
+	 outline:none;
+}
+H1 a:visited {
+     COLOR: #0077bb; 
+	 FONT-WEIGHT:  bold; 
+	 outline:none;
+}
+
+
+H1 a:hover,
+H1 a:focus,
+H1 a:active {
+text-decoration: none;
+	background:#c1ebff;	
+	}
+	
+.left_content{
+	width: 160px;
+	display: none;
+}
+
+.MM {
+	width: 160px;
+	margin: 0px;
+	padding: 0px;
+	margin-left :0px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip: rect(0px,0px,0px,0px);
+	display:block;
+	
+}
+
+.MM li {
+	line-height: 25px;
+	list-style-type: none;
+	display: block;
+	text-decoration: none;
+	height: 25px;
+	width: 160px;
+	padding-left: 0px;
+	font-size: 14px;
+	font-family: '宋体', Simsun;  /* 调整&nbsp; 在不同的浏览器下不等宽 */
+	
+}
+
+.MM a:{	
+	display: block;
+	width: 150px;
+	color: #0ffff0;
+	height: 25px;
+	text-decoration: none;
+	moz-outline-style: none;
+	background-image: url(images/menu_bgS.gif);
+	background-repeat: no-repeat;
+	line-height: 25px;
+	text-align: left; 
+	margin: 0px;
+	padding: 0px;	
+
+
+	
+}
+
+.MM a:hover,
+.MM a:focus,
+.MM a:active {
+	background:#c1ebff;	
+	}
+	
+.MM a:link {
+	line-height: 26px;
+	color: #333333;
+	height: 26px;
+	width: 160px;
+	display: block;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.MM a:visited {
+	line-height: 26px;
+	color: #333333;
+	display: block;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	height: 26px;
+	width: 160px;
+	text-decoration: none;	
+}
+
+.input50{ width:50px;}
+.input100{ width:100px;}
+
+.select150{ width:150px;}
+.select170{ width:170px;}
+.select200{ width:200px;}
+
+
+
+.dialog_label{ width:90px; float:left; margin-top:17px; }
+.dialog_label50{ width:50px; float:left; margin-top:17px; }
+.dialog_label70{ width:70px; float:left; margin-top:17px; }
+.dialog_label110{ width:110px; float:left; margin-top:17px; }
+.dialog_label125{ width:125px; float:left; margin-top:17px; }
+.dialog_label160{ width:160px; float:left; margin-top:17px; }
+.dialog_label250{ width:250px; float:left; margin-top:17px; }
+.dialog_input{ width:296px; float:left; margin-top:12px;}
+.dialog_input50_time{ width:50px; float:left; margin-top:12px; margin-left:7px; }
+.dialog_input80{ width:80px; float:left; margin-top:12px;}
+.dialog_input100{ width:100px; float:left; margin-top:12px;}
+.dialog_input130{ width:130px; float:left; margin-top:12px;}
+.dialog_input160{ width:160px; float:left; margin-top:12px;}
+.dialog_input200{ width:296px; float:left; margin-top:12px;}
+.dialog_Char{ float:left; margin-top:16px; color:#ff0000 ;padding-left:7px;}
+.dialog_select300{ width:300px; float:left; margin-top:14px; }
+.dialog_select104{ width:104px; float:left; margin-top:14px; }
+.dialog_select160{ width:160px; float:left; margin-top:14px; }
+.dialog_select200{ width:200px; float:left; margin-top:14px; }
+.dialog_text{ float:left; margin-top:12px;padding-left:7px;}
+.dialog_label_nodisplay { float:left; margin-top:7px;  display:none }
+.dialog_radio18{ float:left; margin-top:18px; }
+

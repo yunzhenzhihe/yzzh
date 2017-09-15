@@ -1,0 +1,70 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+<form name="myform" action="__SELF__" method="post" onsubmit="return YTauth_checkform();">			 		 
+		 <h3 class="yt_margintop5 yt_marginbottom15 ">添加用户组（角色）</h3>		 
+		 <table class="table  table-bordered " >  
+			<tbody>	
+					<TR >
+						<TD width="20%" align="right"  style="vertical-align:middle;"  >组（角色）名称：</TD>
+						<TD width="80%" ><input type="text" class="input-sm yt_input-large300  " name="title" id="title" name="inputdatabox"   >	</TD>	
+					 </TR>				
+					<TR >
+						<TD  align="right"  rowspan="2"  >权限： </TD>
+						<TD>  <label class="" >  <input  type="checkbox" id="auth_chkall" onclick="YTauth_chkall()"  > 全选 </label> </TD>	 
+					</TR>	
+					<TR >
+						<td class="yt_news-blocks ">
+								<foreach name="data" item="vo">
+								  <div class="news-blocks ">	
+									    <label for="chk{$vo.id}" >  <input  type="checkbox" class="checkbox01" name="rules[]"  id="chk{$vo.id}" onclick="YTauth_checkbox( $('#chk{$vo.id}'),{$vo.id})" value="{$vo.id}" />&nbsp;{$vo.title} </label> 
+                                                 <br/>										
+										    <foreach name="vo['sub']" item="sub">
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┠─&nbsp;<label for="chk{$sub.id}" >  <input  type="checkbox" class="checkbox{$vo.id}" name="rules[]"  id="chk{$sub.id}" onclick="YTauth_checkbox_sub($('#chk{$sub.id}'),{$sub.id},$('#chk{$vo.id}'))" value="{$sub.id}"/ >&nbsp;{$sub.title} </label> 
+
+														<foreach name="sub['sub1']" item="sub1">
+														   <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┠─&nbsp;<label for="chk{$sub1.id}" >  <input  type="checkbox" class="checkbox{$sub.id}" name="rules[]"  id="chk{$sub1.id}"  onclick="YTauth_checkbox_sub1($('#chk{$sub1.id}'),$('#chk{$sub.id}'),$('#chk{$vo.id}'))" value="{$sub1.id}" />&nbsp;{$sub1.title} </label> 										 										
+														</foreach>
+
+												<br/>											
+											 </foreach>
+									</div>		 
+								</foreach>
+						</td>
+				    </TR>
+					<TR >
+					  <td colspan = "2" > <button type="submit" class="btn green yt_float_right yt_input-small140 yt_marginright30 " >确认</button> </td>
+					</TR >
+
+			 </tbody>		
+		 </table>	
+            <!-- END PAGE CONTENT-->
+	
+</form>	  			
+         </div>
+         <!-- END PAGE -->
+      </div>
+   </div>
+  
+   
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+   
+   <script>
+    jQuery(document).ready(function() {    
+      });
+   </script>
+
+</body>
+</html>

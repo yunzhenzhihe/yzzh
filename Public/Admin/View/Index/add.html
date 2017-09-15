@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="__ADMIN__/js/jquery-1.8.3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<form action="" method="post">
+
+
+        <h1>{$Think.lang.Order details}</h1>
+    <!--{$Think.lang.Order number}：<strong>{$data.order_number}</strong><br/>-->
+    <!--{$Think.lang.Commodity name}：<strong>{$data.goods_name}</strong><br/>-->
+    <!--{$Think.lang.Commodity price}：<strong>￥{$data.goods_price}</strong><br/>-->
+    <!--{$Think.lang.Commodity quantity}：<strong>{$data.goods_number}</strong><br/>-->
+    收货人姓名：<strong>{$data.user_name}</strong><br/>
+    收货人地址：<strong>{$data.user_address}</strong><br/>
+    收货人电话：<strong>{$data.user_telephone}</strong><br/>
+    支付方式：<if condition="$data.user_pay == 1">
+    <strong>支付宝</strong><br/>
+
+    <elseif condition="$data.user_pay == 2"/>
+    <strong>微信</strong><br/>
+    <elseif condition="$attr.check == 3"/>
+    <strong>微信</strong><br/>
+</if><br/>
+
+    <a href="{:U('del',array('order_number' => $data['order_number']))}">删除订单</a><br/>
+    <input type="submit" id="send" value="{$Think.lang.payment}">
+</form>
+
+</body>
+<script>
+    $("#send").click(function(){
+        alert('支付成功');
+    })
+</script>
+
+</html>

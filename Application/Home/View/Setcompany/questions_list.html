@@ -1,0 +1,164 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+	 		 
+        <h3 class="yt_margintop15 yt_marginbottom25 ">答疑、建议、反馈</h3>	
+			 <div class="table-toolbar">
+				<div class="btn-group">
+				   <button id="yt_btn_add" class="btn green"   >
+				   添加 <i class="icon-plus"></i>
+				   </button>
+				</div>
+			 </div>		
+			 <div class="table-responsive"> 
+					 <?php if($recordlist==null) : ?>	
+							 <div class="news-blocks yt_margintop15 ">
+								<h4>无数据...</h4>
+							 </div>	
+					<?php else : ?>  				
+                      <table class="table table-striped table-bordered table-hover table-full-width  row-border order-column      " id="yt_table">   
+                        <thead >
+                           <tr>
+							  <volist name="table_head" id="vo">	
+							      <th>{$vo['value']}</th>
+							  </volist>	
+							     
+                           </tr>
+                        </thead>					
+                        <tbody>
+						<volist name="recordlist" id="vo">	
+						  <tr class="">
+							  <volist name="table_head" id="vo1">
+   							       <td>									  
+										  <if condition='($vo1.key neq "memo" )'> 
+												 {$vo[$vo1['key']]}	
+										  <else />	 
+													<a class="tooltips" data-original-title="详情"  href= "JavaScript:YTquestions_info('{$vo['id']}') " >{$vo[$vo1['key']]}</a>														 
+										  </if>  	
+								   </td> 
+							  </volist>	
+					  
+						   </tr>
+						  </volist>	
+						  
+                        </tbody>
+                     </table>
+					 <div class="row">
+						<div class="col-md-12 yt_margintop15 ">
+
+									 <span class="col-md-4 " >
+										  <select  class="input-sm   " id="NumberOfRows" onchange="YTnumberofrows(this.options[this.selectedIndex].value)" >
+												<volist name="selectrowslist" id="vo" >	
+													 <option  value="{$vo}" >每页显示&nbsp;{$vo}&nbsp;条</option> 
+												</volist>		
+										  </select>				  
+									 </span>										 																	 
+									 <span class="pagelink col-md-6 yt_margintop-0 "  >
+										 {$page} 	
+										 <input id="select_interval_days"  value="{$Think.session.select_interval_days}"  type="hidden"   /> <!--查询间隔天数天 --> 
+									 </span>						 						 
+						  </div>
+					   </div>						 
+					  <?php endif ?>	
+					  
+					  
+                    </div>
+            <!-- END PAGE CONTENT-->
+ 			
+         </div>
+
+		 
+            <!-- END PAGE CONTENT-->
+			
+		 <!-- BEGIN DIALOG_FORM  -->
+		 <div id="yt_dialog_form" class="modal fade" tabindex="-1" aria-hidden="true" data-width="650" >
+				  <div class="modal-header" id="yt_modal-header" >
+					 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					 <h4 class="modal-title" id="yt_dialog_title">添加</h4>
+				  </div>
+				  <div class="modal-body " >
+						<form class="form-horizontal" role="form">
+						
+							<div class="form-group">
+							   <label for="unit" class="control-label col-md-3">类型<span class="required" >*</span></label>
+							   <div class="col-md-8">	
+                                          <div class="radio-list yt_marginleft20"  >
+										     <label   class="radio-inline" >
+                                                  <input type="radio" name="question_type" value="答疑"  />答疑
+											 </label>
+											 <label  class="radio-inline" >
+                                                  <input type="radio" name="question_type" value="建议" />建议
+                                             </label>
+											 <label  class="radio-inline" >
+                                                  <input type="radio" name="question_type" value="反馈" />反馈
+                                             </label>											 
+										  </div>
+
+							   </div>						   
+							</div>							
+						
+						  <div class="form-group yt_margintop20 ">
+							<label for="name" class="col-sm-3 control-label">答疑、建议、反馈<span class="required" >*</span></label>
+							<div class="col-sm-8 " >
+							   <textarea class="form-control" rows="5"   id="memo" ></textarea>
+							</div>
+						  </div>                                         
+						</form>								
+				  </div>
+				  <div class="modal-footer">
+					 <button type="button" data-dismiss="modal" class="btn default" id="yt_dialog_btn_cancel">取消</button>
+					 <button type="button" class="btn green" onClick=" YTquestions_add()	 " >确认</button>  
+				  </div>
+		 </div>
+		 <!-- END DIALOG_FORM  -->				
+			
+			
+ 			
+         </div>
+         <!-- END PAGE -->
+      </div>
+   </div>
+  
+   
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+   
+   <script>
+    jQuery(document).ready(function() {    
+		showSelect('#NumberOfRows','{$Think.cookie.NumberOfRows}');	
+      });
+
+   </script>
+  <script type="text/javascript">  
+     function dialogcheckdata() {  
+         var checkvalid = true;
+	       checkvalid = checkvalid &&  checkEmpty( $( "#memo" ) , "答疑、建议、反馈内容" ) ;
+	     return checkvalid;
+	  };
+	
+    function dialogclearinputbox() {   
+        dialog_clear_allbox();
+		$("#memo").focus();  
+	  }	;
+	  
+	 function dialog_clear_allbox() {  
+		var a=document.getElementsByName( "inputdatabox" ) ; 
+		for(var   i=0;i <a.length;i++) 
+		   a[i].value='';	  				
+} ;
+	  	  		  	  	
+</script>
+  
+ <include file="Framefile:yt_dialog_data" /> 
+</body>
+</html>

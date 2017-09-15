@@ -1,0 +1,63 @@
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header" /> 
+
+		   <h3 class="yt_margintop5  yt_floatleft ">默认地图设置</h3>	
+		   
+		   <div class="input-group yt_input-large600 input-daterange yt_float_right  "  >
+				<span class="input-group-addon">维度：</span>
+				<input type="text" class="form-control date-picker "  readonly id="customer_marker_lat" value="{$map_info['lat']}" >
+				<span class="input-group-addon">经度：</span>
+				<input type="text" class="form-control date-picker " readonly id="customer_marker_lng" value="{$map_info['lng']}">
+				<span class="input-group-addon">缩放级别：</span>
+				<input type="text" class="form-control date-picker "  readonly id="zoom_level" value="{$map_info['zoom_level']}">																				
+				<span class=" btn input-group-addon  green "  onClick="YTmap_setupsoftmap('__URL__/savesoftmap')" >保存数据</span>										 
+		   </div>
+		   <div class="row  yt_margintop10 ">
+				 <div class="col-md-12 yt_margintop5 ">		
+						<div id="map" style="width:auto; height:800px"></div>  <!--开始地图应用部分 552-->	
+						<label class="control-label pull-left ">注：鼠标拖拽标记，点保存数据按钮</label>   
+						<button class='btn red btn-xs pull-right ' onclick='changeMap("soso")'>普通地图</button> <span class="pull-right" > 	&nbsp;</span>
+						<button class='btn red btn-xs pull-right ' onclick='changeMapType()'>卫星地图</button> <span class="pull-right" > 	&nbsp;</span>
+						<button class='btn red btn-xs pull-right ' onclick='changeLayer()'>实时交通</button> <span class="pull-right" > 	&nbsp;</span>
+				 </div>
+		   </div>		
+      </div>
+    <!--   END PAGE -->
+   </div>
+		 
+
+  <include file="Framefile:yt_footer" />
+  <include file="Framefile:yt_map" />   
+  
+   <script>
+    jQuery(document).ready(function() {       
+		App.init();
+        $('#yt_left_menu_setup').addClass("active");  
+		$('#yt_left_menu_setup_softmap').addClass("active");
+
+		$('#yt_left_menu_setup_arrow .arrow ').remove();
+		$('#yt_left_menu_setup_arrow ').append( '<span class="selected"></span> ');
+		$('#yt_left_menu_setup_arrow ').append( '<span class="arrow open"></span>	');	 
+		
+		$(window).resize(function() { 	
+		    window.location.reload();  
+		});
+      });
+	YTapp='__APP__';  
+	YTself='__ACTION__';  
+    map_onlyshow_init(); 
+	addCustomerMarker( $('#customer_marker_lat').val(),$('#customer_marker_lng').val() ); 
+    YTmap_resize(-160);	
+
+   </script>
+
+</body>
+ <include file="Framefile:yt_dialog_data" /> 
+</html>
+		 
+		 
+		 
+		 
+		 
+ 

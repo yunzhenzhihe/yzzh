@@ -1,0 +1,634 @@
+/* here you can put your own css to customize and override the theme */
+table { 
+  font-size:14px;    
+}
+
+.yt-head-row{
+  margin-top: -20px;
+}
+
+.table-toolbar {
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+
+.page-content { 
+background:#fbfafa;
+}
+
+
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+ /* background-color: #f5f5f7;  2014.9.21 取消   */  
+}
+
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+ /*  background-color:#E8F6FC;    2014.9.22  鼠标悬浮在表格上的颜色*/
+}
+
+.row-details-open{
+ /* background-color:#eeeeee;    2014.9.22  打开表格行的详情的背景色*/
+}
+
+
+thead { 
+  /*  background-color: #eeeeee;  2014.9.21 取消 */
+}
+
+/*表格排序的颜色*/
+
+.table-hover > tbody > tr:hover > td, /* 2014.9.22  鼠标悬浮在表格上的颜色*/
+.table-hover > tbody > tr:hover > th ,/* 2014.9.22  鼠标悬浮在表格上的颜色*/
+table.dataTable.order-column tbody tr > .sorting_1,
+table.dataTable.order-column tbody tr > .sorting_2,
+table.dataTable.order-column tbody tr > .sorting_3, table.dataTable.display tbody tr > .sorting_1,
+table.dataTable.display tbody tr > .sorting_2,
+table.dataTable.display tbody tr > .sorting_3 {
+  background-color:#E8F6FC;
+}
+
+.modal-header  {
+
+}
+
+.modal-footer  {
+background-color:  #f7f7f7;
+}
+
+.pagelink{
+	cursor:pointer;  TEXT-ALIGN:right ;margin-right :40px;  float:right; margin-top:10px; font-size:16px;    
+}
+
+
+.yt_form_group_left_70{
+margin-left :-70px;
+}
+
+.yt_form_group_left_50{
+margin-left :-50px;
+}
+
+/* 开始 调整form_wizard 比较宽松的问题做了紧凑处理  */
+.form-group {
+  margin-top: -5px; 
+}
+
+#bar{
+  margin-top: -15px; 
+}
+
+#tab_title{
+  margin-top: -10px; 
+}
+
+.tab-pane{
+margin-top: -20px; 
+}
+/* 结束 调整form_wizard 比较宽的问题做了紧凑处理  */
+
+.yt_floatright{
+  float: right;
+}
+
+.yt_floatleft{
+  float: left;
+}
+
+.yt_margintop3{
+  margin-top: 3px; 
+}
+
+.yt_margintop5{
+  margin-top: 5px; 
+}
+
+.yt_margintop7{
+  margin-top: 7px; 
+}
+
+.yt_margintop10{
+  margin-top: 10px; 
+}
+
+.yt_margintop15{
+  margin-top: 15px; 
+}
+
+.yt_margintop20{
+  margin-top: 20px; 
+}
+
+.yt_margintop25{
+  margin-top: 25px; 
+}
+
+.yt_margintop30{
+  margin-top: 30px; 
+}
+
+.yt_margintop35{
+  margin-top: 35px; 
+}
+
+.yt_margintop40{
+  margin-top: 40px; 
+}
+
+.yt_margintop45{
+  margin-top: 45px; 
+}
+
+.yt_margintop50{
+  margin-top: 50px; 
+}
+
+.yt_margintop55{
+  margin-top: 55px; 
+}
+
+.yt_margintop73{
+  margin-top: 73px; 
+}
+
+.yt_margintop-0{
+  margin-top: -0px; 
+}
+
+.yt_margintop-5{
+  margin-top: -5px; 
+}
+
+.yt_margintop-7{
+  margin-top: -7px; 
+}
+
+.yt_margintop-10{
+  margin-top: -10px; 
+}
+
+.yt_margintop-15{
+  margin-top: -15px; 
+}
+
+.yt_margintop-20{
+  margin-top: -20px; 
+}
+
+.yt_margintop-30{
+  margin-top: -25px; 
+}
+
+.yt_margintop-35{
+  margin-top: -35px; 
+}
+
+.yt_marginbottom5{
+  margin-bottom: 5px; 
+}
+.yt_marginbottom10{
+  margin-bottom: 10px; 
+}
+
+.yt_marginbottom15{
+  margin-bottom: 15px; 
+}
+
+.yt_marginbottom25{
+  margin-bottom: 25px; 
+}
+
+.yt_marginbottom30{
+  margin-bottom: 30px; 
+}
+
+.yt_marginbottom60{
+  margin-bottom: 60px; 
+}
+
+.yt_marginbottom70{
+  margin-bottom: 70px; 
+}
+
+.yt_marginbottom-1{
+  margin-bottom: -1px; 
+}
+
+.yt_marginleft-15{
+  margin-left :-15px; 
+}
+
+.yt_marginleft-20{
+  margin-left :-20px; 
+}
+
+.yt_marginleft-230{
+  margin-left :-230px; 
+}
+
+.yt_marginleft-248{
+  margin-left :-248px; 
+}
+
+.yt_marginleft-270{
+  margin-left :-270px; 
+}
+
+.yt_marginleft-375{
+  margin-left :-375px; 
+}
+
+.yt_marginleft-432{
+  margin-left :-432px; 
+}
+
+.yt_marginleft-450{
+  margin-left :-450px; 
+}
+
+.yt_marginleft-468{
+  margin-left :-468px; 
+}
+
+.yt_marginleft5{
+  margin-left :5px; 
+}
+
+.yt_marginleft10{
+  margin-left :10px; 
+}
+
+.yt_marginleft15{
+  margin-left :15px; 
+}
+
+.yt_marginleft20{
+  margin-left :20px; 
+}
+
+.yt_marginleft30{
+  margin-left :30px; 
+}
+
+.yt_marginleft40{
+  margin-left :40px; 
+}
+
+.yt_marginleft50{
+  margin-left :50px; 
+}
+
+.yt_marginleft60{
+  margin-left :60px; 
+}
+
+
+.yt_marginleft80{
+  margin-left :80px; 
+}
+
+.yt_marginleft105{
+  margin-left :105px; 
+}
+
+.yt_marginleft220{
+  margin-left :220px; 
+}
+
+.yt_marginleft230{
+  margin-left :230px; 
+}
+
+.yt_marginleft300{
+  margin-left :300px; 
+
+}
+
+.yt_marginright-30{
+  margin-right :-30px; 
+}
+
+.yt_marginright5 {
+  margin-right :5px; 
+}
+.yt_marginright10 {
+  margin-right :10px; 
+}
+
+.yt_marginright15{
+  margin-right :15px; 
+}
+
+.yt_marginright20{
+  margin-right :20px; 
+}
+
+.yt_marginright30{
+  margin-right :30px; 
+}
+
+.yt_marginright50{
+  margin-right :50px; 
+}
+
+.yt_input-small70 {
+  width: 70px !important;
+}
+
+.yt_input-small100 {
+  width: 100px !important;
+}
+
+.yt_input-small140 {
+  width: 140px !important;
+}
+
+.yt_input-small180 {
+  width: 180px !important;
+}
+
+.yt_input-small220 {
+  width: 220px !important;
+}
+
+.yt_input-small250 {
+  width: 250px !important;
+}
+
+.yt_input-large300{
+  width: 300px !important;
+}
+
+.yt_input-large320{
+  width: 320px !important;
+}
+
+.yt_input-large360{
+  width: 360px !important;
+}
+
+.yt_input-large380{
+  width: 380px !important;
+}
+
+.yt_input-large420{
+  width: 420px !important;
+}
+
+.yt_input-large500{
+  width: 500px !important;
+}
+
+.yt_input-large550{
+  width: 550px !important;
+}
+
+.yt_input-large600{
+  width: 600px !important;
+}
+.yt_input-large700{
+  width: 700px !important;
+}
+
+.yt_input-large760{
+  width: 760px !important;
+}
+
+.yt_input-large800{
+  width: 800px !important;
+}
+
+.yt_input-large900{
+  width: 900px !important;
+}
+/*显示客户的资料 记录这些使用*/
+.yt_note-info {
+  background-color:  #F5F5F5 ;  /*#E8F6FC; #F5F5F5  ; */
+  border-color: #57b5e3;
+  border-top: solid 2px #faf6ea; 
+  border-bottom: solid 2px #faf6ea;  /*  新加 显示下边框 14年9月4日*/ 
+}
+
+.yt_note-info:hover {
+  background:#E8F6FC;   /*;14年9月4日 #fbfafa */
+  border-color: #78cff8  #78cff8  #78cff8 #E8F6FC; 
+  transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;  
+}
+/*显示客户的资料 记录这些使用*/
+
+.yt_width250 {
+	display:-moz-inline-box; 
+	display:inline-block; 
+	width:250px;
+}
+
+.yt_width350 {
+	display:-moz-inline-box; 
+	display:inline-block; 
+	width:350px;
+}
+
+.yt_float_left {
+	float: left ;
+}
+
+.yt_float_right {
+	float: right ;
+}
+
+ /* 水平居中*/
+.yt_text_center{   
+    text-align:center; 
+} 
+
+/* 垂直居中*/
+.yt_text_verticalmiddle{   
+    vertical-align:middle;  
+} 
+ 
+.yt_text_right{   
+    text-align:right;  
+}  
+
+.yt_text_left{   
+    text-align:left;  
+} 
+
+.yt_nodisplay{   
+    display: none;  
+} 
+
+
+/***
+Custom icon buttons
+***/
+.yt_icon-btn {
+ /* height: 100px; */
+  min-width: 75px;
+  margin: 5px 5px 0 0;
+  border: 1px solid #ddd;
+  padding: 12px 0px 0px 0px;
+  background-color: #fafafa !important;
+  background-image: none !important;
+  filter:none !important;
+  -webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important;
+  display:inline-block !important;
+  color: #646464 !important;
+  text-shadow: none !important;
+  text-align: left;
+  cursor: pointer;
+  position: relative;  
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -ms-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+}
+
+.yt_icon-btn i {
+  font-size: 18px;
+}
+
+.ie8 .yt_icon-btn:hover {
+  filter: none !important;
+} 
+
+.yt_icon-btn:hover {
+  text-decoration: none !important;
+  border-color: #999 !important;
+  color: #444 !important;
+  text-shadow: 0 1px 0px rgba(255, 255, 255, 1) !important;
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -ms-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.yt_icon-btn:hover .badge {
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -ms-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  -webkit-box-shadow: none !important;
+       -moz-box-shadow: none !important;
+            box-shadow: none !important;
+}
+
+.yt_icon-btn div {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 20px;  
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.yt_icon-btn .badge {
+/*  position: absolute;  */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px !important;
+  font-weight: 300;
+  top: -5px;
+  right: -5px;
+  padding: 3px 6px 3px 6px;
+  color: white !important;
+  text-shadow: none;
+  border-width: 0;
+  border-style: solid;
+  -webkit-border-radius: 12px !important;
+  -moz-border-radius: 12px !important;
+  border-radius: 12px !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+} 
+
+.yt_position-absolute {  /* 配套  .yt_icon-btn .badge   使用 解决显示在右上角 还是在文字的末尾*/
+  position: absolute; 
+}
+
+.yt_page-sidebar-map-background-color {
+   margin-left :0px; 
+   background-color: #f4f4f4;
+}
+
+.yt_background-color-f4f4f4 {
+  background-image: none !important;
+  background-color: #f4f4f4 !important;
+  border-color: #f4f4f4 !important;   
+}
+
+.yt_padding10{
+  padding:10px 10px 10px 10px;
+}
+
+.yt_news-blocks {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #E8F6FC  ; /* #F8F8FF #EEF2FF  #faf6ea; 14年08月19日*/
+
+  border-top: solid 2px #faf6ea; 
+  border-bottom: solid 2px #faf6ea;  /*  新加 显示下边框 14年08月19日*/
+ 
+}
+ 
+.yt_news-blocks:hover {
+  background:#E8F6FC;  /*#fff;14年08月19日 #fbfafa;  */
+  border-color: #78cff8; 
+  transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;  
+}
+
+.yt_img-responsive {
+  height: 300px;
+}
+
+.yt_color_white {
+   color: white !important;
+}
+
+.yt_color_black {
+   color: black !important;
+}
+
+.yt_color_red {
+   color: red !important;
+}
+
+.yt_color_blue {
+   color: blue !important;
+}
+
+.yt_color_green {
+   color: green !important;
+}
+
+.yt_line-height20 {
+   line-height:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

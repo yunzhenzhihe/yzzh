@@ -1,0 +1,47 @@
+
+.imageRow .single {
+  float: left; 
+  display: block;
+  padding: 4px;
+  width: 154px;
+}
+
+.imageRow .single a {
+  float: left;
+  display: block;
+  padding: 1px;
+  line-height: 1em; 
+  outline:none;
+  margin-right: 0;
+}
+
+.imageRow .single a img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid ;  
+
+}
+
+
+.imageRow .single a:link {
+	COLOR: #ffffff;
+}
+
+.imageRow .single a:hover {   /*  #8ad459;  */
+  background-color: #cde6c7;
+}
+
+.input_lightbox_edit{ float:left; width:15px; height:15px; padding-left:20px; margin-top:1px; display:none; }
+.input_lightbox_del  { float:right; width:11px; height:11px; padding-right:20px;  margin-top:2px; display:none;  }
+.image_desc  { margin-top:1px;  display: inline; }    
+
+
+.upload_file{ margin-top:12px; outline:none;}
+.upload_submit {	float:left;margin-top:7px; margin-left:2px;height:20px;}
+.upload_loading { float:left;margin-top:2px; padding-left:15px; display: none; }
+
+
+

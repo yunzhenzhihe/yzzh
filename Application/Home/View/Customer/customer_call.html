@@ -1,0 +1,116 @@
+ <taglib name="html" />     
+ 
+    
+ 
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.0
+Version: 1.5.2
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+   <meta charset="utf-8" />
+   <title>云天售后服务软件</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="" name="author" />
+   <meta name="MobileOptimized" content="320">
+     
+   <!-- BEGIN GLOBAL MANDATORY STYLES -->          
+   <link href="__PUBLIC__/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+   <link href="__PUBLIC__/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="__PUBLIC__/assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>  
+   <!-- END GLOBAL MANDATORY STYLES -->
+   <!-- BEGIN PAGE LEVEL STYLES  -->
+
+   
+   <!-- END PAGE LEVEL STYLES -->
+   <!-- BEGIN THEME STYLES--> 
+   <link href="__PUBLIC__/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
+   <link href="__PUBLIC__/assets/css/style.css" rel="stylesheet" type="text/css"/>
+   <link href="__PUBLIC__/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/> 
+   <link href="__PUBLIC__/assets/css/plugins.css" rel="stylesheet" type="text/css"/>
+   <link href="__PUBLIC__/assets/css/pages/portfolio.css" rel="stylesheet" type="text/css"/>  
+   <link href="__PUBLIC__/assets/css/pages/news.css" rel="stylesheet" type="text/css"/>
+   <link href="__PUBLIC__/assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/> 
+   <link href="__PUBLIC__/assets/css/custom.css" rel="stylesheet" type="text/css"/> 
+   <!-- END THEME STYLES -->
+   <link href="__PUBLIC__/css/jtip.css" rel="stylesheet" type="text/css" />   <!-- !--jquery 帮助提示插件 -->
+   
+  <link rel="shortcut icon" href="__PUBLIC__/assets/img/yt.ico" />  
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY  --> 
+<body class="yt_background-color-f4f4f4" > 
+<div class="yt_padding10 yt_input-large760 " >
+         <!-- BEGIN PAGE CONTENT-->
+         <div class="row yt_marginleft10 yt_margintop10">
+						 <table class="table   table-hover table-bordered table-striped " id="yt_table">  
+							<thead>
+							   <tr>
+								  <th>姓名</th>
+								  <th>电话</th>
+								  <th>地址</th>						  
+								  <th>操作</th>
+							   </tr>
+							</thead>
+							<tbody>	
+			                  <?php if($customerlist==null) : ?>
+									<TR >
+										<TD>无数据</TD>
+										<TD></TD>
+										<TD></TD>
+										<TD>
+											 <button  class="btn green "   onClick=" pcmenu1('Customer*customer_add*callnumber*')  "  >
+											   添加新客户 <i class="icon-plus"></i>
+											</button>											
+										</TD>									
+									</TR>			  
+		                       <?php else : ?>
+
+									<TR >
+										<TD>{$customerlist['name']}</TD>
+										<TD>{$customerlist['phone_number']}</TD>
+										<TD>{$customerlist['address']} </TD>
+										<TD>
+										   <button id="yt_btn_info" class="btn purple  "  onClick=" pcmenu2('Utilcustome*utilcustome_info*guid*')  "  >
+										   详情 <i class="icon-info-sign"></i>
+										   </button>					
+									 </TR>									
+		                      <?php endif ?>	
+
+							 </tbody>		
+						 </table>
+
+
+		</div>
+	 </div> 
+
+  <script type="text/javascript">	
+	var guid="{$customerlist['guid']}",name="{$customerlist['name']}";
+	var returnjsonstr='{"guid":"'+guid+'","name":"'+name+'"}';						
+	alert("web1"+returnjsonstr); 
+
+   function pcmenu1( url )  {  //添加新客户
+		var returnjsonstr='{"url":"'+url+'"}';						
+		alert("web2"+returnjsonstr);   
+    } ;
+	
+   function pcmenu2( url )  {   //客户详情
+		var returnjsonstr='{"url":"'+url+'"}';						
+		alert("web3"+returnjsonstr);   
+    }	;
+			
+  </script>	
+
+</body>
+</html>
+ 

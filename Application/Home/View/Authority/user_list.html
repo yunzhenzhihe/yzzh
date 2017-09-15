@@ -1,0 +1,298 @@
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header" /> 
+
+         <!-- BEGIN PAGE HEADER-->
+		<div class="yt-head-row">
+			 <div class="row">
+				<div class="col-md-12">
+				   <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+
+				   <ul class="page-breadcrumb breadcrumb">
+
+					  
+					  <li>
+						 <span>用户管理与权限</span>
+						 <i class="icon-angle-right"></i>
+					  </li>
+					  <li><span>用户添加\修改\删除</span></li>
+				   </ul>
+				   <!-- END PAGE TITLE & BREADCRUMB-->
+				</div>
+			 </div>
+		</div>
+         <!-- END PAGE HEADER-->
+		 
+         <!-- BEGIN PAGE CONTENT-->
+         <div class="row">
+            <div class="col-md-12">
+                     <div class="table-toolbar">
+                        <div class="btn-group">
+                           <button id="yt_btn_add" class="btn green"   >
+                           添加 <i class="icon-plus"></i>
+                           </button>
+                        </div>
+                     </div>
+					<div class="table-responsive yt_margintop-10 "> 
+						 <table class="table   table-hover table-bordered " id="yt_table">  
+							<thead>
+							   <tr>
+							      <th>操作</th>
+								  <th>登录用户名</th>
+								  <th>注册E_mail（找回和修改密码使用）</th>
+								  <th>用户（角色）组</th>
+								  <th>售后人员</th>
+								  <th>真实姓名</th>
+								  <th>账户状态</th>
+								  <th>录入日期</th>
+								  <th>录入人员</th>								  
+								  
+							   </tr>
+							</thead>
+							<tbody>	
+							  <?php if($recordlist==null) : ?>
+									<TR >
+										<TD>无数据</TD>
+										<TD></TD>
+										<TD></TD>
+										<TD></TD>
+										<TD></TD>
+										<TD></TD>
+										<TD></TD>
+										<TD></TD>
+										<TD></TD>										
+									</TR>
+							  <?php else : ?>
+								<volist name="recordlist" id="vo" >	
+									<TR >
+										<TD>	
+										   <if condition='($vo.username neq "admin" )'> 
+										       <if condition='($vo.title neq "系统管理员" )'> 
+												   <button  class="btn  purple btn-xs tooltips "  data-placement="bottom" data-original-title="工作权限"  onClick=" JavaScript:window.open('__APP__/Authority/auth_info/flag/1/id/{$vo['id']}');  "    >
+												   <i class="icon-info-sign"  ></i>
+												  </button>														   
+											   <else />	
+													<button  class="btn  purple btn-xs tooltips "  data-placement="bottom" data-original-title="工作权限" onClick="alert('系统管理员，拥有软件的全部权限')"  >
+													   <i class="icon-info-sign"  ></i>
+													</button>													   
+											   </if> 
+								   
+											   <button  class="btn blue btn-xs  yt_marginleft5 "  onClick=" edit_record('{$vo['id']}')  "  >
+											   修改 <i class="icon-edit"></i>
+											   </button>
+											   <button  class="btn red btn-xs  yt_marginleft5  "  onClick=" del_record('{$vo['id']}')  "  >
+											   删除 <i class="icon-remove"></i>
+											   </button>	
+											 <else />	
+												<button  class="btn  purple btn-xs tooltips "  data-placement="bottom" data-original-title="工作权限" onClick="alert('系统管理员，拥有软件的全部权限')"  >
+												   <i class="icon-info-sign"  ></i>
+												</button>												 
+											    注册系统管理员不能被修改\删除
+                                            </if>  											   
+										 </TD>										
+										<TD>{$vo['username']} </TD>
+										<TD>{$vo['mail']} </TD>
+										<TD>{$vo['title']} </TD>
+										<TD>{$vo['servicestaff']} </TD>
+										<TD>{$vo['realname']} </TD>										
+										<TD>{$vo['status']}&nbsp;&nbsp;{$vo['status_time']}&nbsp;&nbsp;{$vo['status_info']}</TD>
+										<TD>{$vo['creat_time']} </TD>	
+										<TD>{$vo['creat_name']} </TD>									
+									 </TR>				 
+								</volist>	
+							   <?php endif ?>
+							  
+							 </tbody>		
+						 </table>
+					 <div class="row">
+						<div class="col-md-12 yt_margintop15 ">
+
+									 <span class="col-md-4 " >
+										   <select  class="input-sm   " id="NumberOfRows" onchange="YTnumberofrows(this.options[this.selectedIndex].value)" >
+												<volist name="selectrowslist" id="vo" >	
+													 <option  value="{$vo}" >每页显示&nbsp;{$vo}&nbsp;条</option> 
+												</volist>		
+										  </select>				  
+									 </span>										 																	 
+									 <span class="pagelink col-md-6 yt_margintop-0 " id="pages"  >
+										 {$page} 				 
+									 </span>						 						 
+						  </div>
+					   </div>						 
+                    </div>
+            </div>
+         </div>
+		 
+		
+		 <!-- BEGIN DIALOG_FORM  -->
+		 <div id="yt_dialog_form" class="modal fade" tabindex="-1" aria-hidden="true" data-width="650" >
+				  <div class="modal-header" id="yt_modal-header" >
+					 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+					 <h4 class="modal-title" id="yt_dialog_title">添加</h4>
+				  </div>
+				  <div class="modal-body " >
+						<form class="form-horizontal" role="form" >
+						  <div class="form-group" id='id_username' >
+							<label for="username" class="col-sm-3 control-label">登录用户名<span class="required" >*</span></label>
+							<div class="col-sm-8 " >
+							  <input type="text" class="form-control" id="username" name="inputdatabox" >							  
+							</div>
+						  </div>
+						  <div class="form-group" id='id_password' >
+							<label for="password" class="col-sm-3 control-label">初始登录密码<span class="required" >*</span></label>
+							<div class="col-sm-8 " >
+							  <input type="text" class="form-control" id="password" name="inputdatabox" >
+							  <span class="help-block"> 只能字母和数字，不能是其它字符，密码长度4-10位 </span>
+							</div>
+						  </div>		
+						  <div class="form-group" id='id_rpassword' >
+							<label for="rpassword" class="col-sm-3 control-label">再输入一次密码<span class="required" >*</span></label>
+							<div class="col-sm-8 " >
+							  <input type="text" class="form-control" id="rpassword" name="inputdatabox" >
+							  <span class="help-block"></span>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="mail" class="col-sm-3 control-label">注册E_mail<span class="required" >*</span></label>
+							<div class="col-sm-8 " >
+							  <input type="text" class="form-control" id="mail" name="inputdatabox" >
+							  <span class="help-block"> 找回和修改密码使用，很重要 </span>
+							</div>
+						  </div>						  
+						   <div class="form-group">
+							   <label for="group_id" class="control-label col-md-3">用户（角色）组<span class="required" >*</span></label>
+							   <div class="col-md-8">										   
+								  <select  class="form-control select2me" required  data-placeholder="请选择..." name="selectdatabox" id="group_id" >	
+											<option value=""></option>
+											<volist name="group_list" id="vo" >				
+												<option value="{$vo['group_id']}" >{$vo['title']}</option>		 
+											</volist>	
+								   </select>									   
+								   <span class="help-block"></span>
+							   </div>
+							</div>	
+						  <div class="form-group">
+							<label for="realname" class="col-sm-3 control-label">真实姓名<span class="required" >*</span></label>
+							<div class="col-sm-8 " >
+							  <input type="text" class="form-control" id="realname" name="inputdatabox" >
+							  <span class="help-block"> </span>
+							</div>
+						  </div>	
+
+						   <div class="form-group">
+							   <label for="status" class="control-label col-md-3">账户状态<span class="required" >*</span></label>
+							   <div class="col-md-8">										   
+								  <select  class="form-control select2me" required  data-placeholder="请选择..." name="selectdatabox" id="status">	
+											<option value="正常">正常</option>
+											<option value="停用">停用</option>
+				
+								   </select>									   
+								   <span class="help-block"> 当账户状态为停用的时候，该用户不能登录本软件 </span>
+							   </div>
+							</div>	
+							
+						  <div class="form-group">
+							<label for="status_info" class="col-sm-3 control-label">停用原因</label>
+							<div class="col-sm-8 " >
+							  <input type="text" class="form-control" id="status_info" name="inputdatabox" >
+							  <span class="help-block"> 当账户状态为停用的时候，请填写停用的原因 </span>
+							</div>
+						  </div>								
+
+						   <div class="form-group">
+							   <label for="servicestaff" class="control-label col-md-3">售后人员<span class="required" >*</span></label>
+							   <div class="col-md-8">										   
+								  <select  class="form-control select2me" required  data-placeholder="请选择..." name="selectdatabox" id="servicestaff" >	
+											<option value="">非售后人员</option>
+											<volist name="servicestaff_list" id="vo" >												
+												   <option value="{$vo['name']}" >{$vo['name']}</option>										
+											</volist>					
+								   </select>									   
+								   <span class="help-block"> 这里设置该用户是不是售后人员 </span>
+							   </div>
+							</div>	
+						  
+                              <input id="edit_record_id" type="hidden" />                                       
+						</form>								
+				  </div>
+				  <div class="modal-footer">
+					 <button type="button" data-dismiss="modal" class="btn default" id="yt_dialog_btn_cancel">取消</button>
+					 <button type="button" class="btn green" id="yt_dialog_btn_ok">确认</button>  
+				  </div>
+		 </div>
+		 <!-- END DIALOG_FORM  -->	
+
+
+      </div>
+    <!--   END PAGE -->
+   </div>
+		 
+
+  <include file="Framefile:yt_footer" />
+  
+
+   <script>
+    jQuery(document).ready(function() {       
+         App.init();
+		 UIExtendedModals.init();
+	     YtUiScripts.initTable5();
+
+        $('#yt_left_menu_auth').addClass("active");  
+		$('#yt_left_menu_auth_user_list').addClass("active");
+		$('#yt_left_menu_auth_arrow .arrow ').remove();
+		$('#yt_left_menu_auth_arrow ').append( '<span class="selected"></span> ');
+		$('#yt_left_menu_auth_arrow ').append( '<span class="arrow open"></span>	');	 
+		showSelect('#NumberOfRows','{$Think.cookie.NumberOfRows}');	
+      });
+	  
+   </script>
+   
+   
+  <script type="text/javascript">   
+     function dialogcheckdata() { 
+         var checkvalid = true;
+	       checkvalid = checkvalid && checkEmpty( $( "#username" ), "登录用户名" );
+		   checkvalid = checkvalid && checkEmpty( $( "#password" ), "登录密码" ); 
+		   checkvalid = checkvalid && checkEmpty( $( "#group_id" ), "用户（角色）组" );
+		   checkvalid = checkvalid && checkEmpty( $( "#realname" ), "真实姓名" );
+		   checkvalid = checkvalid && checkEmpty( $( "#status" ), "状态" );
+		   checkvalid = checkvalid && checkRegexp( $( "#mail" ) , /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/,"邮件格式不对" ) ;	
+		   if ( $("#status").val()=='正常') {
+				$("#status_info").val('');
+			}	else {
+			    checkvalid = checkvalid && checkEmpty( $( "#status_info" ), "当账户状态为停用的时候，停用原因" );
+			} ;		   
+	     return checkvalid;
+	  };
+	
+    function dialogclearinputbox() {  
+        dialog_clear_allbox(); 
+		$("#username").focus(); 
+	  }	;
+	  
+	 function dialog_clear_allbox() {   
+		var a=document.getElementsByName( "inputdatabox" ) ; 
+		for(var   i=0;i <a.length;i++) 
+		   a[i].value='';	  
+
+		var b=document.getElementsByName( "selectdatabox" ) ;  
+		for(var   i=0;i <b.length;i++) {
+		    var b1=b[i].options;
+			b1[0].selected=true;	
+			$("select[name='selectdatabox']").change();   			
+		 }	;	   
+     } ;
+
+	  	  		  	  	
+</script>
+  
+ <include file="Framefile:yt_dialog_data" /> 
+ 
+</body>
+</html>
+		 
+		 
+		 
+		 
+		 
+ 

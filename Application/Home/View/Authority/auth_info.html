@@ -1,0 +1,112 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+	 		 
+		 <h3 class="yt_margintop5 yt_marginbottom15 ">用户工作权限详情</h3>		 
+		 <table class="table  table-bordered " >  
+			<tbody>	
+					<TR >
+						<TD width="20%" align="right"  style="vertical-align:middle;"  >用户：</TD>						
+						<TD width="80%" >{$userinfo.username}&nbsp;&nbsp;&nbsp;&nbsp;{$userinfo.realname}</TD>	
+						<input type="hidden" name="id" value="{$reuslt.id}" />
+					 </TR>				
+					<TR >
+						<TD width="20%" align="right"  style="vertical-align:middle;"  >组（角色）：</TD>						
+						<TD width="80%" >{$reuslt.title}	</TD>	
+						<input type="hidden" name="id" value="{$reuslt.id}" />
+					 </TR>				
+					<TR >
+						<TD  align="right"  rowspan="2"  >权限： </TD>
+						<TD>  
+						      <a class="btn blue btn-xs " href="__APP__/Authority/auth_info/flag/2/id/{$userinfo.id}">显示没有的权限 <i class="icon-edit"></i> </a>&nbsp;&nbsp;
+						      <a class="btn blue btn-xs " href="__APP__/Authority/auth_info/flag/1/id/{$userinfo.id}">隐藏没有的权限 <i class="icon-edit"></i> </a>
+						</TD>	 
+					</TR>	
+					<TR >
+					
+					   <if condition='($flag eq "1" )'> 									
+								<td class="yt_news-blocks ">
+										<foreach name="data" item="vo">
+										 <if condition=" strpos($reuslt['rules'],','.$vo['id'].',') GT -1 ">
+										  <div class="news-blocks ">	
+												        <label for="chk{$vo.id}" >  <input  type="checkbox" class="checkbox01" name="rules[]"  id="chk{$vo.id}" onclick="YTauth_checkbox( $('#chk{$vo.id}'),{$vo.id})" value="{$vo.id}" checked="true" />&nbsp;{$vo.title} </label> 
+														    <br/>		
+							
+													<foreach name="vo['sub']" item="sub">
+														  <if condition=" strpos($reuslt['rules'],','.$sub['id'].',') GT -1 "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┠─&nbsp;<label for="chk{$sub.id}" >  <input  type="checkbox" class="checkbox{$vo.id}" name="rules[]"  id="chk{$sub.id}" onclick="YTauth_checkbox_sub($('#chk{$sub.id}'),{$sub.id},$('#chk{$vo.id}'))" value="{$sub.id}" checked="true" />&nbsp;{$sub.title} </label> 
+																	
+																<foreach name="sub['sub1']" item="sub1">
+																   <if condition=" strpos($reuslt['rules'],','.$sub1['id'].',') GT -1 ">
+																        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+																	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┠─&nbsp;<label for="chk{$sub1.id}" >  <input  type="checkbox" class="checkbox{$sub.id}" name="rules[]"  id="chk{$sub1.id}"  onclick="YTauth_checkbox_sub1($('#chk{$sub1.id}'),$('#chk{$sub.id}'),$('#chk{$vo.id}'))" value="{$sub1.id}" checked="true" />&nbsp;{$sub1.title} </label> 										 										
+                                                                    </if> 
+																</foreach>
+														      <br/>
+														  </if>
+													 </foreach>
+											</div>
+										</if> 		
+										</foreach>
+								</td>
+						 <else />	
+								<td class="yt_news-blocks ">
+										<foreach name="data" item="vo">
+										  <div class="news-blocks ">	
+												<label for="chk{$vo.id}" >  <input  type="checkbox" class="checkbox01" name="rules[]"  id="chk{$vo.id}" onclick="YTauth_checkbox( $('#chk{$vo.id}'),{$vo.id})" value="{$vo.id}" <if condition=" strpos($reuslt['rules'],','.$vo['id'].',') GT -1 ">checked="true"</if>  />&nbsp;{$vo.title} </label> 
+														 <br/>										
+													<foreach name="vo['sub']" item="sub">
+														&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┠─&nbsp;<label for="chk{$sub.id}" >  <input  type="checkbox" class="checkbox{$vo.id}" name="rules[]"  id="chk{$sub.id}" onclick="YTauth_checkbox_sub($('#chk{$sub.id}'),{$sub.id},$('#chk{$vo.id}'))" value="{$sub.id}" <if condition=" strpos($reuslt['rules'],','.$sub['id'].',') GT -1 ">checked="true"</if> />&nbsp;{$sub.title} </label> 
+
+																<foreach name="sub['sub1']" item="sub1">
+																   <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+																	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;┠─&nbsp;<label for="chk{$sub1.id}" >  <input  type="checkbox" class="checkbox{$sub.id}" name="rules[]"  id="chk{$sub1.id}"  onclick="YTauth_checkbox_sub1($('#chk{$sub1.id}'),$('#chk{$sub.id}'),$('#chk{$vo.id}'))" value="{$sub1.id}" <if condition=" strpos($reuslt['rules'],','.$sub1['id'].',') GT -1 ">checked="true"</if>  />&nbsp;{$sub1.title} </label> 										 										
+																</foreach>
+
+														<br/>											
+													 </foreach>
+											</div>		 
+										</foreach>
+								</td>
+						</if>  						
+					
+					
+					
+					
+
+				    </TR>
+
+
+			 </tbody>		
+		 </table>	
+            <!-- END PAGE CONTENT-->
+ 			
+         </div>
+         <!-- END PAGE -->
+      </div>
+   </div>
+  
+   
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+   
+   <script>
+    jQuery(document).ready(function() {    
+       //  App.init();
+		// Portfolio.init();
+		$('input[type="checkbox"]').attr('disabled', 'disabled');		
+      });
+
+   </script>
+
+</body>
+</html>

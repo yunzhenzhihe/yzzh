@@ -1,0 +1,489 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">
+	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+		 
+            <!-- BEGIN PAGE HEADER-->
+            <div class="row">
+               <div class="col-md-12">
+                  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                  <h3 class="page-title">
+                     修改客户资料 <small>修改客户资料</small>
+                  </h3>
+                  <!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+			
+			
+         <div class="row">
+            <div class="col-md-12">
+               <div class="portlet box blue" id="form_wizard_1">
+                  <div class="portlet-title">
+                     <div class="caption">
+                        <i class="icon-reorder"></i>步骤  <span class="step-title">1/2</span>
+                     </div>
+                     <div class="tools hidden-xs">
+                        <a href="javascript:;" class="collapse"></a>
+                     </div>
+                  </div>
+                  <div class="portlet-body form">
+                     <form action="#" class="form-horizontal" id="submit_form">
+                        <div class="form-wizard">
+                           <div class="form-body">
+                              <ul class="nav nav-pills nav-justified steps" id="yt_tab_title">
+                                 <li>
+                                    <a href="#tab1" data-toggle="tab" class="step">
+                                    <span class="number">1</span>
+                                    <span class="desc"><i class="icon-ok"></i> 客户资料</span>   
+                                    </a>
+                                 </li>					 	
+                                 <li>
+                                    <a href="#tab3" data-toggle="tab" class="step active">
+                                    <span class="number">2</span>
+                                    <span class="desc"><i class="icon-ok"></i> 确认</span>   
+                                    </a>
+                                 </li>
+                              </ul>
+                              <div id="bar" class="progress progress-striped" role="progressbar">
+                                 <div class="progress-bar progress-bar-success"></div>
+                              </div>
+                              <div class="tab-content">
+                                 <div class="alert alert-danger display-none">
+                                    <button class="close" data-dismiss="alert"></button>
+                                    有些输入项错误,请检查.
+                                 </div>
+                                 <div class="alert alert-success display-none">
+                                    <button class="close" data-dismiss="alert"></button>
+                                    输入成功!
+                                 </div>
+								 
+								 
+                                 <div class="tab-pane active" id="tab1">								 
+								  <h3 class="form-section">客户资料</h3>	
+								<div class="col-md-6">	
+								<div class="yt_form_group_left_70 ">		  
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">姓名<span class="required" >*</span></label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control  " name="name" required   />
+                                          <span class="help-block"></span>
+                                       </div>
+                                    </div>
+																																	
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">性别<span class="required">*</span></label>
+                                       <div class="col-md-9">
+                                          <div class="radio-list"  >
+										     <label   class="radio-inline" >
+                                                  <input type="radio" name="gender" value="男" data-title="男" required /> 男
+											 </label>
+											 <label  class="radio-inline" >
+                                                  <input type="radio" name="gender" value="女" data-title="女" required/> 女
+                                             </label>
+										  </div>
+                                          <div id="form_gender_error"></div>
+                                       </div>
+                                    </div>
+							
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">电话<span class="required" >*</span></label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control  required " name="phone_number"  >
+                                            <span class="help-block">区号和号码之间不要加分隔符，比如是010123456，不能是010-123456 																	
+											</span>
+                                       </div>
+                                    </div>
+									
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">地址<span class="required" >*</span></label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control" name="address" id="address" required  />
+                                          <span class="help-block"></span>
+                                       </div>
+                                    </div>	
+									
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">注册日期<span class="required" >*</span></label>
+                                       <div class="col-md-9">
+											<div class="input-group input-medium date date-picker">
+												<input type="text"  class="form-control" readonly required id="date_registration" name="date_registration" >
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="icon-calendar"></i></button>
+												</span> 
+											 </div>
+                                       </div>									  
+                                    </div>
+									
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">客户组<span class="required" >*</span></label>
+                                       <div class="col-md-9">
+										   <select  class="form-control select2me" required  data-placeholder="请选择..." name="cat_id" >	
+										            <option value=""></option>
+													<volist name="group_list" id="vo" >				
+														<option value="{$vo['cat_id']}" >{$vo['cat_name']}</option>		 
+													</volist>					
+										   </select>
+		
+										   <span class="help-block"></span>
+                                       </div>
+                                    </div>	
+									
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">电子邮件<span class="required" ></span></label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control" name="email" id="email"   />
+                                          <span class="help-block"></span>
+                                       </div>
+                                    </div>		
+									
+									
+                                    <div class="form-group  {$Think.session.custom_field1_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field1_text}</label>
+                                       <div class="col-md-9">
+										   <select  class="form-control select2me" name="custom_field1" data-placeholder="请选择..." >
+                                                    <option value=""></option>										   
+													<volist name="custom_field1_list" id="vo" >				
+														<option value="{$vo['name']}" >{$vo['name']}</option>		 
+													</volist>					
+										   </select>
+										   <span class="help-block"></span>
+                                       </div>
+                                    </div>		
+
+                                     <div class="form-group  {$Think.session.custom_field2_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field2_text}</label>
+                                       <div class="col-md-9">
+										   <select  class="form-control select2me" name="custom_field2" data-placeholder="请选择..." >	
+										            <option value=""></option>
+													<volist name="custom_field2_list" id="vo" >				
+														<option value="{$vo['name']}" >{$vo['name']}</option>		 
+													</volist>					
+										   </select>
+										   <span class="help-block"></span>
+                                       </div>
+                                    </div>	
+																		
+                                     <div class="form-group  {$Think.session.custom_field3_style}  ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field3_text}</label>
+                                       <div class="col-md-9">
+										   <select  class="form-control select2me" name="custom_field3" data-placeholder="请选择..." >	
+										            <option value=""></option>
+													<volist name="custom_field3_list" id="vo" >				
+														<option value="{$vo['name']}" >{$vo['name']}</option>		 
+													</volist>					
+										   </select>
+                                          <span class="help-block"></span>
+                                       </div>
+                                    </div>
+									
+                                     <div class="form-group  {$Think.session.custom_field4_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field4_text}</label>
+                                       <div class="col-md-9">
+										   <select  class="form-control select2me" name="custom_field4" data-placeholder="请选择..." >	
+										            <option value=""></option>
+													<volist name="custom_field4_list" id="vo" >				
+														<option value="{$vo['name']}" >{$vo['name']}</option>		 
+													</volist>					
+										   </select>
+                                          <span class="help-block"></span>
+                                       </div>
+                                    </div>									
+									
+                                    <div class="form-group  {$Think.session.custom_field5_style}  ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field5_text}</label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control" name="custom_field5"/>
+                                          <span class="help-block"></span>
+                                       </div>
+								    </div>	
+
+                                    <div class="form-group  {$Think.session.custom_field6_style}  ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field6_text}</label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control" name="custom_field6"/>
+                                          <span class="help-block"></span>
+                                       </div>
+								    </div>
+                                     <div class="form-group  {$Think.session.custom_field7_style}  ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field7_text}</label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control" name="custom_field7"  />
+                                          <span class="help-block"></span>
+                                       </div>
+                                    </div>
+									
+                                     <div class="form-group  {$Think.session.custom_field8_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field8_text}</label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control" name="custom_field8"  />
+                                          <span class="help-block"></span>
+                                       </div>
+                                    </div>									
+									
+                                    <div class="form-group  {$Think.session.custom_field9_style}  ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field9_text}</label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control" name="custom_field9"/>
+                                          <span class="help-block"></span>
+                                       </div>
+								    </div>	
+
+                                    <div class="form-group  {$Think.session.custom_field10_style}  ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field10_text}</label>
+                                       <div class="col-md-9">
+                                          <input type="text" class="form-control" name="custom_field10"/>
+                                          <span class="help-block"></span>
+                                       </div>
+								    </div>	
+																									
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">备注</label>
+                                       <div class="col-md-9">
+                                          <textarea class="form-control" rows="3" name="customer_memo" ></textarea>
+                                          <span class="help-block"></span>
+                                       </div>
+								    </div>									
+									
+
+									
+								</div>								 
+								</div>	 
+
+								<div class="col-md-6  ">
+												<div id="map" style="width:auto; height:650px"></div>  <!--开始地图应用部分 552-->	
+												<label class="control-label col-md-11">注：鼠标右键在地图上标注客户的位置，可实现图形化管理客户和订单</label>   
+
+												<div>
+												<!--		<input id="url_url"  value="__URL__"  type="hidden" />  -->												         
+														<input id="edit_record_id"  value="{$custom_list['id']}"  type="hidden" />	 
+														<input id="customer_marker_lng" name="customer_marker_lng"   type="text" style="display:none;"/>
+														<input id="customer_marker_lat" name="customer_marker_lat"  type="text"  style="display:none;"/>														
+												</div>	  
+								</div>	
+
+								<div class="clearfix"> </div>
+ 					 
+                                 </div>	 
+
+                                 <div class="tab-pane" id="tab3">
+								 <h3 class="form-section">确认</h3>	
+                                 <!--   <h3 class="block">确认</h3>   -->
+                                    <h4 class="form-section">客户资料</h4>
+
+									
+								<div class="col-md-12">											
+								<div class="col-md-6">							
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">姓名：</label>
+                                       <div class="col-md-9">
+										  <p class="form-control-static" data-display="name"></p>
+                                       </div>
+                                    </div>		
+									
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">性别：</label>
+                                       <div class="col-md-9">
+									       <p class="form-control-static" data-display="gender"></p>
+                                       </div>
+                                    </div>										
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">电话：</label>
+                                       <div class="col-md-9">
+											<p class="form-control-static" data-display="phone_number"></p>
+                                       </div>
+                                    </div>	
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">地址：</label>
+                                       <div class="col-md-9">
+									       <p class="form-control-static" data-display="address"></p>
+                                       </div>
+                                    </div>										
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">注册日期：</label>
+                                       <div class="col-md-9">
+									         <p class="form-control-static" data-display="date_registration"></p>
+                                       </div>									  
+                                    </div>									
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">客户组：</label>
+                                       <div class="col-md-9">
+									        <p class="form-control-static" data-display="cat_id"></p>
+                                       </div>
+                                    </div>	
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">电子邮件：</label>
+                                       <div class="col-md-9">
+									        <p class="form-control-static" data-display="email"></p>
+                                       </div>
+                                    </div>																			
+                                    <div class="form-group">
+                                       <label class="control-label col-md-3">备注：</label>
+                                       <div class="col-md-9">
+									    <p class="form-control-static" data-display="customer_memo"></p>
+                                       </div>
+								    </div>											
+								</div>	 
+
+								<div class="col-md-6  "> 
+								    <div class="form-group">
+                                       <label class="control-label col-md-3">地图标注经度：</label>
+                                       <div class="col-md-9">
+									    <p class="form-control-static" data-display="customer_marker_lng"></p>
+                                       </div>
+								    </div>	
+
+								    <div class="form-group">
+                                       <label class="control-label col-md-3">地图标注维度：</label>
+                                       <div class="col-md-9">
+									    <p class="form-control-static" data-display="customer_marker_lat"></p>
+                                       </div>
+								    </div>	
+                                    <div class="form-group  {$Think.session.custom_field1_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field1_text}：</label>
+                                       <div class="col-md-9">
+									        <p class="form-control-static" data-display="custom_field1"></p>
+                                       </div>
+                                    </div>		
+                                     <div class="form-group  {$Think.session.custom_field2_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field2_text}：</label>
+                                       <div class="col-md-9">
+									        <p class="form-control-static" data-display="custom_field2"></p>
+                                       </div>
+                                    </div>																			
+                                     <div class="form-group {$Think.session.custom_field3_style} " >
+                                       <label class="control-label col-md-3">{$Think.session.custom_field3_text}：</label>
+                                       <div class="col-md-9">
+									      <p class="form-control-static" data-display="custom_field3"></p>
+                                       </div>
+                                    </div>									
+                                     <div class="form-group  {$Think.session.custom_field4_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field4_text}：</label>
+                                       <div class="col-md-9">
+									       <p class="form-control-static" data-display="custom_field4"></p>
+                                       </div>
+                                     </div>																		
+                                    <div class="form-group  {$Think.session.custom_field5_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field5_text}：</label>
+                                       <div class="col-md-9">
+									    <p class="form-control-static" data-display="custom_field5"></p>
+                                       </div>
+								    </div>	
+                                    <div class="form-group  {$Think.session.custom_field6_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field6_text}：</label>
+                                       <div class="col-md-9">
+									    <p class="form-control-static" data-display="custom_field6"></p>
+                                       </div>
+								    </div>	
+                                     <div class="form-group {$Think.session.custom_field7_style} " >
+                                       <label class="control-label col-md-3">{$Think.session.custom_field7_text}：</label>
+                                       <div class="col-md-9">
+									      <p class="form-control-static" data-display="custom_field7"></p>
+                                       </div>
+                                    </div>									
+                                     <div class="form-group  {$Think.session.custom_field8_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field8_text}：</label>
+                                       <div class="col-md-9">
+									       <p class="form-control-static" data-display="custom_field8"></p>
+                                       </div>
+                                     </div>																		
+                                    <div class="form-group  {$Think.session.custom_field9_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field9_text}：</label>
+                                       <div class="col-md-9">
+									    <p class="form-control-static" data-display="custom_field9"></p>
+                                       </div>
+								    </div>	
+                                    <div class="form-group  {$Think.session.custom_field10_style} ">
+                                       <label class="control-label col-md-3">{$Think.session.custom_field10_text}：</label>
+                                       <div class="col-md-9">
+									    <p class="form-control-static" data-display="custom_field10"></p>
+                                       </div>
+								    </div>																								
+
+								</div>										
+							</div>			
+								<div class="clearfix"> </div>	
+
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-actions fluid">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="col-md-offset-3 col-md-9">
+                                       <a href="javascript:;" class="btn default button-previous">
+                                       <i class="m-icon-swapleft"></i> 上一步 
+                                       </a>
+                                       <a href="javascript:;" class="btn blue button-next">
+                                       下一步 <i class="m-icon-swapright m-icon-white"></i>
+                                       </a>
+                                       <a href="javascript:;" class="btn green button-submit">
+                                       确认提交 <i class="m-icon-swapright m-icon-white"></i>
+                                       </a>                            
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>			
+			
+			
+			
+
+            <!-- END PAGE CONTENT-->
+         </div>
+         <!-- END PAGE -->          
+      </div>
+   </div>
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+
+ <include file="Framefile:yt_map" />  
+ <include file="Framefile:yt_dialog_data" />  
+  
+    <script>
+   
+    jQuery(document).ready(function() {    
+         App.init();		 
+		 FormWizard.init();  
+		 UIExtendedModals.init(); 	
+		 FormComponents.init();	  
+      });
+	  
+	  var  data= new Array();	
+	  data=<?php echo json_encode($custom_list);?>;
+	  yt_wizard_datatoinput(data);
+	  map_init();
+	 if (( $('#customer_marker_lat').val() !='') && ( $('#customer_marker_lng').val() !='' )) {
+	    addCustomerMarker2( $('#customer_marker_lat').val(),$('#customer_marker_lng').val() ); 
+	
+		
+	  }	;
+	  
+	  
+
+	$('#form_wizard_1 .button-submit').click(function () {  
+	    var url='__URL__/'+'ajaxsave';
+		yt_ajaxsubmit(url,1,1) ;
+	}).hide();	
+	
+
+   </script> 
+  
+ 
+</body>
+</html>

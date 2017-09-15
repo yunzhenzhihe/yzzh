@@ -1,0 +1,113 @@
+
+   <!-- BEGIN CONTAINER -->
+   <div class="page-container">
+      <!-- BEGIN SIDEBAR -->
+      <div class="page-sidebar navbar-collapse collapse">
+         <!-- BEGIN SIDEBAR MENU -->        
+         <ul class="page-sidebar-menu">
+            <li>
+               <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+               <div class="sidebar-toggler hidden-phone"></div>
+               <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+            </li>
+            <li>
+               <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                 <br>
+               <!-- END RESPONSIVE QUICK SEARCH FORM -->
+            </li>
+            <li class="start " id="yt_left_menu_index">
+               <a href="__APP__/Index/index_menu">
+               <i class="icon-home"></i> 
+               <span class="title">&nbsp;{$Think.lang._INDEXMENU_}<!--首页--></span>
+               </a>
+            </li>
+			
+	<!--	{$Think.session.yt_left_menu}-->
+
+
+            <li id="yt_left_menu_setup" >
+               <a href="javascript:;" id="yt_left_menu_setup_arrow" >
+				   <i class="icon-cogs"></i> 
+				   <span class="title">{$Think.lang._SETUP_}<!--参数设置--></span>
+				    <span class="arrow "></span>  			   
+               </a>
+               <ul class="sub-menu">
+			   
+                  <li id="yt_left_menu_setup_defaultfields" >
+                     <a href="__APP__/Setgoods/goods_list">
+                    商品设置</a>
+                  </li>
+                  <li id="yt_left_menu_setup_softinfo" >
+                     <a href="__APP__/Setsoftinfo/softinfo">  
+                     页面风格</a>
+                  </li>
+               </ul>
+            </li>
+            <li id="yt_left_menu_3D" >
+               <a href="javascript:;" id="yt_left_menu_3D_arrow" >
+                  <i class="icon-picture"></i>
+                  <span class="title">虚拟与现实</span>
+                  <span class="arrow "></span>
+               </a>
+               <ul class="sub-menu">
+                  <li id="yt_left_menu_3Dset" >
+                     <a href="__APP__/Virtuality/index">
+                        模型贴图上传</a>
+                  </li>
+                  <li id="yt_left_menu_images_imageslist">
+                     <a href="__APP__/Showimages/group">
+                        图片分组管理</a>
+                  </li>
+               </ul>
+            </li>
+            <li id="yt_left_menu_images" >
+               <a href="javascript:;" id="yt_left_menu_images_arrow" >
+				   <i class="icon-picture"></i> 
+				   <span class="title">图片管理</span>
+				    <span class="arrow "></span>  			   
+               </a>
+               <ul class="sub-menu">
+                  <li id="yt_left_menu_images_companyimage" >
+                     <a href="__APP__/Showimages/index">
+                     公司图片管理</a>
+                  </li>		
+                  <li id="yt_left_menu_images_imageslist">
+                     <a href="__APP__/Showimages/group">
+                     图片分组管理</a>
+                  </li>					  
+               </ul>	   
+            </li>				
+
+            <li id="yt_left_menu_sale" >
+               <a href="javascript:;" id="yt_left_menu_sale_arrow" >
+				   <i class=" icon-shopping-cart"></i> 
+				   <span class="title">销售订单管理</span>
+				    <span class="arrow "></span>  			   
+               </a>
+               <ul class="sub-menu">
+                  <li>
+                     <a href="  JavaScript:window.open('__APP__/Customer/customer_sale');   ">
+                     新客户销售订单录入</a>
+                  </li>	
+                  <li id="yt_left_menu_sale_customer_list">
+                     <a href="__APP__/Sales/customer_list">
+                     老客户销售订单录入</a>
+                  </li>		
+                  <li id="yt_left_menu_sale_sale_list">
+                     <a href="__APP__/Sales/sales_list">
+                     销售订单查询\修改\删除</a>
+                  </li>						  
+                  <li id="yt_left_menu_manage_sales_process_confirm">
+                     <a href="__APP__/Salesprocess/salesprocess_confirm">
+                     销售订单审核出库</a>					  
+                  </li>					  
+               </ul>	   
+            </li>
+         </ul>
+         <!-- END SIDEBAR MENU -->
+      </div>
+      <!-- END SIDEBAR -->
+      <!-- BEGIN PAGE -->
+      <div class="page-content">
+
+

@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.login{ background:url(login_bg.jpg) no-repeat center; height:1000px;}
+.login-wrapper{ width:960px; margin:0 auto}
+.login .login-logo{ height:106px; overflow:hidden}
+.login .login-logo img{ margin-top:40px;}
+.login .user-lg{ padding-left:55px; padding-top:24px;}
+.login .user-lg dl dt{ font-size:26px; color:#768263; font-family:"微软雅黑", "黑体", Arial}
+.login .user-lg dl dd{ margin-top:18px; clear:both}
+.login .user-lg dl dd span{ display:block; float:left; width:85px; text-align:right; font-size:14px; line-height:30px;}
+.login .user-lg dl dd input.shr{ float:left; border:1px #cfcfcf solid;width:226px; height:30px; line-height:30px;-moz-border-radius:3px; -webkit-border-radius:3px; 	border-radius:3px; }
+.login .user-lg dl dd ul li img{ width:75px; height:75px; margin-right:2px;}
+.login .user-lg dl dd p{ line-height:30px; color:#999}
+.login .user-lg dl dd ul li{ float:left}
+.login .user-lg dl dd ul li a{ display:block; float:left}
+.login .user-lg dl dd ul{ width:310px; height:75px; border:1px solid #CCC; padding:2px 0 2px 2px;-moz-border-radius:3px; -webkit-border-radius:3px; 	border-radius:3px;}
+.login .user-lg dl dd input.jizhu{ float:left; margin-right:10px; margin-top:10px;*margin-top:5px;}
+.login .user-lg dl dd em{ font-style:normal; color:#666; float:left; line-height:30px;*line-height:30px;}
+.login .user-lg dl input.denglu{ border:none; background:url(login_reg_icon.png) no-repeat right 0; text-indent:-9999px; width:84px; height:29px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

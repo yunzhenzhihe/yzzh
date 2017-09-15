@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.0
+Version: 1.5.2
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>云天售后服务软件</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<meta name="MobileOptimized" content="320">
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/font-awesome/css/font-awesome.min.css" /> 
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/bootstrap/css/bootstrap.min.css" />   
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/Minify/index.php?g=web_css" />
+
+	<!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="__PUBLIC__/assets/img/yt.ico" />  
+</head>
+
+<!-- BEGIN BODY -->
+<body class="login ">
+	<!-- BEGIN LOGO -->
+	<div class="logo">
+		<img src="__PUBLIC__/assets/img/logo-big.png" alt="" /> 
+	</div>
+	<!-- END LOGO -->
+	<!-- BEGIN LOGIN -->
+	
+	
+	<div class="content yt_input-large500 ">
+		<!-- BEGIN LOGIN FORM -->
+		<form class="login-form" action="JavaScript:YTlogin_dologin('__URL__/dologin');" method="post">
+			<h3 class="form-title">输入您的账号</h3>
+			<div class="alert alert-error hide">
+				<button class="close" data-dismiss="alert"></button>
+				<span>请输入正确的用户名和密码和公司ID.</span>
+			</div>
+
+			<div class="form-group">
+				<label class="control-label  visible-ie8 visible-ie9">用户名</label>
+				<div class="input-icon">
+					<i class="icon-user"></i>
+					<input class="form-control placeholder-no-fix" type="text"  autocomplete="off" placeholder="用户名" name="username" value="{$Think.cookie.username}" />
+				</div>
+			</div>					
+			<div class="form-group">
+				<label class="control-label  visible-ie8 visible-ie9">密码</label>
+				<div class="input-icon">
+					<i class="icon-lock"></i>
+					<input class="form-control placeholder-no-fix" type="password"  autocomplete="off" placeholder="密码" name="password"  value="{$Think.cookie.password}"  />
+					<input class="yt_nodisplay"  type="password"    />
+				</div>
+			</div>	
+			<div class="form-group">
+				<label class="control-label  visible-ie8 visible-ie9">公司ID</label>
+				<div class="input-icon">
+					<i class="icon-sitemap"></i>
+					<input class="form-control placeholder-no-fix" type="text" autocomplete="off"  placeholder="公司ID" name="companyid" value="{$Think.cookie.company_id}" />
+				</div>
+			</div>		
+			<div class="form-group">
+				<label class="control-label  visible-ie8 visible-ie9">验证码</label>
+				<div class="input-icon input-group">
+					<i class="icon-reorder  "></i>
+					<input class="form-control placeholder-no-fix yt_input-small220" type="text" autocomplete="off" placeholder="验证码" name="authcode"  /></input>
+				    <img src="__URL__/verify" width="78" height="33" onclick="JavaScript:YTlogin_resetVerifyCode();" class="checkcode"  title="点击刷新验证码" id="verifyImage"/>
+
+				</div>
+			</div>					
+			
+			<div class="form-actions">
+				<label class="checkbox">
+				<input type="checkbox" name="remember" value="1" {$Think.cookie.RememberPassword} /> 记住密码
+				</label>
+				<button type="submit" class="btn green pull-right" >
+				登录 <i class="m-icon-swapright m-icon-white"></i>
+				</button>            
+			</div>
+
+			<div class="forget-password">
+				<p>
+				<!--    <a href="javascript:;"  id="forget-password">忘了密码\修改密码？</a>	 -->
+				 
+					 <?php if($login_flag == null) : ?>	
+					       <a  href="__URL__/forget"  >忘了密码\修改密码？</a> 
+					       <a class="yt_float_right" href="__URL__/register"  >新公司注册</a> 
+					  <?php endif ?>						
+				</p>
+			</div>
+			<?php if($login_flag == null) : ?>				
+					<div class="forget-password">
+						<p>
+							<a href="http://www.ytsoft.cn/yt800/" target="_blank" >如果想获取文字、图片、视频等更多信息，请访问软件主页</a>					
+						</p>
+					</div>	
+             <?php else : ?>  
+					<div class="forget-password">
+						<p>
+							<a href="JavaScript:alert('http://www.ytsoft.cn/yt800/');	   " >如果想获取文字、图片、视频等更多信息，请访问软件主页</a>					
+						</p>
+					</div>				 	
+			<?php endif ?>				
+		</form>
+		<!-- END LOGIN FORM -->        
+
+	</div>
+	<!-- END LOGIN -->
+	<!-- BEGIN COPYRIGHT -->
+	<div class="copyright">
+        {$Think.session.soft_footer}
+	</div>
+	<!-- END COPYRIGHT -->
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	<!-- BEGIN CORE PLUGINS -->   
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/respond.min.js"></script>
+	<script src="assets/plugins/excanvas.min.js"></script> 
+	<![endif]-->   
+	
+	<input id="login_flag" name="login_flag"   value="{$login_flag}"  type="hidden"   /> <!--当来自pcclent登录的时候 会设置这个值 web登录 则没有这个值 --> 
+    <script src="__PUBLIC__/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>  
+    <script src="__PUBLIC__/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>    
+    <script src="__PUBLIC__/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="__PUBLIC__/Minify/index.php?g=web_js" type="text/javascript"></script>  
+	
+	<script>
+		jQuery(document).ready(function() {     
+		  App.init();
+		  Login.init();
+		});		
+		YTurl = '__URL__';
+		YTapp='__APP__';  
+	//	YTlogin_resetVerifyCode();
+	</script>
+
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+
+ <include file="Framefile:yt_dialog_data" /> 
+ 
+
+</html>

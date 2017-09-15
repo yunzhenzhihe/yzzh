@@ -1,0 +1,4 @@
+[ 2017-08-14T16:24:52+08:00 ] 127.0.0.1 /index.php?s=/Admin/Order/add.html
+ERR: 1048:Column 'company_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `yt_dzgoods_order` (`company_id`,`order_number`,`goods_attr`,`goods_number`,`add_time`,`user_name`,`user_address`,`user_telephone`,`user_pay`) VALUES (NULL,'20170814162452820153','{\"维恩翁群无\":\"\",\"897879789789\":\"\",\"45台35435435\":\"\",\"67567567\":\"\"}','1','1502699092','','北京市 北京市市辖区 东城区 ','','1')
+

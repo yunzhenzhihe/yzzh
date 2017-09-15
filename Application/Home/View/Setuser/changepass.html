@@ -1,0 +1,85 @@
+
+ <taglib name="html" />     
+<include file="Framefile:admin_html_header" /> 
+<script charset="utf-8" src="http://api.map.soso.com/v1.0/main.js"></script> 
+  <link href="__PUBLIC__/css/admin_login.css" rel="stylesheet" type="text/css" />  
+  
+</head>
+<body>
+			  <div id="center_middle_register">	
+			  <label style="float:left; margin-top:25px; margin-left:23px; font-size:14px; "  >修改登录密码</label>
+              <br class="clearfloat" />	
+              <hr width=100% size=1 color=#0ffff0 style="FILTER: alpha(opacity=100,finishopacity=0,style=3) ;padding-left:-30px;width:440px; "> 		
+ 
+				<form>
+					<div>
+						<label class="dialog_label80" for="password" >新密码</label> 
+						<input class="dialog_input300" type="text" name="inputdatabox" id="password" maxlength="40" /> 
+						<div class="dialog_Char" > *  </div>						
+					</div>	
+				    <br class="clearfloat" />
+					<div>
+						<label class="dialog_label80" for="password1" >确认密码</label> 
+						<input class="dialog_input300" type="text" name="inputdatabox1" id="password1" maxlength="40" /> 
+						<div class="dialog_Char" > *  </div>						
+					</div>	
+				    <br class="clearfloat" />
+					  										
+					<div>
+                        <div style="float:left; margin-top:17px;margin-left:20px;" id="btn" > <input type="button"   style='width:400px; height:30px; '  value="确   认" onclick="dochangepass('__URL__/ajaxchangepass')"/> </div>
+					</div>		
+					<br class="clearfloat" />	 					
+				</form>	 					
+			  </div>	  			  			  
+		 <br class="clearfloat" />
+		 
+		<input id="url_url"  value="__URL__"  type="hidden" />			
+
+<script type="text/javascript">
+
+document.getElementById("password").focus(); 
+
+function checkdata() {   
+        if ( trim($("#password").val())  != trim($("#password1").val()) ) { 
+			alert( ' 两次输入密码不一致 ' );  
+			return false;
+		};
+         var checkvalid = true;		 
+		 checkvalid = checkvalid && checkEmpty( $( "#password" ), "密码" );	 
+	     return checkvalid;                                  
+	  };
+
+function dochangepass(url){   
+    var pass=$("#password").val();
+	if ( checkdata() ) {
+			open_ajaxsavedata_form() ;
+			$.ajax({
+				   type: "POST",
+				   url: url,   
+				   timeout:timeout,
+				   data: {password:pass},  
+				   dataType: "json",
+				   success: function(json){
+					 close_ajaxsavedata_form() ;  
+					 if (json.status==1) {    
+					   alert('修改密码成功');  
+					   alert('change password ok,close');    
+					 }
+					 else{ 
+						 alert('修改密码失败：'+json.info);
+					 }		   
+				   },
+					error:function(XMLHttpRequest, textStatus, errorThrown){
+						close_ajaxsavedata_form() ;  	
+						alert('超时错误或其它未知的错误,请退出重试');
+					}			   
+				});	
+	  };		
+} 	    
+</script> 
+	
+</body>
+
+<include file="Framefile:dialog_data" />
+</html>
+

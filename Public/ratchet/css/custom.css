@@ -1,0 +1,237 @@
+.slider {
+  margin-bottom: 0;
+}
+.slider img {
+  width: auto;
+  height: 150px;
+}
+.content-padded {
+  margin: 30px 15px 15px;
+}
+
+.yt_marginleft10{
+  margin-left :10px; 
+}
+
+.yt_marginleft15{
+  margin-left :15px; 
+}
+
+.yt_marginleft20{
+  margin-left :20px; 
+}
+
+.yt_marginright10 {
+  margin-right :10px; 
+
+}
+
+.yt_marginright15 {
+  margin-right :15px; 
+}
+
+.yt_margintop-5{
+  margin-top: -5px; 
+}
+
+.yt_margintop-10{
+  margin-top: -10px; 
+}
+
+.yt_margintop-15{
+  margin-top: -15px; 
+}
+
+.yt_margintop-195{
+  margin-top: -195px; 
+}
+
+.yt_margintop0{
+  margin-top: 0px; 
+}
+
+.yt_margintop5{
+  margin-top: 5px; 
+}
+
+.yt_margintop10{
+  margin-top: 10px; 
+}
+
+.yt_margintop15{
+  margin-top: 15px; 
+}
+
+.yt_margintop20{
+  margin-top: 20px; 
+}
+
+.yt_margintop30{
+  margin-top: 30px; 
+}
+
+.yt_margintop44{
+  margin-top: 44px; 
+}
+
+
+.yt_marginbottom15{
+  margin-bottom: 15px; 
+}
+
+.yt_marginbottom25{
+  margin-bottom: 25px; 
+}
+
+.yt_marginbottom-25{
+  margin-bottom: -10px; 
+}
+
+.yt_lineheight25{
+  line-height:25px; 
+}
+
+.yt_lineheight30{
+  line-height:30px; 
+}
+
+
+.yt_height44 {
+  height: 44px;
+}
+
+.yt_height60 {
+  height: 60px;
+}
+
+.yt_width30 {
+  width: 30%;
+}
+
+.yt_width70 {
+  width: 70%;
+}
+
+.yt_padding10{
+  padding:10px 10px 10px 10px;
+}
+
+.yt_paddingtop5{
+  padding-top:5px;
+}
+
+
+
+.yt_paddingright60{
+  padding-right :60px; 
+}
+
+.yt_margin10{
+  margin:10px 10px 10px 10px;
+}
+
+
+
+yt_p {
+  font-size: 14px;
+  color: #777;
+}
+
+body {
+/*  position: fixed; 原来是这个屏幕不能滚动   background-color: #b5b5b6;   #07AFD9;   #7FA3B1*/
+  position: absolute;
+  background-color: #F0F8FF; 
+}
+
+.yt_red{
+  color: #DC143C;
+}
+
+.yt_green{
+  color: green;
+}
+
+.yt_black{
+  color: black;
+}
+
+.yt_blue{
+  color: blue; 
+}
+
+.yt_color1{
+ color: #07AFD9;
+}
+
+.yt_color2{
+ color: #777;
+}
+
+.yt_background-color1 {
+  background-color: #07AFD9;
+
+}
+
+.yt_background-color2 {
+  background-color: #F0F8FF;
+
+}
+
+.yt_white{
+  color: white;
+}
+
+.yt_position_absolute{
+  position: absolute;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+.yt_float_left {
+	float: left ;
+}
+
+.yt_float_right {
+	float: right ;
+}
+
+.yt_fontsize12 {
+	font-size:12px; 
+}
+
+.yt_fontsize14 {
+	font-size:14px; 
+}
+
+.yt_fontsize16 {
+	font-size:16px; 
+}
+
+.yt_fontsize18 {
+	font-size:18px; 
+}
+
+.yt_onborderradius {
+  border-radius: 0px;
+}
+
+.yt_nodisplay{   
+    display: none;  
+} 
+
+
+
+
+
+ 
+
+
+
+
+

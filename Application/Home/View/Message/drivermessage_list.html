@@ -1,0 +1,136 @@
+ <taglib name="html" />     
+ 
+<include file="Framefile:admin_html_header" /> 
+
+<div id="container"> 
+  <div id="mainContent">
+    <div id="sidebar" name="frmTitle">
+	<include file="Framefile:admin_setup_left" /> 
+	</div>    
+    
+	<div id="content">  <!--主要业务逻辑开始-->
+        <div class=manage_head_one>当前位置：<span class=manage_head_two >通知管理 &gt; 司机通知  </span>
+                <div class="NumberOfRows" >  
+						<select id="NumberOfRows" name="NumberOfRows"  style="select_info" onchange="location.href = '__ACTION__/NumberOfRows/'+this.options[this.selectedIndex].value;"  >
+								  <option value ="10">10</option>
+								  <option value ="20">20</option>
+								  <option value="30">30</option>
+								  <option value="50">50</option>
+								  <option value="100">100</option>
+						</select> 行/页 
+				</div>	
+
+		</div>
+        <div class=manage > 				
+         <span style="padding-left:10px;"> <a  href= "JavaScript:open_add_dialog() ;">&nbsp;发布新通知</a></span> 		 
+        </div>  
+		
+       <div id="ajaxpage">
+		<TABLE id="grid" width="100%" class="tablesorter" cellSpacing="1" cellPadding="2"  rules="all" border="0" > 	
+		  <thead>
+             <TR class=table_head >
+                <Th style= "width:20% ">发布时间</Th>	
+                <Th style= "width:65% ">通知</Th>				
+				<Th style= "width:10% ">操作 </Th>				
+			</TR>	
+          </thead>	
+          <tbody>	
+
+          <?php if($drivermessagelist==null) : ?>
+		  		<TR  class="table_body"   >
+                <TD>无数据</TD>
+                <TD></TD>
+				<TD></TD>			
+				</TR>		
+            <?php else : ?>
+	        <volist name="drivermessagelist" id="vo">	
+                 <TR class=table_body>
+                <TD>{$vo['time']} </TD>
+				<TD >{$vo['msg']}</TD>
+				<TD> &nbsp;&nbsp; <a  href= "JavaScript:del_record('{$vo['id']}')  "  >删除</a></td>                  
+                 </TR>				 
+	        </volist>
+			<?php endif ?>
+          </tbody>			
+          </TABLE>
+          <div class=pagelink  id="pages" > {$page}  </DIV>
+	   </div> 
+	</div> <!--主要业务逻辑结束 class="text ui-widget-content ui-corner-all"--> 
+  </div>
+  
+  <br class="clearfloat" />
+</div>
+
+<div id="dialog-form" title="发布通知">
+	<form>
+	<fieldset>	
+
+
+		<label  class="dialog_label50"   for="msg" >通知</label> 
+        <textarea style="float:left; margin-top:12px;  "  rows="8" cols="40"  name="inputdatabox" id="msg" onkeyup="count();"  ></textarea> 
+		<br class="clearfloat" />
+		<label style="margin-left:350px; color:#ff0000 ; "  id="count">通知</label>   
+		<br>
+		<div style= " line-height: 25px; " > 
+			提示:<br>
+        1. 客户通知字数限定在1-150个字<br>
+		2. 通知发出后,司机会立即收到,发送以前请仔细核对<br>
+		</div>
+		
+		<input  type="hidden" name="inputdatabox" id="msg_title" /> 
+	  
+	</fieldset>	
+	</form>	
+</div> 
+
+   
+<div>
+		<input id="parent_id" type="hidden" />
+		<input id="record_id" type="hidden" />
+		<input id="url_url"  value="__URL__"  type="hidden" />
+		<input id="url_public"  value="__PUBLIC__"  type="hidden" />		
+</div>
+
+
+  <script type="text/javascript">				
+		$('#left_content_Msg').slideToggle('fast');  
+		ShowLeftMenu( '司机通知')		
+  </script>	
+  
+  
+ <script type="text/javascript">   //表格排序 按住shift键，支持多列排序 , $("#image_desc").val(),'dsfdsfsdf''
+        $(document).ready(function () {			
+			$("#grid").tablesorter({sortList: [[0,1]] ,    //排序列表  [0,0],[1,0] 按第一列,第二列进行升序排序  [列索引,排序方向] 0 asc 1 desc  "zebra", "resizable"
+			                      //  widgets: ['zebra'] ,  
+								  widgets: ['zebra'] ,  
+								  headers:{2:{sorter:false} }     //列阻止排序 那些列不排序  headers:{2:{sorter:false} , 3:{sorter:false} }    2.3列阻止    "text"  文本 "digit"   数字  currency"   货币 "ipAddress" ip地址 "url    url地址  "isoDate" percent",  百分比 "shortDate"  "time",  "metadata"  元数据
+
+			} );   
+        });
+		
+	 ShowSelect('#NumberOfRows','{$Think.cookie.NumberOfRows}');	//遍历select 行/页  并且赋值	
+
+     function count() {   // 计算字数
+          $("#count").html(trim($(  "#msg"  ).val()).length )   	;	 
+		  var str= $("#msg").val().substring(0, 13) ;
+          $("#msg_title").val(str);		  
+	  }	; 
+</script>	
+
+ <script type="text/javascript">   //添加修改对话框 只要有这个功能的页面，以下的几个函数必须有，按照每个页面的表单来调整
+     function dialogcheckdata() {   // 弹出添加 修改数据框 提交前做验证  Verify the results
+         var checkvalid = true;	 
+         checkvalid = checkvalid && checkLength( $(  "#msg"  ), "通知", StringLength001, StringLength150 );			  
+	     return checkvalid;                                  
+	  };
+  
+    function dialogclearinputbox() {   // 清空数据
+		$("#msg").val('');   //清空 
+		$("#count").html('0')   ;	 
+		$("#msg").focus();  //设置焦点
+	  }	;
+					  		  	  	
+</script>	
+ <include file="Framefile:dialog_data" />
+</body>
+</html>

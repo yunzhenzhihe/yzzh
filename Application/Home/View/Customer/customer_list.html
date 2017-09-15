@@ -1,0 +1,210 @@
+ <taglib name="html" />     
+ 
+<include file="Framefile:yt_header" /> 
+		 
+        <!-- BEGIN PAGE CONTENT-->
+         <div class="row">
+            <div class="col-md-12">
+
+               <!-- END EXAMPLE TABLE PORTLET-->
+               <div class="portlet box blue">
+                  <div class="portlet-title">
+                     <div class="caption">客户查询\修改\删除</div>
+					 <div class="tools hidden-xs">
+							<a href="javascript:;" class="collapse"></a>
+					 </div>		
+                     <div class="actions">					
+						 <li class="btn-group">					
+						    <button type="button" id="btn_exporttoexcel" class="btn  blue yt_marginright20 "  onClick=" YTtabletoexcel( $('#yt_table'),[0,1] ,3,'客户资料','')"  > 导出Excel </button>
+						</li>			
+                     </div>
+                  </div>
+                  <div class="portlet-body">				  				  
+                     <div class="table-toolbar yt_margintop5 yt_marginbottom60 ">
+						 <span class="col-md-12"  >												 
+                              <div class="input-group  yt_float_right">
+										   <select  class="form-control select2me yt_input-small140 "  id="search_key"  >	
+											    <volist name="table_head" id="vo">	
+												   	 <if condition="($vo.search eq true )"> 
+													       <option value="{$vo['key']}">按{$vo['value']}搜索</option>		
+					                                  </if>                                                
+												</volist>															
+										   </select>										   										   
+	                                <input type="text" class="form-control yt_input-small140 "  placeholder="请输入关键词" id="search_txt" value="{$search_txt}" onkeypress="YTsearch_customer1(event)" >							   									
+									<button  class="btn  {$btn_flag1}  tooltips "  data-placement="bottom" data-original-title="按关键词模糊查询" onClick="YTsearch_customer()"  >
+									   <i class=" icon-search"  ></i>
+								    </button>										   
+
+                                 <!-- /btn-group -->
+                              </div>	
+						 </span>		
+						 <span class="col-md-12"  >
+								   <div class="input-group yt_input-large380 input-daterange yt_float_left yt_margintop-10"  >
+										<span class="input-group-addon">起始日期</span>
+										<input type="text" class="form-control date-picker " name="from" readonly id="date_begin" value="{$date_begin}" >
+										<span class=" btn input-group-addon dropdown-toggle  " data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">截至日期&nbsp;<i class="icon-angle-down"></i></span>
+										<input type="text" class="form-control date-picker " name="to" readonly id="date_end" value="{$date_end}">
+											 <ul class="dropdown-menu pull-right" role="menu">	
+											        <li >&nbsp;&nbsp;</li>
+											        <li >&nbsp;&nbsp;录入日期</li>
+											        <li class="divider"></li>
+													<li><a href="JavaScript:showDateBeginEnd(0);">当天</a></li>
+													<li><a href="JavaScript:showDateBeginEnd(7);">最近7天</a></li>
+													<li><a href="JavaScript:showDateBeginEnd(10);">最近10天</a></li>
+													<li><a href="JavaScript:showDateBeginEnd(15);">最近15天</a></li>
+													<li><a href="JavaScript:showDateBeginEnd(30);">最近30天</a></li>
+													<li><a href="JavaScript:showDateBeginEnd(60);">最近60天</a></li>
+													<li >&nbsp;&nbsp;</li>
+											 </ul>		 
+								   </div>	
+                                   <button  class="btn {$btn_flag2}   yt_float_left  yt_margintop-10 "  onClick=" YTselect_timeinterval() "  > 查询 </button>
+
+	                          <div class="input-group yt_float_right yt_margintop15 ">				  	
+										   <select  class="form-control select2me yt_input-large320  "  data-placeholder="按客户组查询客户" id="searchcustomer_group" onchange="YTsearch_customergroup(this.options[this.selectedIndex].value)" >	
+										            <option value=""></option>
+													<option value="1"  >全部客户组({$totalcount}/{$totalcount})</option>
+													<volist name="group_list" id="vo" >				
+														<option value="{$vo['cat_id']}" >{$vo['cat_name']}</option>		 
+													</volist>					
+										   </select>		
+                                 <!-- /btn-group -->
+                              </div>							  
+						 </span>							 
+                     </div>	
+
+					 
+				  
+					 <?php if($customerlist==null) : ?>	
+                             </br>	</br>	
+							 
+							 <div class="news-blocks yt_margintop15 ">
+								<h4>无数据...</h4>
+							 </div>	
+					<?php else : ?>		  
+                   <table class="table table-striped table-bordered table-hover table-full-width  row-border order-column   " id="yt_table"> 
+                        <thead>
+                           <tr>
+                              <th>操作</th>
+							  <volist name="table_head" id="vo">	
+							      <th>{$vo['value']}</th>
+							  </volist>	
+                           </tr>
+                        </thead>					
+                        <tbody>
+						<volist name="customerlist" id="vo">	
+						  <tr class="">
+						  <td>
+											   <button  class="btn  purple btn-xs tooltips "  data-placement="bottom" data-original-title="客户详情" onClick="YTcustomer_info('{$vo['guid']}')"  >
+											   <i class="icon-info-sign"  ></i>
+											   </button>												   												   
+											   <button id="yt_btn_edit" class="btn blue btn-xs  yt_marginleft5  "  onClick=" YTcustomer_edit('{$vo['id']}') " >
+											   修改 <i class="icon-edit"></i>
+											   </button>
+											   <button id="yt_btn_del" class="btn red btn-xs  yt_marginleft5  "   onClick=" del_guid('{$vo['id']}','{$vo['guid']}') "  >
+											   删除 <i class="icon-remove"></i>
+											   </button>												   
+											   
+
+							   
+						  </td>
+							  <volist name="table_head" id="vo1">
+   							       <td>		
+										  <if condition='($vo1.key neq "address" )'> 
+												 {$vo[$vo1['key']]}	
+										  <else />	 
+												<if condition='($vo.customer_marker_lng neq "" )'> 
+													<a class="tooltips" data-original-title="客户地图"  href= "JavaScript:YTcustomer_map('{$vo['customer_marker_lat']}','{$vo['customer_marker_lng']}','姓名：{$vo['name']}，电话：{$vo['phone_number']}，地址：{$vo['address']}') ">{$vo[$vo1['key']]}</a>	
+											   <else />	 
+												   {$vo[$vo1['key']]}	
+											   </if>  														 
+										  </if>  									   			   																	 
+								   </td> 
+							  </volist>								 
+						   </tr>
+						  </volist>	
+						  
+                        </tbody>
+                     </table>
+					  <?php endif ?>	
+					 <div class="row">
+						<div class="col-md-12 yt_margintop15 ">
+
+									 <span class="col-md-4 " >
+										   <select  class="input-sm   " id="NumberOfRows" onchange="YTnumberofrows(this.options[this.selectedIndex].value)" >
+												<volist name="selectrowslist" id="vo" >	
+													 <option  value="{$vo}" >每页显示&nbsp;{$vo}&nbsp;条</option> 
+												</volist>		
+										  </select>				  
+									 </span>										 																	 
+									 <span class="pagelink col-md-6 yt_margintop-0 "  >
+										 {$page} 	
+										 <input id="select_interval_days"  value="{$Think.session.select_interval_days}"  type="hidden"   /> <!--查询间隔天数天 --> 
+									 </span>						 						 
+						  </div>
+					   </div>						   
+                  </div>
+               </div>	
+         </div>
+		
+	 </div>
+    <!--   END PAGE -->
+   </div>	 
+	   
+  <include file="Framefile:yt_footer" />
+    
+<script>
+    jQuery(document).ready(function() {       			
+			 App.initnocheckboxes();	
+
+			if ( $("#date_begin").val() =='' ) { 
+			  showDateBeginEnd($("#select_interval_days").val()*1);   
+			}   else {
+			   FormComponents.yt_handleDatePickers();	
+			} ;			 
+
+			$('#yt_left_menu_customer').addClass("active");  
+			$('#yt_left_menu_customer_info').addClass("active");
+
+			$('#yt_left_menu_custome_arrow .arrow ').remove();
+			$('#yt_left_menu_custome_arrow ').append( '<span class="selected"></span> ');
+			$('#yt_left_menu_custome_arrow ').append( '<span class="arrow open"></span>	');	 
+			
+			showSelect('#NumberOfRows','{$Think.cookie.NumberOfRows}');				
+			$('#searchcustomer_group').select2("val","{$group_value}");
+			$('#search_key').select2("val","{$search_key}");	
+
+			YTself=getYTself1() ; 
+			YtUiScripts.initTable1();
+      });
+   	YTself='__ACTION__';  
+	
+	$('#search_txt').focus();      	
+</script>
+
+<script> 
+  var YTsorter_number='{$Think.cookie.customersorter_number}'; 
+  var  YTsorter_ascordesc='{$Think.cookie.customersorter_ascordesc}';  
+  var YTtable_head_startnumber={$table_head_startnumber}; 
+  var YTtable_head_endnumber={$table_head_endnumber};  
+		   
+   function fnFormatDetails ( oTable, nTr )  
+	{
+	   var aData = oTable.fnGetData( nTr );
+	   var sOut = ' <div class="note yt_note-info yt_marginbottom-1 "> <p> ';
+		  <volist name="table_head" id="vo" >
+			  <if condition="((($key+1)%3) eq 0)"> sOut += ' <span class="yt_width250 ">  {$vo["value"]}：'+aData[{$vo["number"]}]+'</span> </p><p>' ;
+				<else />  sOut += ' <span class="yt_width250 ">  {$vo["value"]}：'+aData[{$vo["number"]}]+'</span>';
+			  </if> 
+		  </volist>				  
+		  sOut += '</p></div> ';		
+		  return sOut;
+	} ;   
+</script>
+
+  <include file="Framefile:yt_dialog_data" /> 
+  
+</body>
+</html>
+		 
+		 
+		 

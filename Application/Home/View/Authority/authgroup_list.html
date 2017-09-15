@@ -1,0 +1,112 @@
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header" /> 
+
+         <!-- BEGIN PAGE HEADER-->
+		<div class="yt-head-row">
+			 <div class="row">
+				<div class="col-md-12">
+				   <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+
+				   <ul class="page-breadcrumb breadcrumb">
+
+					  <li>
+						 <span>用户管理与权限</span>
+						 <i class="icon-angle-right"></i>
+					  </li>
+					  <li><span>用户（角色）组设置</span></li>
+				   </ul>
+				   <!-- END PAGE TITLE & BREADCRUMB-->
+				</div>
+			 </div>
+		</div>
+         <!-- END PAGE HEADER-->
+		 
+         <!-- BEGIN PAGE CONTENT-->
+         <div class="row">
+            <div class="col-md-12">
+                     <div class="table-toolbar">
+                        <div class="btn-group">
+                           <button  class="btn green"  onClick=" JavaScript:window.open('__APP__/Authority/authgroup_add/');   "  >
+                           添加 <i class="icon-plus"></i>
+                           </button>
+                        </div>
+                     </div>
+					<div class="table-responsive yt_margintop-10  "> 
+						 <table class="table   table-hover table-bordered " id="yt_table">  
+							<thead>
+							   <tr>
+							      <th>操作</th>
+								  <th>用户（角色）组</th>
+								  <th>录入日期</th>
+								  
+							   </tr>
+							</thead>
+							<tbody>	
+							  <?php if($recordlist==null) : ?>
+									<TR >
+										<TD>无数据</TD>
+										<TD></TD>
+										<TD></TD>
+									</TR>
+							  <?php else : ?>
+								<volist name="recordlist" id="vo" >	
+									<TR >
+										<TD>										
+										   <if condition='($vo.title neq "系统管理员" )'> 									
+												   <button  class="btn blue btn-xs "  onClick=" JavaScript:window.open('__APP__/Authority/group_edit/id/{$vo['id']}');  "  >
+												   授权/编辑 <i class="icon-edit"></i>
+												   </button>
+												   <button  class="btn red btn-xs yt_marginleft5 "  onClick=" YTajax_del_url('{$vo['id']}','ajaxdelauthgroup')  "  >
+												   删除 <i class="icon-remove"></i>
+												   </button>		
+											 <else />	
+											      系统管理员组不能被修改\删除，拥有本软件全部权限
+                                            </if>  										
+										 </TD>											
+										<TD>{$vo['title']} </TD>
+										<TD>{$vo['creat_time']} </TD>							
+									 </TR>				 
+								</volist>	
+							   <?php endif ?>
+							  
+							 </tbody>		
+						 </table>
+                    </div>
+            </div>
+         </div>
+	
+      </div>
+    <!--   END PAGE -->
+   </div>
+		 
+
+  <include file="Framefile:yt_footer" />
+  
+   <script>
+    jQuery(document).ready(function() {       
+         App.init();
+		 UIExtendedModals.init();
+		 YtUiScripts.initTable6();
+
+        $('#yt_left_menu_auth').addClass("active");  
+		$('#yt_left_menu_auth_group_list').addClass("active");
+
+		$('#yt_left_menu_auth_arrow .arrow ').remove();
+		$('#yt_left_menu_auth_arrow ').append( '<span class="selected"></span> ');
+		$('#yt_left_menu_auth_arrow ').append( '<span class="arrow open"></span>	');	 
+		
+      });
+
+   </script>
+   
+    <include file="Framefile:yt_dialog_data" />   
+ 
+</body>
+</html>
+		 
+		 
+		 
+		 
+		 
+ 

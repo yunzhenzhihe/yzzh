@@ -1,0 +1,220 @@
+<taglib name="html" />
+
+<include file="Framefile:yt_header" />
+
+<!-- BEGIN PAGE HEADER-->
+<div class="yt-head-row">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+
+            <ul class="page-breadcrumb breadcrumb">
+                <li class="btn-group">
+                </li>
+
+                <li>
+                    <span>参数设置</span>
+                    <i class="icon-angle-right"></i>
+                </li>
+                <li>
+                    <span>{$name.name}</span>
+                    <i class="icon-angle-right"></i>
+                </li>
+                <li><span>添加分类</span></li>
+            </ul>
+            <!-- END PAGE TITLE & BREADCRUMB-->
+        </div>
+    </div>
+</div>
+<!-- END PAGE HEADER-->
+
+<!-- BEGIN PAGE CONTENT-->
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-toolbar">
+            <div class="btn-group">
+                <button id="yt_btn_add" class="btn green"   >
+                    添加分类 <i class="icon-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table   table-hover table-bordered " id="yt_table">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>商品名称</th>
+                    <th>商品分类</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if($recordlist==null) : ?>
+                <TR >
+                    <TD>无数据</TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                </TR>
+                <?php else : ?>
+                <foreach name="recordlist" item="vo" key="k">
+                    <TR >
+                        <TD>{$k} </TD>
+                        <TD>{$name.name} </TD>
+                        <TD>{$vo.cate} </TD>
+                        <TD>
+                            <button id="yt_btn_edit" class="btn blue btn-xs edit"  onClick=" edit_record('{$vo['id']}')  "  >
+                                修改 <i class="icon-edit"></i>
+                            </button>
+                            <a id="yt_btn_add" class="btn red btn-xs  yt_marginleft5" href="{:U('Setgoodscate/delete', array( 'id' => $vo['id'] ))}">
+                                删除 <i class="icon-remove"></i>
+                            </a>
+                            <a id="yt_btn_add" class="btn green btn-xs  yt_marginleft5" href="{:U('Setdefaultfields/defaultfields_list', array( 'id' => $vo['id'] ))}">
+                                添加属性 <i class="icon-plus"></i>
+                            </a>
+                        </TD>
+                    </TR>
+                </foreach>
+                <?php endif ?>
+
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-md-12 yt_margintop15 ">
+
+									 <span class="col-md-4 " >
+										   <select  class="input-sm   " id="NumberOfRows" onchange="YTnumberofrows(this.options[this.selectedIndex].value)" >
+												<volist name="selectrowslist" id="vo" >
+													 <option  value="{$vo}" >每页显示&nbsp;{$vo}&nbsp;条</option>
+												</volist>
+										  </select>
+									 </span>
+                    <span class="pagelink col-md-6 yt_margintop-0 " id="pages"  >
+										 {$page}
+									 </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- BEGIN DIALOG_FORM  -->
+<div id="yt_dialog_form" class="modal fade" tabindex="-1" aria-hidden="true" data-width="550" >
+    <div class="modal-header" id="yt_modal-header" >
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title" id="yt_dialog_title">添加</h4>
+    </div>
+    <div class="modal-body " >
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="pid" class="col-sm-3 control-label">上级分类<span class="required" >*</span></label>
+                <div class="col-sm-8">
+                    <select name="selectdatabox" require="1"  id="pid"  class="col-md-14 form-control" >
+                        <option value='0' path="0,">顶级分类</option>
+                        <foreach name="cate" item="vo" >
+                            <option value="{$vo.id}" path="{$vo.path}">{$vo.cate}</option>
+                        </foreach>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cate" class="col-sm-3 control-label">商品分类<span class="required" >*</span></label>
+                <div class="col-sm-8 " >
+                    <input type="text" class="form-control" id="cate" name="inputdatabox" >
+                </div>
+            </div>
+            <div class="form-group" style="display: none">
+                <label for="gid" class="col-sm-3 control-label">商品ID<span class="required" >*</span></label>
+                <div class="col-sm-8 " >
+                    <input type="text" class="form-control" id="gid" name="inputdatabox" value="{$gid}">
+                </div>
+            </div>
+            <div class="form-group" style="display: none">
+                <label for="path" class="col-sm-3 control-label">商品ID<span class="required" >*</span></label>
+                <div class="col-sm-8 " >
+                    <input type="text" class="form-control" id="path" name="inputdatabox">
+                </div>
+            </div>
+            <div class="form-group" id="yt_dialog_addchecktext">
+                <div class="col-sm-offset-3 col-sm-8">
+                    <div class="checkbox">
+                        <label >
+                            <input type="checkbox" id="yt_dialog_addcheck" checked="true" > 连续添加
+                        </label>
+                    </div>
+                </div>
+                <input id="edit_record_id" type="hidden" />
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn default" id="yt_dialog_btn_cancel">取消</button>
+        <button type="button" class="btn green" id="yt_dialog_btn_ok">确认</button>
+    </div>
+</div>
+<!-- END DIALOG_FORM  -->
+
+</div>
+<!--   END PAGE -->
+</div>
+
+
+<include file="Framefile:yt_footer" />
+
+
+
+<script>
+    jQuery(document).ready(function() {
+        App.init();
+        UIExtendedModals.init();
+
+        $('#yt_left_menu_setup').addClass("active");
+        $('#yt_left_menu_setup_supplier').addClass("active");
+
+        $('#yt_left_menu_setup_arrow .arrow ').remove();
+        $('#yt_left_menu_setup_arrow ').append( '<span class="selected"></span> ');
+        $('#yt_left_menu_setup_arrow ').append( '<span class="arrow open"></span>	');
+
+        showSelect('#NumberOfRows','{$Think.cookie.NumberOfRows}');
+    });
+
+</script>
+<script>
+   $(document).ready(function () {
+    $('#path').val("0,");
+   });
+   $('#pid').change(function () {
+       $('#path').val($('#pid').children('option:selected').attr('path'));
+   });
+</script>
+<script type="text/javascript">
+    function dialogcheckdata() {
+        var checkvalid = true;
+        checkvalid = checkvalid && checkLength( $( "#cate" ), "商品名称", StringLength001, StringLength100 );
+        return checkvalid;
+    };
+
+    function dialogclearinputbox() {
+        dialog_clear_allbox();
+        $("#cate").focus();
+    }	;
+
+    function dialog_clear_allbox() {
+        var a=document.getElementsByName( "inputdatabox" ) ;
+        for(var   i=0;i <a.length;i++)
+            if(i !=1 && i !=2){
+                a[i].value='';
+            }
+    } ;
+
+</script>
+
+<include file="Framefile:yt_dialog_data" />
+
+</body>
+</html>
+
+
+

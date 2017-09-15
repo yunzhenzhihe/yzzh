@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../test/1.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Home/Controller/SetgoodscateController.class.php" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_14.log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Public/js/dropzone.js" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

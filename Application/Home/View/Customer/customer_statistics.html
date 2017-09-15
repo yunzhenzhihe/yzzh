@@ -1,0 +1,148 @@
+ <taglib name="html" />     
+ 
+<include file="Framefile:yt_header" /> 
+		 
+        <!-- BEGIN PAGE CONTENT-->
+         <div class="row">
+            <div class="col-md-12">
+
+               <!-- END EXAMPLE TABLE PORTLET-->
+               <div class="portlet box blue">
+                  <div class="portlet-title">
+                     <div class="caption">客户统计</div>
+					 	<div class="tools hidden-xs">
+							<a href="javascript:;" class="collapse"></a>
+						</div>		
+                  </div>
+                  <div class="portlet-body">				  				  
+                     <div class="table-toolbar yt_margintop5 ">
+						 <span class="col-md-12"  >
+								   <div class="input-group yt_input-small220 input-daterange yt_float_left yt_marginbottom5 "  >
+										<span class="input-group-addon">查询距今</span>
+										<input type="text" class="form-control  "  placeholder="请输入天数" id="search_txt" value="{$search_txt}"  >	
+					                    <span class="input-group-addon">天</span>
+					              </div>	
+
+								  <div class="input-group yt_marginleft50 yt_margintop5 yt_floatleft  "  >
+										  <div class="checkbox-list "  >
+												<label  class="checkbox-inline" >
+													<input type="checkbox" name="status_type" value="2" id="status1" {$status1} / >没有打来电话
+												</label>														
+												<label  class="checkbox-inline" >
+													<input type="checkbox" name="status_type" value="2" id="status2" {$status2} / >没有销售记录
+												</label>	
+												<label  class="checkbox-inline" >
+													<input type="checkbox" name="status_type" value="2" id="status3" {$status3} / >没有售后记录
+												</label>											 
+											</div>											 								   
+								   </div>				   
+
+                                   <button  class="btn  {$btn_flag1}   yt_float_left yt_marginleft30 yt_margintop "  onClick=" YTcustomer_statistics() "  > 查询客户 </button>
+								  
+							  
+						 </span>						
+                     </div>		
+
+					 <?php if($customerlist==null) : ?>	
+                             </br>	</br>	
+							 
+							 <div class="news-blocks yt_margintop15 ">
+								<h4>无数据...</h4>
+							 </div>	
+					<?php else : ?>  
+                      <table class="table table-striped table-bordered table-hover table-full-width  row-border order-column      " id="yt_table">  
+                        <thead >
+                           <tr>
+                              <th>操作</th>
+							  <volist name="table_head" id="vo">	
+							      <th>{$vo['value']}</th>
+							  </volist>	
+                           </tr>
+                        </thead>					
+                        <tbody>
+						<volist name="customerlist" id="vo">	
+						  <tr class="">
+						  <td>
+							   <button  class="btn  purple btn-xs tooltips "  data-placement="bottom" data-original-title="客户详情" onClick="YTcustomer_info('{$vo['guid']}')"  >
+							   <i class="icon-info-sign"  ></i>
+							   </button>		
+						  </td>
+							  <volist name="table_head" id="vo1">
+   							       <td>		
+                                     {$vo[$vo1['key']]}						   																	 
+								   </td> 
+							  </volist>								 
+						   </tr>
+						  </volist>	
+						  
+                        </tbody>
+                     </table>
+					  <?php endif ?>	
+					 <div class="row">
+						<div class="col-md-12 yt_margintop15 ">
+
+									 <span class="col-md-4 " >
+										  <select  class="input-sm   " id="NumberOfRows" onchange="YTnumberofrows(this.options[this.selectedIndex].value)" >
+												<volist name="selectrowslist" id="vo" >	
+													 <option  value="{$vo}" >每页显示&nbsp;{$vo}&nbsp;条</option> 
+												</volist>		
+										  </select>				  
+									 </span>										 																	 
+									 <span class="pagelink col-md-6 yt_margintop-0 "  >
+										 {$page} 				 
+									 </span>						 						 
+						  </div>
+					   </div>						  
+                  </div>
+               </div>	
+         </div>
+		
+	 </div>
+    <!--   END PAGE -->
+   </div>	 
+	   
+  <include file="Framefile:yt_footer" />
+    
+<script>
+    jQuery(document).ready(function() {       			
+			 App.initnocheckboxes();	 
+			 YtUiScripts.initTable2();
+
+			$('#yt_left_menu_customer').addClass("active");  
+			$('#yt_left_menu_customer_statistics').addClass("active");
+
+			$('#yt_left_menu_custome_arrow .arrow ').remove();
+			$('#yt_left_menu_custome_arrow ').append( '<span class="selected"></span> ');
+			$('#yt_left_menu_custome_arrow ').append( '<span class="arrow open"></span>	');	 
+			
+			showSelect('#NumberOfRows','{$Think.cookie.NumberOfRows}');				
+			$('#search_key').select2("val","{$search_key}");	
+      });
+
+	$('#search_txt').focus(); 
+	       	
+</script>
+
+<script> 
+  var   YTtable_head_startnumber={$table_head_startnumber}, 
+   YTtable_head_endnumber={$table_head_endnumber}; 
+		   
+   function fnFormatDetails ( oTable, nTr )  
+	{
+	   var aData = oTable.fnGetData( nTr );
+	   var sOut = ' <div class="note yt_note-info yt_marginbottom-1 "> <p> ';
+		  <volist name="table_head" id="vo" >
+			  <if condition="((($key+1)%3) eq 0)"> sOut += ' <span class="yt_width250 ">  {$vo["value"]}：'+aData[{$vo["number"]}]+'</span> </p><p>' ;
+				<else />  sOut += ' <span class="yt_width250 ">  {$vo["value"]}：'+aData[{$vo["number"]}]+'</span>';
+			  </if> 
+		  </volist>				  
+		  sOut += '</p></div> ';		
+		  return sOut;
+	};   
+</script>
+
+</body>
+</html>
+		 
+		 
+		 

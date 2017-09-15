@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.0
+Version: 1.5.2
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>云天售后服务软件</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<meta name="MobileOptimized" content="320">
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/font-awesome/css/font-awesome.min.css" /> 
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/assets/plugins/bootstrap/css/bootstrap.min.css" />   
+	<link type="text/css" rel="stylesheet" href="__PUBLIC__/Minify/index.php?g=web_css" />
+
+	<!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="__PUBLIC__/assets/img/yt.ico" />  
+</head>
+
+<!-- BEGIN BODY -->
+<body class="login ">
+	<!-- BEGIN LOGO -->
+	<div class="logo">
+		<img src="__PUBLIC__/assets/img/logo-big.png" alt="" /> 
+	</div>
+	<!-- END LOGO -->
+	<!-- BEGIN LOGIN -->
+	
+	
+	<div class="content yt_input-large500 ">
+     
+		<!-- BEGIN FORGOT PASSWORD FORM -->
+		<form class="login-form" action="JavaScript:YTlogin_doforget('__URL__/doforget');" method="post">
+			<h3 class="form-title" >忘了密码\修改密码？</h3>
+			<div class="form-group">
+			    <label class="control-label">请输入邮箱地址，接收密码重置邮件</label>
+				<div class="input-icon">
+					<i class="icon-envelope"></i>
+					<input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label  visible-ie8 visible-ie9">验证码</label>
+				<div class="input-icon input-group">
+					<i class="icon-reorder  "></i>
+					<input class="form-control placeholder-no-fix yt_input-small220" type="text" autocomplete="off" placeholder="验证码" name="authcode1"  /></input>
+				    <img src="__URL__/verify" width="78" height="33" onclick="JavaScript:YTlogin_resetVerifyCode1();" class="checkcode"  title="点击刷新验证码" id="verifyImage1"/>
+				</div>
+			</div>					
+			<div class="form-actions">
+				<button id="register-back-btn" type="button" class="btn" onclick="location='__URL__/login'" >
+				<i class="m-icon-swapleft"></i>  登陆
+				</button>					
+				
+				<button type="submit" class="btn green pull-right">
+				确认提交 <i class="m-icon-swapright m-icon-white"></i>
+				</button>            
+			</div>
+		</form>
+		<!-- END FORGOT PASSWORD FORM -->
+
+	</div>
+	<!-- END LOGIN -->
+	<!-- BEGIN COPYRIGHT -->
+	<div class="copyright">
+        {$Think.session.soft_footer}
+	</div>
+	<!-- END COPYRIGHT -->
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	<!-- BEGIN CORE PLUGINS -->   
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/respond.min.js"></script>
+	<script src="assets/plugins/excanvas.min.js"></script> 
+	<![endif]-->   
+	
+	<input id="login_flag" name="login_flag"   value="{$login_flag}"  type="hidden"   /> <!--当来自pcclent登录的时候 会设置这个值 web登录 则没有这个值 --> 
+    <script src="__PUBLIC__/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>  
+    <script src="__PUBLIC__/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>    
+    <script src="__PUBLIC__/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="__PUBLIC__/Minify/index.php?g=web_js" type="text/javascript"></script>  
+	
+	<script>
+		jQuery(document).ready(function() {     
+		  App.init();
+		  Login.init();
+		});		
+		YTurl = '__URL__';	
+		YTapp='__APP__';  
+	//	YTlogin_resetVerifyCode();
+	</script>
+
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+
+ <include file="Framefile:yt_dialog_data" /> 
+ 
+
+</html>

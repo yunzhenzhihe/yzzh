@@ -1,0 +1,75 @@
+
+<taglib name="html" />     
+ 
+<include file="Framefile:yt_header_single" /> 
+
+   <div class="container">
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container">
+	  	  
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+		 
+            <!-- BEGIN PAGE HEADER-->
+            <div class="row">
+               <div class="col-md-12">
+                  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                  <h3 class="page-title">
+                     客户地图 <small><strong>{$customer_info}</strong></small>
+                  </h3>
+                  <!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+			
+			
+				 <div class="row">
+					<div class="col-md-12">
+					   <div class="portlet box blue" id="form_wizard_1">
+						  <div class="portlet-title">
+							 <div class="caption">
+								<i class="icon-reorder"></i>客户标注点 <span class="step-title">经度：{$customer_lng} 维度：{$customer_lat} </span>
+							 </div>
+							 <div class="tools hidden-xs">
+								<a href="javascript:;" class="collapse"></a>
+							 </div>
+						  </div>
+						  <div class="portlet-body form">
+								<div id="map" style="width:auto; height:650px"></div>  <!--开始地图应用部分 552-->	
+                                <button class='btn red btn-xs pull-right ' onclick="moveToCenter('{$customer_lat}','{$customer_lng}')">标注点复位</button> <span class="pull-right" > 	&nbsp;</span>								
+								<button class='btn red btn-xs pull-right ' onclick='changeMap("soso")'>普通地图</button> <span class="pull-right" > 	&nbsp;</span>
+								<button class='btn red btn-xs pull-right ' onclick='changeMapType()'>卫星地图</button> <span class="pull-right" > 	&nbsp;</span>
+								<button class='btn red btn-xs pull-right ' onclick='changeLayer()'>实时交通</button> <span class="pull-right" > 	&nbsp;</span>
+							<br></br>
+						  </div>
+					   </div>
+					</div>
+				 </div>			
+			
+			
+			
+
+            <!-- END PAGE CONTENT-->
+         </div>
+         <!-- END PAGE -->          
+      </div>
+   </div>
+   <!-- END CONTAINER -->
+   
+
+  <include file="Framefile:yt_footer_single" />
+  <include file="Framefile:yt_map" />   
+  
+   <script>
+    jQuery(document).ready(function() {    
+         App.init();		
+      });
+	  
+	map_onlyshow_init(); 
+	showCustomerMarker( '{$customer_lat}','{$customer_lng}' );  
+
+   </script>
+
+</body>
+</html>
