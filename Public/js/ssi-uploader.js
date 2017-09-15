@@ -32,7 +32,7 @@
          .after(this.$element = $('<div class="ssi-uploader"">'));
         var $chooseBtn = $('' +
          '<span class="ssi-InputLabel">' +
-         '<button class="ssi-button success">' + this.language.chooseFiles + '</button>' +
+         '<button class="ssi-button success ssi-InputLabel_btn">' + this.language.chooseFiles + '</button>' +
          '</span>').append(element);
         var $uploadBtn = $('<button id="ssi-uploadBtn" class="ssi-button success ssi-hidden" >' +
          '<span class="ssi-btnIn">' + this.language.upload + '&nbsp;</span>' +
@@ -59,6 +59,23 @@
         var thisS = this;
         var $input = $chooseBtn.find(".ssi-uploadInput");
         $chooseBtn.find('button').click(function () {
+            // $.ajax({
+            //
+            //     type: "post",
+            //
+            //     url: "/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo",
+            //
+            //     cache:false,
+            //
+            //     async:false,
+            //
+            //     dataType: ($.browser.msie) ? "text" : "xml",
+            //
+            //     success: function(xmlobj){
+            //
+            //     }
+            //
+            // });
             $input.trigger('click');
         });
 
@@ -202,12 +219,28 @@
         //
         for (var i = 0; i < filesLength; i++) {
             var file = files[i],
-             ext = file.name.getExtension();// get file's extension
-            //'jpg', 'gif', 'png', 'jpeg'
-            //     if(ext=="jpg" || ext=="gif" || ext=="png" || ext=="jpeg"){
-            //         $('#myModal1').modal('toggle');
-            //         $('#selectimg').append("<div>" + "<input type='file' multiple class='ssi-upload'/>" + "</div>" + "</div>");
-            //     }
+            ext = file.name.getExtension();// 获取文件的后缀
+            var id = $uploadBtn.parents('th').prev().prev().html();
+                if(ext=="obj"){
+                    $.ajax({
+                        data:{id:id},
+                        type: "post",
+
+                        url: "/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo",
+
+                        cache:false,
+
+                        async:false,
+
+                        dataType: "json",
+
+                        success: function(xmlobj){
+
+                        }
+
+                    });
+                    // return false;
+                }
             if ($.inArray(ext, this.options.allowed) === -1) { //如果请求的文件不允许
 
                 if (length > filesLength) {//there are more file we dont pick
