@@ -173,7 +173,7 @@
                     $('#li2').after(goods);
                     $('.list').empty();
                     $('#table').append(list);
-                    $('.ssi-upload1').ssi_uploader({url:'__URL__/upload',maxFileSize:100,allowed:['obj','mtl','jpg', 'gif', 'png', 'jpeg'],data:{img:'1'}});
+                    $('.ssi-upload1').ssi_uploader({url:'__URL__/upload',maxFileSize:100,allowed:['obj','mtl'],data:{img:'1'}});
                     $('.upimgbtn').each(function () {
                         $(this).click(function () {
                             var cate_id = $(this).parent().prev().prev().prev().html();
