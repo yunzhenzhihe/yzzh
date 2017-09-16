@@ -1,7 +1,7 @@
 /*
  * error:an teleiwsei to upload kai iparxei ena sti lista pou den exei patithei
  * */
-
+var flag;
 (function (root, factory) {
     //@author http://ifandelse.com/its-not-hard-making-your-library-support-amd-and-commonjs/
     if (typeof module === "object" && module.exports) {
@@ -197,6 +197,7 @@
                 return;//don't do anything
             }
         }
+        var flag;
         var thisS = this,
          j = 0,
          length,
@@ -223,23 +224,43 @@
             var id = $uploadBtn.parents('th').prev().prev().html();
                 if(ext=="obj"){
                     $.ajax({
-                        data:{id:id},
+                        data:{id:id,ext:'obj'},
                         type: "post",
-
-                        url: "/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo",
-
+                        url: "/yzzh/ytsoft.php?s=/Home/Virtuality/check",
                         cache:false,
-
                         async:false,
-
                         dataType: "json",
-
-                        success: function(xmlobj){
-
+                        success: function(mes){
+                                if(mes.status == 1){
+                                    flag = mes;
+                                }
                         }
-
                     });
-                    // return false;
+                }
+            if(ext=="mtl"){
+                $.ajax({
+                    data:{id:id,ext:'mtl'},
+                    type: "post",
+                    url: "/yzzh/ytsoft.php?s=/Home/Virtuality/check",
+                    cache:false,
+                    async:false,
+                    dataType: "json",
+                    success: function(mes){
+                        if(mes.status == 1){
+                            flag = mes;
+                        }
+                    }
+                });
+            }
+                if(flag.data == 'false'){
+                    if(flag.info == 'obj'){
+                        alert('obj文件已存在请勿重复上传！');
+                        return false;
+                    }
+                    if(flag.info == 'mtl'){
+                        alert('mtl文件已存在请勿重复上传！');
+                        return false;
+                    }
                 }
             if ($.inArray(ext, this.options.allowed) === -1) { //如果请求的文件不允许
 
