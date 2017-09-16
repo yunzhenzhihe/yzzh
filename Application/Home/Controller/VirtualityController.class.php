@@ -65,7 +65,7 @@ class VirtualityController extends PublicController {
                     //上传mtl文件
                     if ($v['ext'] == 'mtl') {
 
-                        $cate = $goodscate->field('model_mtl')->where($map)->select();
+                        $cate = $goodscate->field('model_mtl')->where($map)->find()['model_mtl'];
                         if (!$cate) {//如果goodscate表中没有mtl文件路径就插入，防止重复插入
                             $data['model_mtl'] = $v['savepath'] . $v['savename'];
                             if ($goodscate->where($map)->save($data)) {
@@ -196,6 +196,35 @@ class VirtualityController extends PublicController {
             $this->ajaxReturn($attr, $mtl_title, 1);
         }else{
             $this->ajaxReturn(0,0,0);
+        }
+    }
+
+    public function check(){
+        if(I('post.ext')=="obj"){
+            $map['id'] = I('post.id');
+            $map['company_id'] = session('company_id');
+            $map['branch_id'] = session('branch_id');
+            $cate = M('goodscate');
+//            $ca = $cate->field('model_obj')->where($map)->find();
+//            \Think\Log::write('调试的$ca：'.json_encode($ca));
+            if($cate->field('model_obj')->where($map)->find()['model_obj']){
+                $this->ajaxReturn('false','obj',1);
+            }else{
+                $this->ajaxReturn('true','obj',1);
+            }
+        }
+        if(I('post.ext')=="mtl"){
+            $map['id'] = I('post.id');
+            $map['company_id'] = session('company_id');
+            $map['branch_id'] = session('branch_id');
+            $cate = M('goodscate');
+//            $ca = $cate->field('model_obj')->where($map)->find();
+//            \Think\Log::write('调试的$ca：'.json_encode($ca));
+            if($cate->field('model_mtl')->where($map)->find()['model_mtl']){
+                $this->ajaxReturn('false','mtl',1);
+            }else{
+                $this->ajaxReturn('true','mtl',1);
+            }
         }
     }
 }
