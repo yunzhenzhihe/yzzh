@@ -1,7 +1,8 @@
 /*
  * error:an teleiwsei to upload kai iparxei ena sti lista pou den exei patithei
  * */
-var flag;
+var flag;//开关
+var $manage = $('.btn-warning');
 (function (root, factory) {
     //@author http://ifandelse.com/its-not-hard-making-your-library-support-amd-and-commonjs/
     if (typeof module === "object" && module.exports) {
@@ -29,7 +30,7 @@ var flag;
     };
     Ssi_upload.prototype.init = function (element) {
         $(element).addClass('ssi-uploadInput')
-         .after(this.$element = $('<div class="ssi-uploader"">'));
+         .after(this.$element = $('<div class="ssi-uploader">'));
         var $chooseBtn = $('' +
          '<span class="ssi-InputLabel">' +
          '<button class="ssi-button success ssi-InputLabel_btn">' + this.language.chooseFiles + '</button>' +
@@ -59,23 +60,6 @@ var flag;
         var thisS = this;
         var $input = $chooseBtn.find(".ssi-uploadInput");
         $chooseBtn.find('button').click(function () {
-            // $.ajax({
-            //
-            //     type: "post",
-            //
-            //     url: "/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo",
-            //
-            //     cache:false,
-            //
-            //     async:false,
-            //
-            //     dataType: ($.browser.msie) ? "text" : "xml",
-            //
-            //     success: function(xmlobj){
-            //
-            //     }
-            //
-            // });
             $input.trigger('click');
         });
 
@@ -197,7 +181,6 @@ var flag;
                 return;//don't do anything
             }
         }
-        var flag;
         var thisS = this,
          j = 0,
          length,
@@ -498,6 +481,40 @@ var flag;
             ajaxLoopRequest(formData, i);// make the request
         }
 
+        function mtluploadsucc(cate_id,mtl_id) {//mtl文件上传成功后将属性和mtl中的title关联
+            $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo',{cate_id:cate_id,mtl_id:mtl_id},function (res) {
+                if(res.status){
+
+                    opt = "<select class='form-control border-radius' id='mtl_select'>";//拼接select框
+                    for(var a = 0; a < res.info.length; a++){
+                        var mtl = res.info[a];
+
+                        if(mtl.mtl_title != null){
+                            opt += '<option value=' + '"' + mtl.id + '"' +'>' + mtl.mtl_title + "</option>";
+                        }
+                    }
+                    opt +="</select>";
+
+                    //拼接table表格
+                    attrlist = "<tbody id='attrlist'>";
+                    for(var i = 0; i < res.data.length; i++){
+                        var attr = res.data[i];
+                        if(attr.attr != null){
+                            var num = i + 1;
+                            attrlist += "<tr class='list2'><th>" + num + "</th>";
+                            attrlist += "<th style='display: none' id='cateid'>" + attr.id + "</th>";
+                            attrlist += "<th id='cate'>" + attr.attr + "</th>";
+                            attrlist += "<th>" + opt + "</th>";
+                        }
+                        attrlist += "</tr>";
+                    }
+                    attrlist += "</tbody>";
+                }
+                $('#attrlist').empty();
+                $('#table2').append(attrlist);
+            });
+            $('#myModal1').modal('toggle');
+        }
         //--------------开始ajax请求-----------------------
         function ajaxLoopRequest(formData, ii) {
 
@@ -608,8 +625,6 @@ var flag;
                 var msg, title = '', dataType = 'error', spanClass = 'exclamation', data;
                 try {
                     data = responseData;
-                    // alert(data.info);
-                    //如果上传的是obj文件
                     if(data.info=='Obj'){
                         if(data.status=='1') {
                             alert('Obj file upload successfully!');
@@ -624,40 +639,7 @@ var flag;
                         if(data.status=='1') {
                             alert('Mtl file upload successfully!');
                             window.mtlfiel = data.data.path;//mtl文件路径
-                            $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo',{cate_id:data.data.cate_id,mtl_id:data.data.id},function (res) {
-                                if(res.status){
-
-                                    opt = "<select class='form-control border-radius' id='mtl_select'>";//拼接select框
-                                    for(var a = 0; a < res.info.length; a++){
-                                        var mtl = res.info[a];
-                                        // alert(mtl.mtl_title);
-
-                                        if(mtl.mtl_title != null){
-                                            opt += '<option value=' + '"' + mtl.id + '"' +'>' + mtl.mtl_title + "</option>";
-                                            // alert(opt);
-                                        }
-                                    }
-                                    opt +="</select>";
-
-                                    //拼接table表格
-                                    attrlist = "<tbody id='attrlist'>";
-                                    for(var i = 0; i < res.data.length; i++){
-                                        var attr = res.data[i];
-                                        if(attr.attr != null){
-                                            var num = i + 1;
-                                            attrlist += "<tr class='list2'><th>" + num + "</th>";
-                                            attrlist += "<th style='display: none' id='cateid'>" + attr.id + "</th>";
-                                            attrlist += "<th id='cate'>" + attr.attr + "</th>";
-                                            attrlist += "<th>" + opt + "</th>";
-                                        }
-                                        attrlist += "</tr>";
-                                    }
-                                    attrlist += "</tbody>";
-                                }
-                                $('#attrlist').empty();
-                                $('#table2').append(attrlist);
-                            });
-                            $('#myModal1').modal('toggle');
+                            mtluploadsucc(data.data.cate_id,data.data.id);
                             if(mtlfiel && objfiel) {
                                 loadObj(objfiel, mtlfiel);
                             }
@@ -944,7 +926,6 @@ var flag;
         }
         return sum;
     };
-
     var locale = {
         en: {
             success: 'Success',

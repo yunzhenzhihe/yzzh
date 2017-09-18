@@ -76,8 +76,10 @@ class VirtualityController extends PublicController {
                                     $fp = fopen($file_path, "r");
                                     $str = fread($fp, filesize($file_path));
 
+                                    //匹配可以替换的图片
                                     preg_match_all("/\bm.*\.(jpg|tif)/", $str, $matches);
 
+                                    // 匹配mtl文件中的标题
                                     preg_match_all("/newmtl\s(.*)\r/", $str, $result);
 
                                     $data1['cate_id'] = I('post.id');
@@ -90,10 +92,13 @@ class VirtualityController extends PublicController {
                                     foreach ($mtl_id[0] as $ke => $v) {
                                         $id[$ke] = $v;
                                     }
+                                    // 遍历读出来的mtl文件title并将其放到要插入到数据库中的数据中
                                     foreach ($result[1] as $k => $val) {
                                         $data1['mtl_title'] = $result[1][$k];
-                                        if (!$mtl_id) {//如果数据库中没有 id是返回的id 否则是查出来的id
-                                            $path['id'][$k] = $mtl->add($data1);
+
+                                        //如果数据库中没有 id是插入数据时返回的id 否则是查出来的id
+                                        if (!$mtl_id) {
+                                            $path['id'][$k] = $mtl->add($data1);//将mtl的title插入数据库中
                                         } else {
                                             $path['id'] = $id['id'];
                                         }
@@ -107,6 +112,7 @@ class VirtualityController extends PublicController {
                                 $this->ajaxReturn(0, "Mtl file upload failed!", 0);
                             }
                         }else{
+                            //数据库中mtl文件已经存在返回mtl文件的信息
                             $mtl = M('mtl_title');
                             $mtl_id = $mtl->field('id')->where($data1)->select();
 
@@ -180,6 +186,8 @@ class VirtualityController extends PublicController {
             $this->ajaxReturn(0);
         }
     }
+
+    // 搜出当前操作的商品的属性和mtl的title在前台让用户将goodsinfo表和mtl_title表关联
     public function mtlinfo(){
         $info = M('yzgoodsinfo');
         $map['cate_id'] = I('post.cate_id');
@@ -187,11 +195,17 @@ class VirtualityController extends PublicController {
         $map['branch_id'] = session('branch_id');
         $attr = $info->field('id,attr')->where($map)->select();
         $mtl = M('mtl_title');
-        $map1['id'] = array('in',I('post.mtl_id'));
-        $map1['company_id'] = session('company_id');
-        $map1['branch_id'] = session('branch_id');
-        $mtl_title = $mtl->field('id,mtl_title')->where($map1)->select();
-
+        if(I('post.mtl_id')) {
+            $map1['id'] = array('in', I('post.mtl_id'));
+            $map1['company_id'] = session('company_id');
+            $map1['branch_id'] = session('branch_id');
+            $mtl_title = $mtl->field('id,mtl_title')->where($map1)->select();
+        }else{
+            $map1['cate_id'] = I('post.cate_id');
+            $map1['company_id'] = session('company_id');
+            $map1['branch_id'] = session('branch_id');
+            $mtl_title = $mtl->field('id,mtl_title')->where($map1)->select();
+        }
         if($attr && $mtl_title) {
             $this->ajaxReturn($attr, $mtl_title, 1);
         }else{
@@ -199,14 +213,14 @@ class VirtualityController extends PublicController {
         }
     }
 
+    // 检查mtl，obj文件是否已经上传 如果已经上传不可以再次上传 关闭ssi uploader 开关
     public function check(){
         if(I('post.ext')=="obj"){
             $map['id'] = I('post.id');
             $map['company_id'] = session('company_id');
             $map['branch_id'] = session('branch_id');
             $cate = M('goodscate');
-//            $ca = $cate->field('model_obj')->where($map)->find();
-//            \Think\Log::write('调试的$ca：'.json_encode($ca));
+
             if($cate->field('model_obj')->where($map)->find()['model_obj']){
                 $this->ajaxReturn('false','obj',1);
             }else{
@@ -218,8 +232,7 @@ class VirtualityController extends PublicController {
             $map['company_id'] = session('company_id');
             $map['branch_id'] = session('branch_id');
             $cate = M('goodscate');
-//            $ca = $cate->field('model_obj')->where($map)->find();
-//            \Think\Log::write('调试的$ca：'.json_encode($ca));
+
             if($cate->field('model_mtl')->where($map)->find()['model_mtl']){
                 $this->ajaxReturn('false','mtl',1);
             }else{

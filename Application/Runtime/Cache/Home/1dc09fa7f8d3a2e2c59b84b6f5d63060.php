@@ -289,7 +289,8 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                             <tr>
                                 <th>序号</th>
                                 <th>商品名称</th>
-                                <th>模型</th>
+                                <th>模型文件上传</th>
+                                <th>属性管理</th>
                                 <th>贴图</th>
                             </tr>
                         </thead>
@@ -341,7 +342,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
         </table>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-primary">提交更改</button>
+        <button type="button" class="btn btn-primary">提交关联</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
     </div>
 </div>
@@ -405,6 +406,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                                     "<input type='file' multiple class='ssi-upload1'/>" +
                                     "</div>" +
                                     "</div>" + "</th>";
+                            list += "<th>" + "<button class='btn btn-warning' data-toggle='modal' data-target='#myModal1'>管理</button>" + "</th>";
                             list += "<th>" + '<a class="btn btn-primary upimgbtn">' + "贴图上传" + "</a>" + "</th>";
                         }
                         list += "</tr>";
@@ -419,11 +421,48 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                     $('#li2').after(goods);
                     $('.list').empty();
                     $('#table').append(list);
-                    $('.ssi-upload1').ssi_uploader({url:'/yzzh/ytsoft.php?s=/Home/Virtuality/upload',maxFileSize:100,allowed:['obj','mtl','jpg', 'gif', 'png', 'jpeg'],data:{img:'1'}});
+                    $('.ssi-upload1').ssi_uploader({url:'/yzzh/ytsoft.php?s=/Home/Virtuality/upload',dropZone:false,maxFileSize:100,allowed:['obj','mtl'],data:{img:'1'}});
+                    $('.btn-warning').each(function () {
+                        $(this).click(function () {
+                            $('#attrlist1').empty();
+                            var cate_id = $(this).parents('th').prev().prev().prev().html();
+                            $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo',{cate_id:cate_id},function (mes) {
+                                if(mes.status){
+                                    var attrlist = undefined;
+                                    opt = "<select class='form-control border-radius' id='mtl_select'>";//拼接select框
+                                    for(var a = 0; a < mes.info.length; a++){
+                                        var mtl = mes.info[a];
+
+                                        if(mtl.mtl_title != null){
+                                            opt += '<option value=' + '"' + mtl.id + '"' +'>' + mtl.mtl_title + "</option>";
+                                        }
+                                    }
+                                    opt +="</select>";
+
+                                    //拼接table表格
+                                    attrlist = "<tbody id='attrlist1'>";
+                                    for(var i = 0; i < mes.data.length; i++){
+                                        var attr = mes.data[i];
+                                        if(attr.attr != null){
+                                            var num = i + 1;
+                                            attrlist += "<tr class='list2'><th>" + num + "</th>";
+                                            attrlist += "<th style='display: none' id='cateid'>" + attr.id + "</th>";
+                                            attrlist += "<th id='cate'>" + attr.attr + "</th>";
+                                            attrlist += "<th>" + opt + "</th>";
+                                        }
+                                        attrlist += "</tr>";
+                                    }
+                                    attrlist += "</tbody>";
+                                }
+                                $('.list2').empty();
+                                $('#table2').append(attrlist);
+                            })
+                        })
+                    })
                     $('.upimgbtn').each(function () {
                         $(this).click(function () {
-                            var cate_id = $(this).parent().prev().prev().prev().html();
-                            var cate = $(this).parent().prev().prev().html();
+                            var cate_id = $(this).parent().prev().prev().prev().prev().html();
+                            var cate = $(this).parent().prev().prev().prev().html();
                             $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/modelmap',{cate_id:cate_id,cate:cate},function (mes) {
                                     if(mes){
                                         $('#myModal').modal('toggle');
@@ -459,6 +498,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
         });
     });
 </script>
+
 <script>
 
     var container = document.getElementById( 'canvas-frame' );
@@ -648,8 +688,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
         showSelect('#NumberOfRows','<?php echo (cookie('NumberOfRows')); ?>');
     });
-
-
 </script>
 
  <div id="yt_loading" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">

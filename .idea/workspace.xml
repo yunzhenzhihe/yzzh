@@ -1,175 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="$.ajax(ajaxOptions).done(function (responseData, t..." line="713" />
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="var msg, title = '', dataType = 'error', spanClass..." line="714" />
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="try {" line="715" />
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="data = $.parseJSON(responseData);" line="716" />
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" line="748" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="$.ajax(ajaxOptions).done(function (responseData, t..." line="666" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="var msg, title = '', dataType = 'error', spanClass..." line="667" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="try {" line="668" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="data = $.parseJSON(responseData);" line="669" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" line="701" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a41d15c-9256-47e8-9469-e97ff46a8c95" name="默认的" comment="wxl第一版">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/34.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993ee4f2cde3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993ee88de032.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993eebb98792.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993eef7ece3a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993efa42d5dd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f0595af16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05967194.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05973836.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f0598587c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f0598f871.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f0599c14a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f059a62b6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f059b0802.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f059bcdd9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f059c6562.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f059d2c0e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f059e50bc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a02f4a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a117bb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a1dbd0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a29ded.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a34116.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a40424.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a4c72e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a5902b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a62f64.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a6d0b3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a77480.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a8190c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a8db43.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05a97c22.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05aa430e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05aae191.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ab89ba.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ac484d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ad0c07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05adb1bd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ae576e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05aef0f5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b056e7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b0f604.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b17784.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b1ff51.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b29e20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b35f9d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b4c96d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b6c20e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b79677.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b8f12d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05b9df51.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ba7fdd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05bb44fc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05bbe975.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05bc8a1f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05bd4dc7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05be15cc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05beb564.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c0342d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c0ba31.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c15997.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c21db3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c2c346.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c361f1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c40be8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c4cbf8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c634f6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c6d887.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c774f9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c816a1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c89d3e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05c9413a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ca0091.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05cb48c9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05cc4b8c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05cdc183.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05cf0b04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d18347.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d32214.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d3c9e2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d50d9e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d5f2d2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d6decd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d77d8c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d815d4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d8a0f1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d95eb0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05d9e1ce.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05da8648.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05db482a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05dc97ea.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05dd7809.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05de1c46.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05debba1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e01964.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e0d914.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e15ed7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e1fedb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e2c567.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e3642a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e60bf0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e72cd4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e82649.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05e94294.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05eab1f5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ebab64.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ec7107.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ed153c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05edbb73.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ee60bb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05ef26ad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05f09c46.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05f20286.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05f2c714.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05f38882.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/uploads/5993f05f46ca0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-07/1504767061_1198817759.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-07/1504767167_843869627.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-07/1504767399_1517387726.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505464684_1010550352.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505465227_1890777755.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505465238_148327468.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505548786_1440272103.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505551235_221572251.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505552122_1921681584.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505552254_2046796670.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505552501_129287710.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505552507_117613006.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505553197_344703735.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505553203_1561582552.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505554895_243979288.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505556111_1027857962.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505556128_695919374.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505556181_1602488439.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505556293_1234065332.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505556319_1533165515.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505476708_2145819334.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505476809_1730016739.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505476819_1566958990.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505559236_431755691.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505577867_524248539.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505613711_285890113.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505614817_878176402.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505614922_28072890.obj" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/css/复件 admin_login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/LodopFuncs - 副本.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/ssi-uploader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/yt_main - 副本.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/yt_map - 副本 (2).js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/yt_map - 副本.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/js/yt_map.min - 副本.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505459751_539118847.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505459765_819139343.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505459780_1028722333.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505459832_1117556216.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505460249_51008971.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505460449_2038215601.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505461492_1149258454.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505461532_1253938353.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505461713_90415313.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505461897_831388159.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505462394_366168552.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505462453_175975921.obj" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_17.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_18.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505559254_536232232.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505577872_1218611120.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505613716_1094533307.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505614822_1533408550.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505614927_1637833127.mtl" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/Controller/17_08_15.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/yzzh.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1dc09fa7f8d3a2e2c59b84b6f5d63060.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1dc09fa7f8d3a2e2c59b84b6f5d63060.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/js/ssi-uploader.js" afterPath="$PROJECT_DIR$/Public/js/ssi-uploader.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -201,36 +64,19 @@
       <file leaf-file-name="17_09_16.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-312">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VirtualityController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VirtualityController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-473">
-              <caret line="67" column="94" lean-forward="false" selection-start-line="67" selection-start-column="94" selection-end-line="67" selection-end-column="94" />
+            <state relative-caret-position="220">
+              <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="408" column="7" lean-forward="true" selection-start-line="408" selection-start-column="7" selection-end-line="408" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <marker date="1505557030662" expanded="true" signature="6850:6871" ph="..." />
-                <marker date="1505557030662" expanded="true" signature="6944:6957" ph="..." />
-                <marker date="1505557030662" expanded="true" signature="7874:7890" ph="..." />
-                <marker date="1505557030662" expanded="true" signature="9117:9138" ph="..." />
-                <marker date="1505557030662" expanded="true" signature="9399:9412" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -238,11 +84,30 @@
       <file leaf-file-name="ssi-uploader.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="249" column="39" lean-forward="true" selection-start-line="249" selection-start-column="39" selection-end-line="249" selection-end-column="39" />
+            <state relative-caret-position="22">
+              <caret line="461" column="23" lean-forward="false" selection-start-line="461" selection-start-column="23" selection-end-line="461" selection-end-column="23" />
               <folding>
-                <marker date="1505556102854" expanded="true" signature="1491:1497" ph=" " />
-                <marker date="1505556102854" expanded="true" signature="32054:32067" ph="..." />
+                <marker date="1505617417959" expanded="true" signature="1527:1533" ph=" " />
+                <marker date="1505617417959" expanded="true" signature="24201:24214" ph="..." />
+                <marker date="1505617417959" expanded="true" signature="43984:45387" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="126" column="16" lean-forward="true" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <marker date="1505696934314" expanded="true" signature="6924:6945" ph="..." />
+                <marker date="1505696934314" expanded="true" signature="7018:7031" ph="..." />
+                <marker date="1505696934314" expanded="true" signature="8094:8110" ph="..." />
+                <marker date="1505696934314" expanded="true" signature="10034:10047" ph="..." />
+                <marker date="1505696934314" expanded="true" signature="11616:11637" ph="..." />
+                <marker date="1505696934314" expanded="true" signature="11898:11911" ph="..." />
               </folding>
             </state>
           </provider>
@@ -259,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>files</find>
       <find>formData</find>
       <find>$file</find>
       <find>$this-&gt;error('操作失败，请退出重试');</find>
@@ -289,6 +153,7 @@
       <find>canvas-frame</find>
       <find>ssi-InputLabel</find>
       <find>ext</find>
+      <find>mtlinfo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -349,8 +214,8 @@
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_14.log" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" />
         <option value="$PROJECT_DIR$/Public/js/ssi-uploader.js" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" />
       </list>
     </option>
@@ -414,7 +279,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -481,7 +346,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -602,7 +467,10 @@
       <workItem from="1505436453585" duration="10639000" />
       <workItem from="1505451821630" duration="4152000" />
       <workItem from="1505456411142" duration="12446000" />
-      <workItem from="1505547997331" duration="9219000" />
+      <workItem from="1505547997331" duration="15536000" />
+      <workItem from="1505612392837" duration="9248000" />
+      <workItem from="1505694827538" duration="604000" />
+      <workItem from="1505695639314" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="wxl第一版">
       <created>1505455822430</created>
@@ -653,22 +521,28 @@
       <option name="project" value="LOCAL" />
       <updated>1505557085628</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="wxl第一版">
+      <created>1505557232440</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1505557232440</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373992000" />
+    <option name="totallyTimeSpent" value="391682000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1988273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -678,6 +552,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="数据库" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32675907" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -705,18 +580,11 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Public/js/yt_map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12892">
-          <caret line="586" column="44" lean-forward="false" selection-start-line="586" selection-start-column="33" selection-end-line="586" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/js/yt_main_ajax.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3410">
@@ -856,13 +724,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.min.js" />
     <entry file="file://$PROJECT_DIR$/Application/Home/View/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -914,14 +776,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" />
     <entry file="file://$PROJECT_DIR$/Public/webuploader/0.1.5/webuploader.noimage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -933,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30588">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,13 +803,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1196">
           <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -965,41 +818,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="801">
           <caret line="246" column="8" lean-forward="false" selection-start-line="246" selection-start-column="8" selection-end-line="246" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-473">
-          <caret line="67" column="94" lean-forward="false" selection-start-line="67" selection-start-column="94" selection-end-line="67" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ImgInput20160917/index.html" />
     <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="249" column="39" lean-forward="true" selection-start-line="249" selection-start-column="39" selection-end-line="249" selection-end-column="39" />
+        <state relative-caret-position="22">
+          <caret line="461" column="23" lean-forward="false" selection-start-line="461" selection-start-column="23" selection-end-line="461" selection-end-column="23" />
           <folding>
-            <marker date="1505556102854" expanded="true" signature="1491:1497" ph=" " />
-            <marker date="1505556102854" expanded="true" signature="32054:32067" ph="..." />
+            <marker date="1505617417959" expanded="true" signature="1527:1533" ph=" " />
+            <marker date="1505617417959" expanded="true" signature="24201:24214" ph="..." />
+            <marker date="1505617417959" expanded="true" signature="43984:45387" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="408" column="7" lean-forward="true" selection-start-line="408" selection-start-column="7" selection-end-line="408" selection-end-column="7" />
+        <state relative-caret-position="429">
+          <caret line="126" column="16" lean-forward="true" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1505557030662" expanded="true" signature="6850:6871" ph="..." />
-            <marker date="1505557030662" expanded="true" signature="6944:6957" ph="..." />
-            <marker date="1505557030662" expanded="true" signature="7874:7890" ph="..." />
-            <marker date="1505557030662" expanded="true" signature="9117:9138" ph="..." />
-            <marker date="1505557030662" expanded="true" signature="9399:9412" ph="..." />
+            <marker date="1505696934314" expanded="true" signature="6924:6945" ph="..." />
+            <marker date="1505696934314" expanded="true" signature="7018:7031" ph="..." />
+            <marker date="1505696934314" expanded="true" signature="8094:8110" ph="..." />
+            <marker date="1505696934314" expanded="true" signature="10034:10047" ph="..." />
+            <marker date="1505696934314" expanded="true" signature="11616:11637" ph="..." />
+            <marker date="1505696934314" expanded="true" signature="11898:11911" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
