@@ -1,0 +1,698 @@
+[ 2017-09-19T16:31:21+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001618s ]
+
+[ 2017-09-19T16:31:26+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003674s ]
+NOTIC: [8] Undefined index: model_obj F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 248 行.
+
+[ 2017-09-19T16:31:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["21.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php3D42.tmp"],"error":[0],"size":[4614674]}}
+[ 2017-09-19T16:31:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T16:31:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T16:37:37+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+NOTIC: [8] Undefined index: model_obj F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 248 行.
+
+[ 2017-09-19T16:38:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001751s ]
+
+[ 2017-09-19T16:38:32+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+NOTIC: [8] Undefined index: model_obj F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 248 行.
+
+[ 2017-09-19T16:38:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["21.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\phpC041.tmp"],"error":[0],"size":[4614674]}}
+[ 2017-09-19T16:38:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T16:38:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T16:39:19+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+
+[ 2017-09-19T16:39:22+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+
+[ 2017-09-19T16:39:24+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+
+[ 2017-09-19T16:39:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+
+[ 2017-09-19T16:39:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["woman.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php9C88.tmp"],"error":[0],"size":[451]}}
+[ 2017-09-19T16:39:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T16:39:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' AND `cate` = '大玩偶' 
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 98 行.
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : INSERT INTO `yt_mtl_title` (`cate_id`,`company_id`,`branch_id`,`cate`,`mtl_title`) VALUES ('1','400700','100000','大玩偶','defaultMat')
+
+[ 2017-09-19T16:39:31+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002034s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `id` IN ('false') AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:42+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001739s ]
+
+[ 2017-09-19T16:39:43+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+
+[ 2017-09-19T16:39:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002499s ]
+
+[ 2017-09-19T16:39:45+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002517s ]
+
+[ 2017-09-19T16:39:47+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:48+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001851s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:48+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001878s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:48+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001795s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001680s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001859s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001859s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:59+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:39:59+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001855s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:41:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001825s ]
+
+[ 2017-09-19T16:41:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+
+[ 2017-09-19T16:41:37+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:41:38+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001771s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:42:22+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+
+[ 2017-09-19T16:42:23+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001837s ]
+
+[ 2017-09-19T16:42:25+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:42:26+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:42:26+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:42:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001786s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:43:35+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+
+[ 2017-09-19T16:43:36+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:43:39+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:43:48+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+
+[ 2017-09-19T16:43:50+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001837s ]
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yt_mtl_title`
+ERR: 1146:Table 'yzzh01.yt_mtl_title' doesn't exist
+ [ SQL语句 ] : SELECT `id`,`mtl_title` FROM `yt_mtl_title` WHERE `cate_id` = '1' AND `company_id` = 400700 AND `branch_id` = '100000' 
+
+[ 2017-09-19T16:47:49+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002259s ]
+
+[ 2017-09-19T16:47:52+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+
+[ 2017-09-19T16:47:53+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["21.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php4B27.tmp"],"error":[0],"size":[4614674]}}
+[ 2017-09-19T16:47:53+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T16:47:53+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T16:47:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+
+[ 2017-09-19T16:47:59+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["21.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php60C3.tmp"],"error":[0],"size":[441]}}
+[ 2017-09-19T16:47:59+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T16:47:59+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001719s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+NOTIC: [8] Undefined offset: 0 F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 98 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 98 行.
+
+[ 2017-09-19T16:48:00+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001919s ]
+
+[ 2017-09-19T16:48:08+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002202s ]
+
+[ 2017-09-19T16:48:13+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002560s ]
+
+[ 2017-09-19T16:48:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002004s ]
+
+[ 2017-09-19T16:49:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["\u5fae\u4fe1\u56fe\u7247_20170915100648.jpg"],"type":["image\/jpeg"],"tmp_name":["F:\\wamp64\\tmp\\phpB96E.tmp"],"error":[0],"size":[5455]}}
+[ 2017-09-19T16:49:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1640","cate":"1","value":"1","cate_id":"1"}
+[ 2017-09-19T16:49:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001750s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T16:53:04+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001701s ]
+
+[ 2017-09-19T16:53:05+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+
+[ 2017-09-19T16:53:11+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["QQ\u56fe\u724720170906143011.jpg"],"type":["image\/jpeg"],"tmp_name":["F:\\wamp64\\tmp\\php223D.tmp"],"error":[0],"size":[41251]}}
+[ 2017-09-19T16:53:11+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"2","cate":"1","value":"2","cate_id":"1"}
+[ 2017-09-19T16:53:11+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T16:53:56+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001649s ]
+
+[ 2017-09-19T16:53:57+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+
+[ 2017-09-19T16:54:02+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["QQ\u56fe\u724720170906143011.jpg"],"type":["image\/jpeg"],"tmp_name":["F:\\wamp64\\tmp\\phpEBB8.tmp"],"error":[0],"size":[41251]}}
+[ 2017-09-19T16:54:02+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"1","value":"1","cate_id":"1"}
+[ 2017-09-19T16:54:02+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T16:54:10+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+
+[ 2017-09-19T17:00:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001631s ]
+
+[ 2017-09-19T17:00:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+
+[ 2017-09-19T17:00:49+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002050s ]
+
+[ 2017-09-19T17:00:55+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+
+[ 2017-09-19T17:00:56+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["21.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php3BC0.tmp"],"error":[0],"size":[4614674]}}
+[ 2017-09-19T17:00:56+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T17:00:56+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T17:01:02+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+
+[ 2017-09-19T17:01:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["21.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php565D.tmp"],"error":[0],"size":[441]}}
+[ 2017-09-19T17:01:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T17:01:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T17:01:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003919s ]
+
+[ 2017-09-19T17:03:50+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+
+[ 2017-09-19T17:04:25+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+
+[ 2017-09-19T17:04:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+
+[ 2017-09-19T17:04:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["21.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php7EB8.tmp"],"error":[0],"size":[4614674]}}
+[ 2017-09-19T17:04:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T17:04:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T17:04:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+
+[ 2017-09-19T17:04:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["21.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php905D.tmp"],"error":[0],"size":[441]}}
+[ 2017-09-19T17:04:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T17:04:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T17:04:35+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+
+[ 2017-09-19T17:07:18+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001659s ]
+
+[ 2017-09-19T17:07:22+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001743s ]
+
+[ 2017-09-19T17:10:15+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+
+[ 2017-09-19T17:10:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+
+[ 2017-09-19T17:10:28+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["cover.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\phpF643.tmp"],"error":[0],"size":[1277983]}}
+[ 2017-09-19T17:10:28+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"2","cate":"\u5c0f\u73a9\u5076","value":"2","cate_id":"\u5c0f\u73a9\u5076"}
+[ 2017-09-19T17:10:28+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001668s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T17:10:32+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+
+[ 2017-09-19T17:10:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["cover.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php96E.tmp"],"error":[0],"size":[958]}}
+[ 2017-09-19T17:10:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"2","cate":"\u5c0f\u73a9\u5076","value":"2","cate_id":"\u5c0f\u73a9\u5076"}
+[ 2017-09-19T17:10:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+NOTIC: [8] Undefined offset: 0 F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 98 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 98 行.
+
+[ 2017-09-19T17:10:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+
+[ 2017-09-19T17:12:18+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001917s ]
+
+[ 2017-09-19T17:12:51+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002381s ]
+
+[ 2017-09-19T17:12:53+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["cover.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php2BD2.tmp"],"error":[0],"size":[1277983]}}
+[ 2017-09-19T17:12:53+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"2","cate":"\u5c0f\u73a9\u5076","value":"2","cate_id":"\u5c0f\u73a9\u5076"}
+[ 2017-09-19T17:12:53+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001580s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T17:12:59+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+
+[ 2017-09-19T17:13:00+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["cover.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php49FA.tmp"],"error":[0],"size":[958]}}
+[ 2017-09-19T17:13:00+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"2","cate":"\u5c0f\u73a9\u5076","value":"2","cate_id":"\u5c0f\u73a9\u5076"}
+[ 2017-09-19T17:13:00+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T17:13:01+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+
+[ 2017-09-19T17:14:16+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001609s ]
+
