@@ -1,0 +1,21 @@
+[ 2017-09-20T11:09:50+08:00 ] ::1 /yzzh/ytsoft.php?s=/Admin/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+ERR: 无法加载控制器:Virtuality
+
+[ 2017-09-20T11:09:53+08:00 ] ::1 /yzzh/ytsoft.php?s=/Admin/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+ERR: 无法加载控制器:Virtuality
+
+[ 2017-09-20T11:10:39+08:00 ] ::1 /yzzh/ytsoft.php?s=/Admin/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+ERR: 无法加载控制器:Virtuality
+

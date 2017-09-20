@@ -1,0 +1,362 @@
+[ 2017-09-19T15:33:36+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+
+[ 2017-09-19T15:33:39+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+
+[ 2017-09-19T15:33:42+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002652s ]
+
+[ 2017-09-19T15:33:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+
+[ 2017-09-19T15:33:46+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+
+[ 2017-09-19T15:33:48+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["1111.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php7636.tmp"],"error":[0],"size":[3574]}}
+[ 2017-09-19T15:33:48+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"5","cate":"\u5927\u4f17","value":"5","cate_id":"\u5927\u4f17","img":"1"}
+[ 2017-09-19T15:33:49+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+NOTIC: [8] Undefined offset: 0 F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 98 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 98 行.
+
+[ 2017-09-19T15:33:50+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+
+[ 2017-09-19T15:36:26+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+
+[ 2017-09-19T15:36:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001532s ]
+
+[ 2017-09-19T15:36:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["1001.jpg"],"type":["image\/jpeg"],"tmp_name":["F:\\wamp64\\tmp\\phpFEE6.tmp"],"error":[0],"size":[41724]}}
+[ 2017-09-19T15:36:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"3","cate":"1","value":"3","cate_id":"1"}
+[ 2017-09-19T15:36:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T15:37:37+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+
+[ 2017-09-19T15:37:38+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+
+[ 2017-09-19T15:37:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["1001.jpg"],"type":["image\/jpeg"],"tmp_name":["F:\\wamp64\\tmp\\php1057.tmp"],"error":[0],"size":[41724]}}
+[ 2017-09-19T15:37:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"1","value":"1","cate_id":"1"}
+[ 2017-09-19T15:37:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T15:38:37+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001541s ]
+
+[ 2017-09-19T15:38:37+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+
+[ 2017-09-19T15:38:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["444.jpg"],"type":["image\/jpeg"],"tmp_name":["F:\\wamp64\\tmp\\phpF9EC.tmp"],"error":[0],"size":[249334]}}
+[ 2017-09-19T15:38:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"3","cate":"1","value":"3","cate_id":"1"}
+[ 2017-09-19T15:38:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T15:39:11+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+
+[ 2017-09-19T15:39:21+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002767s ]
+
+[ 2017-09-19T15:39:23+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+
+[ 2017-09-19T15:39:24+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+
+[ 2017-09-19T15:39:25+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002012s ]
+
+[ 2017-09-19T15:40:41+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+
+[ 2017-09-19T15:40:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+
+[ 2017-09-19T15:40:49+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+
+[ 2017-09-19T15:40:50+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：[]
+[ 2017-09-19T15:40:50+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+
+[ 2017-09-19T15:44:20+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002090s ]
+
+[ 2017-09-19T15:45:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+
+[ 2017-09-19T15:45:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+
+[ 2017-09-19T15:45:35+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：[]
+[ 2017-09-19T15:45:35+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+
+[ 2017-09-19T15:47:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+
+[ 2017-09-19T15:47:32+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+
+[ 2017-09-19T15:47:36+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+
+[ 2017-09-19T15:47:38+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：[]
+[ 2017-09-19T15:47:38+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+
+[ 2017-09-19T15:48:18+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+
+[ 2017-09-19T15:48:21+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+
+[ 2017-09-19T15:48:23+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：[]
+[ 2017-09-19T15:48:23+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+
+[ 2017-09-19T15:49:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001786s ]
+
+[ 2017-09-19T15:49:46+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+NOTIC: [8] Undefined index: model_obj F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 248 行.
+
+[ 2017-09-19T15:49:47+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：[]
+[ 2017-09-19T15:49:47+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+
+[ 2017-09-19T15:49:55+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+
+[ 2017-09-19T15:49:57+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001585s ]
+
+[ 2017-09-19T15:49:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：{"files":{"name":["1111.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php43D7.tmp"],"error":[0],"size":[3574]}}
+[ 2017-09-19T15:49:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: ���Ե�$post��{"id":"1","cate":"\u5927\u73a9\u5076","value":"1","cate_id":"\u5927\u73a9\u5076"}
+[ 2017-09-19T15:49:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001804s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php 第 175 行.
+
+[ 2017-09-19T15:49:59+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+
+[ 2017-09-19T15:54:04+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+
+[ 2017-09-19T15:54:07+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+NOTIC: [8] Undefined index: model_obj F:\wamp64\www\yzzh\Application\Home\Controller\VirtualityController.class.php 第 248 行.
+
+[ 2017-09-19T15:54:08+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: 调试的$_FILES：[]
+[ 2017-09-19T15:54:08+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+
+[ 2017-09-19T15:55:36+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T15:56:00+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T15:56:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T15:56:39+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:00:22+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:01:25+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:01:46+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:01:47+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:01:47+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:01:47+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:02:02+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:02:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:02:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:02:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+
+[ 2017-09-19T16:02:23+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/User/verify
+ERR: Call to undefined function Think\imagecreate()
+

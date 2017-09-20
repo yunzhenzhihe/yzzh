@@ -1,37 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="$.ajax(ajaxOptions).done(function (responseData, t..." line="666" />
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="var msg, title = '', dataType = 'error', spanClass..." line="667" />
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="try {" line="668" />
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="data = $.parseJSON(responseData);" line="669" />
-    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" line="701" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="$.ajax(ajaxOptions).done(function (responseData, t..." line="667" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="var msg, title = '', dataType = 'error', spanClass..." line="668" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="try {" line="669" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" description="data = $.parseJSON(responseData);" line="670" />
+    <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" line="703" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a41d15c-9256-47e8-9469-e97ff46a8c95" name="默认的" comment="wxl第一版">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505476708_2145819334.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505476809_1730016739.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-15/1505476819_1566958990.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505559236_431755691.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505577867_524248539.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505613711_285890113.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505614817_878176402.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505614922_28072890.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505802709_485053502.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505802872_1910072605.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505803008_1513513584.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870288_666860938.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870574_1852439615.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870802_1294052005.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870858_1950689574.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871044_372874757.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871199_1634365727.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871778_1970600336.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871878_464391854.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871930_558923279.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871991_1459531622.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505877173_1745664858.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505877350_897000492.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505877579_942863104.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505877970_1199186597.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505878065_881815649.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505878086_1179625811.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505878864_186577855.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yzzh.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/17_08_15.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_09_20.log" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_17.log" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_18.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-16/1505559254_536232232.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505577872_1218611120.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505613716_1094533307.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505614822_1533408550.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-17/1505614927_1637833127.mtl" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/Controller/17_08_15.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yzzh.zip" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_19.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_20.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505803117_90603065.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505803757_1941401171.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505807398_990374966.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870292_800098311.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870579_2142310615.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870806_1392463617.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870862_698908140.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871049_1015375950.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871205_610820813.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871782_1006335738.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871882_620653371.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871934_373959857.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871995_944833724.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505878869_50537272.mtl" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1dc09fa7f8d3a2e2c59b84b6f5d63060.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1dc09fa7f8d3a2e2c59b84b6f5d63060.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/js/ssi-uploader.js" afterPath="$PROJECT_DIR$/Public/js/ssi-uploader.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,21 +86,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="17_09_16.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log">
+      <file leaf-file-name="VirtualityController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="6336">
+              <caret line="300" column="1" lean-forward="false" selection-start-line="300" selection-start-column="1" selection-end-line="300" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VirtualityController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php">
+      <file leaf-file-name="17_09_19.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_19.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
+            <state relative-caret-position="1408">
+              <caret line="64" column="53" lean-forward="false" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -84,30 +109,42 @@
       <file leaf-file-name="ssi-uploader.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="461" column="23" lean-forward="false" selection-start-line="461" selection-start-column="23" selection-end-line="461" selection-end-column="23" />
+            <state relative-caret-position="176">
+              <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
               <folding>
-                <marker date="1505617417959" expanded="true" signature="1527:1533" ph=" " />
-                <marker date="1505617417959" expanded="true" signature="24201:24214" ph="..." />
-                <marker date="1505617417959" expanded="true" signature="43984:45387" ph="{...}" />
+                <marker date="1505877775130" expanded="true" signature="1509:1515" ph=" " />
+                <marker date="1505877775130" expanded="true" signature="24458:24471" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="126" column="16" lean-forward="true" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+            <state relative-caret-position="437">
+              <caret line="202" column="123" lean-forward="false" selection-start-line="202" selection-start-column="123" selection-end-line="202" selection-end-column="123" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <marker date="1505696934314" expanded="true" signature="6924:6945" ph="..." />
-                <marker date="1505696934314" expanded="true" signature="7018:7031" ph="..." />
-                <marker date="1505696934314" expanded="true" signature="8094:8110" ph="..." />
-                <marker date="1505696934314" expanded="true" signature="10034:10047" ph="..." />
-                <marker date="1505696934314" expanded="true" signature="11616:11637" ph="..." />
-                <marker date="1505696934314" expanded="true" signature="11898:11911" ph="..." />
+                <element signature="e#2681#2687#0" expanded="true" />
+                <element signature="e#2692#2698#0" expanded="true" />
+                <element signature="e#2699#2705#0" expanded="true" />
+                <marker date="1505879386855" expanded="true" signature="6412:6433" ph="..." />
+                <marker date="1505879386855" expanded="true" signature="6506:6519" ph="..." />
+                <marker date="1505879386855" expanded="true" signature="7566:7582" ph="..." />
+                <marker date="1505879386855" expanded="true" signature="9070:9084" ph="..." />
+                <marker date="1505879386855" expanded="true" signature="9086:9092" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9092:9098" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9098:9104" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9104:9110" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9110:9116" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9116:9122" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9133:9139" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9140:9146" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9147:9153" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="9154:9160" ph=" " />
+                <marker date="1505879386855" expanded="true" signature="10275:10288" ph="..." />
+                <marker date="1505879386855" expanded="true" signature="13738:13751" ph="..." />
+                <marker date="1505879386855" expanded="true" signature="13838:13851" ph="..." />
               </folding>
             </state>
           </provider>
@@ -124,9 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>formData</find>
-      <find>$file</find>
-      <find>$this-&gt;error('操作失败，请退出重试');</find>
       <find>url</find>
       <find>$uploadBtn</find>
       <find>html</find>
@@ -135,7 +169,6 @@
       <find>12348</find>
       <find>ssi-uploadBtn</find>
       <find>click</find>
-      <find>append</find>
       <find>cn</find>
       <find>la</find>
       <find>extError</find>
@@ -154,6 +187,10 @@
       <find>ssi-InputLabel</find>
       <find>ext</find>
       <find>mtlinfo</find>
+      <find>$.ajax</find>
+      <find>append</find>
+      <find>obj</find>
+      <find>load</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,8 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_add.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/GoodsController.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Setdefaultfields/goods_add.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/GoodsController.class.php" />
@@ -205,7 +240,6 @@
         <option value="$PROJECT_DIR$/Application/Home/Controller/SetgoodsmodelController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Showimages/index.html" />
         <option value="$USER_HOME$/Desktop/uploads/index.html" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/Upload.class.php" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_11.log" />
         <option value="$PROJECT_DIR$/Public/css/ssi-uploader.css" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_12.log" />
@@ -214,8 +248,11 @@
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_14.log" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" />
-        <option value="$PROJECT_DIR$/Public/js/ssi-uploader.js" />
+        <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_18.log" />
+        <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/Upload.class.php" />
+        <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_19.log" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" />
+        <option value="$PROJECT_DIR$/Public/js/ssi-uploader.js" />
         <option value="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" />
       </list>
     </option>
@@ -279,7 +316,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,6 +340,29 @@
               <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="yzzh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yzzh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="yzzh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yzzh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Setdefaultfields" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="yzzh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yzzh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Setsoftinfo" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="yzzh" type="b2602c69:ProjectViewProjectNode" />
@@ -347,6 +406,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -470,7 +530,13 @@
       <workItem from="1505547997331" duration="15536000" />
       <workItem from="1505612392837" duration="9248000" />
       <workItem from="1505694827538" duration="604000" />
-      <workItem from="1505695639314" duration="1521000" />
+      <workItem from="1505695639314" duration="10876000" />
+      <workItem from="1505711576468" duration="17268000" />
+      <workItem from="1505782259261" duration="6679000" />
+      <workItem from="1505763355853" duration="2035000" />
+      <workItem from="1505800084021" duration="3869000" />
+      <workItem from="1505804151163" duration="69000" />
+      <workItem from="1505877232276" duration="2186000" />
     </task>
     <task id="LOCAL-00001" summary="wxl第一版">
       <created>1505455822430</created>
@@ -528,16 +594,23 @@
       <option name="project" value="LOCAL" />
       <updated>1505557232440</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="wxl第一版">
+      <created>1505697184209</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1505697184209</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="391682000" />
+    <option name="totallyTimeSpent" value="436614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1988273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15565032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -580,29 +653,11 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Public/js/yt_main_ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3410">
-          <caret line="155" column="42" lean-forward="false" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.070/vue2.2.2.js" />
-    <entry file="file://$USER_HOME$/Desktop/vue_upload/index.html" />
-    <entry file="file://$USER_HOME$/Desktop/uploads/index.html" />
-    <entry file="file://D:/uploads/index.html" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="645" column="0" lean-forward="false" selection-start-line="645" selection-start-column="0" selection-end-line="645" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_08_14.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -746,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Upload.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Controller.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -806,14 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/js/yt_dialog_data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="801">
@@ -822,39 +862,100 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/ImgInput20160917/index.html" />
-    <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.js">
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Setsoftinfo/softinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="461" column="23" lean-forward="false" selection-start-line="461" selection-start-column="23" selection-end-line="461" selection-end-column="23" />
-          <folding>
-            <marker date="1505617417959" expanded="true" signature="1527:1533" ph=" " />
-            <marker date="1505617417959" expanded="true" signature="24201:24214" ph="..." />
-            <marker date="1505617417959" expanded="true" signature="43984:45387" ph="{...}" />
-          </folding>
+        <state relative-caret-position="1584">
+          <caret line="72" column="19" lean-forward="false" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html">
+    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/KADXMM.txt" />
+    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_18.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="126" column="16" lean-forward="true" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Upload.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="123" column="63" lean-forward="false" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_19.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="64" column="53" lean-forward="false" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../yzzh - 副本/Application/Home/Controller/VirtualityController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="300" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1505696934314" expanded="true" signature="6924:6945" ph="..." />
-            <marker date="1505696934314" expanded="true" signature="7018:7031" ph="..." />
-            <marker date="1505696934314" expanded="true" signature="8094:8110" ph="..." />
-            <marker date="1505696934314" expanded="true" signature="10034:10047" ph="..." />
-            <marker date="1505696934314" expanded="true" signature="11616:11637" ph="..." />
-            <marker date="1505696934314" expanded="true" signature="11898:11911" ph="..." />
+            <marker date="1505877775130" expanded="true" signature="1509:1515" ph=" " />
+            <marker date="1505877775130" expanded="true" signature="24458:24471" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
+        <state relative-caret-position="6336">
+          <caret line="300" column="1" lean-forward="false" selection-start-line="300" selection-start-column="1" selection-end-line="300" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="202" column="123" lean-forward="false" selection-start-line="202" selection-start-column="123" selection-end-line="202" selection-end-column="123" />
+          <folding>
+            <element signature="e#2681#2687#0" expanded="true" />
+            <element signature="e#2692#2698#0" expanded="true" />
+            <element signature="e#2699#2705#0" expanded="true" />
+            <marker date="1505879386855" expanded="true" signature="6412:6433" ph="..." />
+            <marker date="1505879386855" expanded="true" signature="6506:6519" ph="..." />
+            <marker date="1505879386855" expanded="true" signature="7566:7582" ph="..." />
+            <marker date="1505879386855" expanded="true" signature="9070:9084" ph="..." />
+            <marker date="1505879386855" expanded="true" signature="9086:9092" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9092:9098" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9098:9104" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9104:9110" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9110:9116" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9116:9122" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9133:9139" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9140:9146" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9147:9153" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="9154:9160" ph=" " />
+            <marker date="1505879386855" expanded="true" signature="10275:10288" ph="..." />
+            <marker date="1505879386855" expanded="true" signature="13738:13751" ph="..." />
+            <marker date="1505879386855" expanded="true" signature="13838:13851" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

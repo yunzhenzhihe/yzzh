@@ -2,7 +2,6 @@
  * error:an teleiwsei to upload kai iparxei ena sti lista pou den exei patithei
  * */
 var flag;//开关
-var $manage = $('.btn-warning');
 (function (root, factory) {
     //@author http://ifandelse.com/its-not-hard-making-your-library-support-amd-and-commonjs/
     if (typeof module === "object" && module.exports) {
@@ -30,16 +29,16 @@ var $manage = $('.btn-warning');
     };
     Ssi_upload.prototype.init = function (element) {
         $(element).addClass('ssi-uploadInput')
-         .after(this.$element = $('<div class="ssi-uploader">'));
+            .after(this.$element = $('<div class="ssi-uploader">'));
         var $chooseBtn = $('' +
-         '<span class="ssi-InputLabel">' +
-         '<button class="ssi-button success ssi-InputLabel_btn">' + this.language.chooseFiles + '</button>' +
-         '</span>').append(element);
+            '<span class="ssi-InputLabel">' +
+            '<button class="ssi-button success ssi-InputLabel_btn">' + this.language.chooseFiles + '</button>' +
+            '</span>').append(element);
         var $uploadBtn = $('<button id="ssi-uploadBtn" class="ssi-button success ssi-hidden" >' +
-         '<span class="ssi-btnIn">' + this.language.upload + '&nbsp;</span>' +
-         '<div id="ssi-up_loading" class="ssi-btnIn"></div></button>');
+            '<span class="ssi-btnIn">' + this.language.upload + '&nbsp;</span>' +
+            '<div id="ssi-up_loading" class="ssi-btnIn"></div></button>');
         var $clearBtn = $('<button id="ssi-clearBtn" class="ssi-hidden ssi-button info" >' + this.language.clear +
-         '</button>');
+            '</button>');
         var $abortBtn = $('<button id="ssi-abortBtn" class="ssi-button error ssi-cancelAll ssi-hidden" ><span class="inBtn">' + this.language.abort + ' </span></button>');
 
         this.$element.append($('<div class="ssi-buttonWrapper">').append($chooseBtn, $abortBtn, $uploadBtn, $clearBtn));
@@ -49,12 +48,12 @@ var $manage = $('.btn-warning');
             var $fileList = $('<table id="ssi-fileList" class="ssi-fileList"></table>');
             var $namePreview = $('<span class="ssi-namePreview"></span>');
             var $mainBox = $('<div id="ssi-uploadFiles" class="ssi-tooltip ssi-uploadFiles ' + (this.options.dropZone ? 'ssi-dropZone' : '') + '"><div id="ssi-uploadProgressNoPreview" class="ssi-uploadProgressNoPreview"></div></div>')
-             .append($namePreview);
+                .append($namePreview);
             var $uploadDetails = $('<div class="ssi-uploadDetails"></div>').append($fileList);
             $uploadBox = $('<div class="ssi-uploadBoxWrapper ssi-uploadBox"></div>').append($mainBox, $uploadDetails);
             this.$element.prepend($uploadBox);
         } else {
-            $uploadBox = $('<div id="ssi-previewBox" class="ssi-uploadBox ssi-previewBox ' + (this.options.dropZone ? 'ssi-dropZonePreview ssi-dropZone"><div id="ssi-DropZoneBack">'+'<center>' + this.language.drag + '</center>' + '</div>' : '">') + '</div>');
+            $uploadBox = $('<div id="ssi-previewBox" class="ssi-uploadBox ssi-previewBox ' + (this.options.dropZone ? 'ssi-dropZonePreview ssi-dropZone"><div id="ssi-DropZoneBack">' + '<center>' + this.language.drag + '</center>' + '</div>' : '">') + '</div>');
             this.$element.append($uploadBox);
         }
         var thisS = this;
@@ -111,11 +110,11 @@ var $manage = $('.btn-warning');
                 tooltipHeight = 0;
             }
             $tooltip = $('<div class="ssi-infoTooltip">'
-             + title +
-             '</div>')
-             .appendTo(thisS.$element)
-             .css({top: $eventTarget.position().top - tooltipHeight, left: $eventTarget.position().left - 5})
-             .fadeIn('slow');
+                + title +
+                '</div>')
+                .appendTo(thisS.$element)
+                .css({top: $eventTarget.position().top - tooltipHeight, left: $eventTarget.position().left - 5})
+                .fadeIn('slow');
 
         });
 
@@ -182,14 +181,14 @@ var $manage = $('.btn-warning');
             }
         }
         var thisS = this,
-         j = 0,
-         length,
-         imgContent = '',
-         $uploadBtn = this.$element.find('#ssi-uploadBtn'),
-         $clearBtn = this.$element.find('#ssi-clearBtn'),
-         $fileList = this.$element.find('#ssi-fileList'),
-         $uploadBox = this.$element.find('.ssi-uploadBox'),
-         imgs = [];
+            j = 0,
+            length,
+            imgContent = '',
+            $uploadBtn = this.$element.find('#ssi-uploadBtn'),
+            $clearBtn = this.$element.find('#ssi-clearBtn'),
+            $fileList = this.$element.find('#ssi-fileList'),
+            $uploadBox = this.$element.find('.ssi-uploadBox'),
+            imgs = [];
         if ((this.inProgress === 0 && this.pending === 0)) { //if no file are pending or are in progress
             this.clear(); //clear the list
         }
@@ -203,48 +202,50 @@ var $manage = $('.btn-warning');
         //
         for (var i = 0; i < filesLength; i++) {
             var file = files[i],
-            ext = file.name.getExtension();// 获取文件的后缀
+                ext = file.name.getExtension();// 获取文件的后缀
             var id = $uploadBtn.parents('th').prev().prev().html();
-                if(ext=="obj"){
+            if(ext == "obj" || ext == "mtl") {
+                if (ext == "obj") {
                     $.ajax({
-                        data:{id:id,ext:'obj'},
+                        data: {id: id, ext: 'obj'},
                         type: "post",
                         url: "/yzzh/ytsoft.php?s=/Home/Virtuality/check",
-                        cache:false,
-                        async:false,
+                        cache: false,
+                        async: false,
                         dataType: "json",
-                        success: function(mes){
-                                if(mes.status == 1){
-                                    flag = mes;
-                                }
+                        success: function (mes) {
+                            if (mes.status == 1) {
+                                flag = mes;
+                            }
                         }
                     });
                 }
-            if(ext=="mtl"){
-                $.ajax({
-                    data:{id:id,ext:'mtl'},
-                    type: "post",
-                    url: "/yzzh/ytsoft.php?s=/Home/Virtuality/check",
-                    cache:false,
-                    async:false,
-                    dataType: "json",
-                    success: function(mes){
-                        if(mes.status == 1){
-                            flag = mes;
+                if (ext == "mtl") {
+                    $.ajax({
+                        data: {id: id, ext: 'mtl'},
+                        type: "post",
+                        url: "/yzzh/ytsoft.php?s=/Home/Virtuality/check",
+                        cache: false,
+                        async: false,
+                        dataType: "json",
+                        success: function (mes) {
+                            if (mes.status == 1) {
+                                flag = mes;
+                            }
                         }
-                    }
-                });
-            }
-                if(flag.data == 'false'){
-                    if(flag.info == 'obj'){
+                    });
+                }
+                if (flag.data == 'false') {
+                    if (flag.info == 'obj') {
                         alert('obj文件已存在请勿重复上传！');
                         return false;
                     }
-                    if(flag.info == 'mtl'){
+                    if (flag.info == 'mtl') {
                         alert('mtl文件已存在请勿重复上传！');
                         return false;
                     }
                 }
+            }
             if ($.inArray(ext, this.options.allowed) === -1) { //如果请求的文件不允许
 
                 if (length > filesLength) {//there are more file we dont pick
@@ -285,6 +286,7 @@ var $manage = $('.btn-warning');
             }
             this.options.errorHandler.method(errorMessage, this.options.errorHandler.error);
         }
+
         function setupReader() {
             var index = thisS.totalFilesLength + thisS.pending;
             if (index === 0) {//do it only the first time
@@ -304,10 +306,10 @@ var $manage = $('.btn-warning');
             if (thisS.options.preview) {
                 var getTemplate = function (content) {
                     return '<table class="ssi-imgToUploadTable ssi-pending">' +
-                     '<tr><td class="ssi-upImgTd">' + content + '</td></tr>' +
-                     '<tr><td><div id="ssi-uploadProgress' + index + '" class="ssi-hidden ssi-uploadProgress"></div></td></tr>' +
-                     '<tr><td><button data-delete="' + index + '" class=" ssi-button error ssi-removeBtn"><span class="trash10 trash"></span></button></td></tr>' +
-                     '<tr><td>' + cutFileName(filename, ext, 15) + '</td></tr></table>'
+                        '<tr><td class="ssi-upImgTd">' + content + '</td></tr>' +
+                        '<tr><td><div id="ssi-uploadProgress' + index + '" class="ssi-hidden ssi-uploadProgress"></div></td></tr>' +
+                        '<tr><td><button data-delete="' + index + '" class=" ssi-button error ssi-removeBtn"><span class="trash10 trash"></span></button></td></tr>' +
+                        '<tr><td>' + cutFileName(filename, ext, 15) + '</td></tr></table>'
                 };
                 var fileType = file.type.split('/');
 
@@ -339,18 +341,18 @@ var $manage = $('.btn-warning');
             } else {
                 thisS.$element.find('.ssi-namePreview').html((index === 0 ? cutFileName(filename, ext, 13) : (thisS.currentListLength + 1) + ' ' + thisS.language.files));//set name preview
                 $fileList.append('<tr class="ssi-space"><td></td></tr>' +//append files element to dom
-                 '<tr class="ssi-toUploadTr ssi-pending"><td><div id="ssi-uploadProgress' + index + '" class="ssi-hidden ssi-uploadProgress ssi-uploadProgressNoPre"></div>' +
-                 '<span>' + cutFileName(filename, ext, 20) + '</span></td>' +
-                 '<td><a data-delete="' + index + '" class="ssi-button ssi-removeBtn  ssi-removeBtnNP"><span class="trash7 trash"></span></a></td></tr>');
+                    '<tr class="ssi-toUploadTr ssi-pending"><td><div id="ssi-uploadProgress' + index + '" class="ssi-hidden ssi-uploadProgress ssi-uploadProgressNoPre"></div>' +
+                    '<span>' + cutFileName(filename, ext, 20) + '</span></td>' +
+                    '<td><a data-delete="' + index + '" class="ssi-button ssi-removeBtn  ssi-removeBtnNP"><span class="trash7 trash"></span></a></td></tr>');
             }
 
             var setImg = function () {//load the images
                 for (var i = 0; i < imgs.length; i++) {
                     if (imgs[i] !== null) {
                         $uploadBox.find("#ssi-uploadProgress" + i).parents('table.ssi-imgToUploadTable')
-                         .find('.ssi-imgToUpload')
-                         .attr('src', imgs[i]) //set src of the image
-                         .next().remove();//remove the spinner
+                            .find('.ssi-imgToUpload')
+                            .attr('src', imgs[i]) //set src of the image
+                            .next().remove();//remove the spinner
                         imgs[i] = null;
                     }
                 }
@@ -363,7 +365,7 @@ var $manage = $('.btn-warning');
         thisS.successfulUpload = 0;
         thisS.aborted = 0;
         thisS.abortedWithError = 0;
-        if (!thisS.options.preview)$completed.prev('tr').remove();
+        if (!thisS.options.preview) $completed.prev('tr').remove();
         $completed.remove();
     };
     var clearPending = function (thisS) {//clear all pending files
@@ -378,7 +380,7 @@ var $manage = $('.btn-warning');
         thisS.toUpload.splice(-thisS.pending, thisS.pending);
         thisS.imgNames.splice(-thisS.pending, thisS.pending);
         thisS.pending = 0;
-        if (!thisS.options.preview)$pending.prev('tr').remove();
+        if (!thisS.options.preview) $pending.prev('tr').remove();
         $pending.remove();
     };
 
@@ -395,7 +397,7 @@ var $manage = $('.btn-warning');
                 clearCompleted(this);
         }
         var $uploadBtn = this.$element.find('#ssi-uploadBtn'),
-         $clearBtn = this.$element.find('#ssi-clearBtn');
+            $clearBtn = this.$element.find('#ssi-clearBtn');
         this.currentListLength = getCurrentListLength(this);
         if (this.inProgress === 0) { //if no file are uploading right now
             this.totalProgress = [];
@@ -433,16 +435,16 @@ var $manage = $('.btn-warning');
         if (this.pending > 0) {
             this.$element.find('#ssi-abortBtn').removeClass('ssi-hidden');
             this.$element.find('.ssi-removeBtn')
-             .addClass('ssi-abortUpload')
-             .removeClass('ssi-removeBtn')
-             .children('span').removeClass('trash7 trash10 trash')
-             .addClass((this.options.preview ? 'ban7w' : 'ban7'));//transform remove button to abort button
+                .addClass('ssi-abortUpload')
+                .removeClass('ssi-removeBtn')
+                .children('span').removeClass('trash7 trash10 trash')
+                .addClass((this.options.preview ? 'ban7w' : 'ban7'));//transform remove button to abort button
             var $uploadBtn = this.$element.find('#ssi-uploadBtn'),
-             $clearBtn = this.$element.find('#ssi-clearBtn');
+                $clearBtn = this.$element.find('#ssi-clearBtn');
             $uploadBtn.prop("disabled", true);
             var thisS = this,
-             formData = new FormData(),//set the form data
-             i = this.totalFilesLength;
+                formData = new FormData(),//set the form data
+                i = this.totalFilesLength;
             if (this.totalFilesLength !== 0 && !this.options.preview) {
                 setNamePreview(this);
             }
@@ -461,9 +463,9 @@ var $manage = $('.btn-warning');
             var id = $uploadBtn.parents('th').prev().prev().html();
             var cate = $uploadBtn.parents('th').prev().html();
             formData.append('id', id);
-            formData.append('cate',cate);
-            formData.append('value',val);
-            formData.append('cate_id',cate_id);
+            formData.append('cate', cate);
+            formData.append('value', val);
+            formData.append('cate_id', cate_id);
             $.each(this.options.data, function (key, value) {// append all extra data 添加加所有额外数据
                 formData.append(key, value);
             });
@@ -481,25 +483,25 @@ var $manage = $('.btn-warning');
             ajaxLoopRequest(formData, i);// make the request
         }
 
-        function mtluploadsucc(cate_id,mtl_id) {//mtl文件上传成功后将属性和mtl中的title关联
-            $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo',{cate_id:cate_id,mtl_id:mtl_id},function (res) {
-                if(res.status){
+        function mtluploadsucc(cate_id, mtl_id) {//mtl文件上传成功后将属性和mtl中的title关联
+            $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo', {cate_id: cate_id, mtl_id: mtl_id}, function (res) {
+                if (res.status) {
 
                     opt = "<select class='form-control border-radius' id='mtl_select'>";//拼接select框
-                    for(var a = 0; a < res.info.length; a++){
+                    for (var a = 0; a < res.info.length; a++) {
                         var mtl = res.info[a];
 
-                        if(mtl.mtl_title != null){
-                            opt += '<option value=' + '"' + mtl.id + '"' +'>' + mtl.mtl_title + "</option>";
+                        if (mtl.mtl_title != null) {
+                            opt += '<option value=' + '"' + mtl.id + '"' + '>' + mtl.mtl_title + "</option>";
                         }
                     }
-                    opt +="</select>";
+                    opt += "</select>";
 
                     //拼接table表格
                     attrlist = "<tbody id='attrlist'>";
-                    for(var i = 0; i < res.data.length; i++){
+                    for (var i = 0; i < res.data.length; i++) {
                         var attr = res.data[i];
-                        if(attr.attr != null){
+                        if (attr.attr != null) {
                             var num = i + 1;
                             attrlist += "<tr class='list2'><th>" + num + "</th>";
                             attrlist += "<th style='display: none' id='cateid'>" + attr.id + "</th>";
@@ -515,6 +517,7 @@ var $manage = $('.btn-warning');
             });
             $('#myModal1').modal('toggle');
         }
+
         //--------------开始ajax请求-----------------------
         function ajaxLoopRequest(formData, ii) {
 
@@ -524,7 +527,7 @@ var $manage = $('.btn-warning');
             }
             var uploadBar = thisS.$element.find('#ssi-uploadProgress' + ii);//获取文件的进度条
             uploadBar.removeClass('ssi-hidden') //make it visible 使其可见
-             .parents(selector).removeClass('ssi-pending');
+                .parents(selector).removeClass('ssi-pending');
             var ajaxOptions = $.extend({}, {//store the request to the uploadList variable
                 xhr: function () {
                     var xhr = new window.XMLHttpRequest();
@@ -540,10 +543,10 @@ var $manage = $('.btn-warning');
                             var sum = arraySum(thisS.totalProgress) / (thisS.inProgress + thisS.successfulUpload);//and calculate the overall progress
                             if (!thisS.options.preview) {
                                 thisS.$element.find('#ssi-uploadProgressNoPreview')
-                                 .removeClass('ssi-hidden')
-                                 .css({
-                                     width: sum + '%'
-                                 });
+                                    .removeClass('ssi-hidden')
+                                    .css({
+                                        width: sum + '%'
+                                    });
                             }
                             $uploadBtn.find('#ssi-up_loading').html(Math.ceil(sum) + '%');// add to upload button the current overall progress percent number
                         }
@@ -554,7 +557,7 @@ var $manage = $('.btn-warning');
                 beforeSend: function (xhr) {
                     thisS.uploadList[ii] = xhr;
                     $uploadBtn.find('#ssi-up_loading') //add spiner to uploadbutton
-                     .html('<i class="fa fa-spinner fa-pulse"></i>');
+                        .html('<i class="fa fa-spinner fa-pulse"></i>');
                     if (typeof thisS.options.beforeEachUpload === 'function') {
                         try {
                             var msg = thisS.options.beforeEachUpload({// execute the beforeEachUpload callback and save the returned value
@@ -625,25 +628,23 @@ var $manage = $('.btn-warning');
                 var msg, title = '', dataType = 'error', spanClass = 'exclamation', data;
                 try {
                     data = responseData;
-                    if(data.info=='Obj'){
-                        if(data.status=='1') {
+                    if (data.info == 'Obj') {
+                        if (data.status == '1') {
                             alert('Obj file upload successfully!');
                             window.objfiel = data.data;
-                            loadObj(objfiel,mtlfiel);
-                        }else {
+                        } else {
                             alert(data.info);
                         }
                     }
                     //如果上传的是mtl文件
-                    if(data.info=="Mtl"){
-                        if(data.status=='1') {
+                    if (data.info == "Mtl") {
+                        if (data.status == '1') {
                             alert('Mtl file upload successfully!');
                             window.mtlfiel = data.data.path;//mtl文件路径
-                            mtluploadsucc(data.data.cate_id,data.data.id);
-                            if(mtlfiel && objfiel) {
-                                loadObj(objfiel, mtlfiel);
+                            mtluploadsucc(data.data.cate_id, data.data.id);
+                            if (mtlfiel && objfiel) {
                             }
-                        }else {
+                        } else {
                             alert(data.info);
                         }
                     }
@@ -673,6 +674,7 @@ var $manage = $('.btn-warning');
                         cb(false, data);
                     }
                 }
+
                 function cb(result, data) {
                     if (result) {//if response type is success
                         dataType = 'success';
@@ -749,7 +751,7 @@ var $manage = $('.btn-warning');
         element = thisS.$element.find(".ssi-abortUpload[data-delete='" + index + "']");
         element.parents(elementSelector).addClass('ssi-completed');
         element.after(getResultMessage(msgType, msg, title, className))
-         .remove();
+            .remove();
     };
 
     var getCompleteStatus = function (thisS) {//check if file are in progress
@@ -818,8 +820,8 @@ var $manage = $('.btn-warning');
             }
             thisS.$element.find('.ssi-namePreview').append(getResultMessage(type, msg, title, 'ssi-noPreviewMessage'));//在名称预览中显示消息
             thisS.$element.find('#ssi-uploadProgressNoPreview') //删除主总体进度条
-             .removeAttr('styles')
-             .addClass('ssi-hidden');
+                .removeAttr('styles')
+                .addClass('ssi-hidden');
         }
         if (typeof thisS.options.onUpload === 'function') {
             try {
@@ -833,8 +835,8 @@ var $manage = $('.btn-warning');
         var $uploadBtn = thisS.$element.find('#ssi-uploadBtn');
         thisS.$element.find('#ssi-clearBtn').prop("disabled", false);
         $uploadBtn.prop("disabled", false)
-         .find('#ssi-up_loading')
-         .empty();
+            .find('#ssi-up_loading')
+            .empty();
         if (thisS.pending === 0) {
             $uploadBtn.addClass('ssi-hidden');
             thisS.toUpload = [];
@@ -871,7 +873,7 @@ var $manage = $('.btn-warning');
             },
             allowed: ['jpg', 'jpeg', 'png', 'bmp', 'gif'],
             errorHandler: {
-                method: function (msg){
+                method: function (msg) {
                     alert(msg);
                 },
                 success: 'success',
@@ -904,10 +906,10 @@ var $manage = $('.btn-warning');
         return this.split('.').pop().toLowerCase();
     };
     var cutFileName = function (word, ext, maxLength) {//缩短名称
-        if (typeof ext === 'undefined')ext = '';
-        if (typeof maxLength === 'undefined')maxLength = 10;
+        if (typeof ext === 'undefined') ext = '';
+        if (typeof maxLength === 'undefined') maxLength = 10;
         var min = 4;
-        if (maxLength < min)return;
+        if (maxLength < min) return;
         var extLength = ext.length;
         var wordLength = word.length;
         if ((wordLength - 2) > maxLength) {
