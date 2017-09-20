@@ -55,7 +55,7 @@ class VirtualityController extends PublicController
                     $goodscate = M('goodscate');
                     //上传obj文件
                     if ($v['ext'] == 'obj') {
-                        \Think\Log::write('调试的$post：'.json_encode(I('post.')));
+//                        \Think\Log::write('调试的$post：'.json_encode(I('post.')));
                         $data['model_obj'] = $v['savepath'] . $v['savename'];
 
                         if ($goodscate->where($map)->save($data)) {
@@ -70,7 +70,7 @@ class VirtualityController extends PublicController
                     }
                     //上传mtl文件
                     if ($v['ext'] == 'mtl') {
-                        \Think\Log::write('调试的$post：'.json_encode(I('post.')));
+//                        \Think\Log::write('调试的$post：'.json_encode(I('post.')));
                         $cate = $goodscate->field('model_mtl')->where($map)->find()['model_mtl'];
                         if (!$cate) {//如果goodscate表中没有mtl文件路径就插入，防止重复插入
                             $data['model_mtl'] = $v['savepath'] . $v['savename'];
@@ -81,9 +81,8 @@ class VirtualityController extends PublicController
                                 if (file_exists($file_path)) {
                                     $fp = fopen($file_path, "r");
                                     $str = fread($fp, filesize($file_path));
-
-                                    //匹配可以替换的图片
-                                    preg_match_all("/\bm.*\.(jpg|tif)/", $str, $matches);
+//                                    //匹配可以替换的图片
+//                                    preg_match_all("/\bm.*\.(jpg|tif)/", $str, $matches);
 
                                     // 匹配mtl文件中的标题
                                     preg_match_all("/newmtl\s(.*)\r/", $str, $result);
@@ -132,7 +131,7 @@ class VirtualityController extends PublicController
                         }
                     }
                 } else {//上传贴图
-                    \Think\Log::write('调试的$post：'.json_encode(I('post.')));
+
                     $map['id'] = I('post.id');
                     $map['company_id'] = session('company_id');
                     $map['branch_id'] = session('branch_id');
@@ -173,7 +172,7 @@ class VirtualityController extends PublicController
             $map1['branch_id'] = session('branch_id');
             $map1['cate_id'] = I('post.cate_id');
             $mes = $maptable->where($map1)->select();
-            
+
             foreach ($res as $key => $val) {
                 $res[$key]['value'] = explode(',', $val['value']);
                 $map1['attr'] = $res[$key]['attr'];
@@ -213,6 +212,7 @@ class VirtualityController extends PublicController
             $map['branch_id'] = session('branch_id');
             $info->field('id,attr')->where($map)->select();
             $attr = $info->field('id,attr')->where($map)->select();
+
             $mtl = M('mtl_title');
             if (I('post.mtl_id')) {
                 $map1['id'] = array('in', I('post.mtl_id'));
@@ -225,6 +225,7 @@ class VirtualityController extends PublicController
                 $map1['branch_id'] = session('branch_id');
                 $mtl_title = $mtl->field('id,mtl_title')->where($map1)->select();
             }
+
             if ($attr && $mtl_title) {
                 $this->ajaxReturn($attr, $mtl_title, 1);
             } else {
@@ -275,14 +276,14 @@ class VirtualityController extends PublicController
             $map['branch_id'] = session('branch_id');
             $data['mtl_id'] = I('post.mtl_id');
             $res = $goodsinfo->where($map)->save($data);
-//            \Think\Log::write('调试的$res：'.json_encode($res));
+
             $mtl = M('mtl_title');
             $map1['id'] = I('post.mtl_id');
             $map1['company_id'] = session('company_id');
             $map1['branch_id'] = session('branch_id');
             $data1['info_id'] = I('post.attr_id');
             $res1 = $mtl->where($map1)->save($data1);
-//            \Think\Log::write('调试的$res1：'.json_encode($res1));
+
             if ($res && $res1) {
                 $result['status'] = 1;
                 $result['content'] = '关联成功！';
@@ -296,4 +297,5 @@ class VirtualityController extends PublicController
             $this->ajaxReturn(0, 0, 0);
         }
     }
+
 }

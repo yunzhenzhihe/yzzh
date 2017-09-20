@@ -307,55 +307,34 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 
 <!-- BEGIN PAGE CONTENT-->
 <div class="row">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="post-grids">
-                <div class="col-md-12 ">
-                    <h4 class="form-section">模型预览</h4>
-                    <p class="yt_date">
-                    <div id="d">
-                        <div id="buttons_materials" class="bwrap"></div>
-                    </div>
-                    <div id="canvas-frame" style="width: 100%; height: 450px; cursor: auto;">
-                    </div>
-                    <div class="fd-btn"></div>
-                    </p>
-                    <button class="btn btn-primary start" onclick="start()">开始</button>
-                    <button class="btn btn-warning cancel" onclick="stop()">停止</button>
-                </div>
-
-                <div class="clearfix"></div>
-            </div>
-        </div>
-
-        <div class="col-md-9">
-            <div class="card">
-                <h4 class="form-section">商品模型上传</h4>
-                <li class="btn-group yt_float_left">
-                    <button type="button" class="btn <?php echo ($btn_flag1); ?> dropdown-toggle" data-toggle="dropdown"
-                            data-hover="dropdown" data-delay="1000" data-close-others="true">
-                        <span><b>&nbsp; &nbsp;请选择商品&nbsp; &nbsp;</b></span> <i class="icon-angle-down"></i>
-                    </button>
-                    <ul class="dropdown-menu pull-right" role="menu">
-                        <strong>
-                            <?php if(is_array($goods_name)): foreach($goods_name as $key=>$name): ?><li><a href="javascript:void(0);" class="goodscate" gid="<?php echo ($name["id"]); ?>"><?php echo ($name["name"]); ?></a>
-                                </li><?php endforeach; endif; ?>
-                        </strong>
-                    </ul>
-                </li>
-                <div class="content table-responsive table-full-width">
-                    <table class="table table-hover table-condensed table-striped" id="table">
-                        <thead id="12348">
-                        <tr>
-                            <th>序号</th>
-                            <th>商品名称</th>
-                            <th>模型文件上传</th>
-                            <th>属性管理</th>
-                            <th>贴图</th>
-                        </tr>
-                        </thead>
-                    </table>
-                </div>
+    <div class="col-md-12">
+        <div class="card">
+            <h4 class="form-section">商品模型上传</h4>
+            <li class="btn-group yt_float_left">
+                <button type="button" class="btn <?php echo ($btn_flag1); ?> dropdown-toggle" data-toggle="dropdown"
+                        data-hover="dropdown" data-delay="1000" data-close-others="true">
+                    <span><b>&nbsp; &nbsp;请选择商品&nbsp; &nbsp;</b></span> <i class="icon-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                    <strong>
+                        <?php if(is_array($goods_name)): foreach($goods_name as $key=>$name): ?><li><a href="javascript:void(0);" class="goodscate" gid="<?php echo ($name["id"]); ?>"><?php echo ($name["name"]); ?></a>
+                            </li><?php endforeach; endif; ?>
+                    </strong>
+                </ul>
+            </li>
+            <div class="content table-responsive table-full-width">
+                <table class="table table-hover table-condensed table-striped" id="table">
+                    <thead id="12348">
+                    <tr>
+                        <th>序号</th>
+                        <th>商品名称</th>
+                        <th>模型文件上传</th>
+                        <th>属性管理</th>
+                        <th>贴图</th>
+                        <th>预览</th>
+                    </tr>
+                    </thead>
+                </table>
             </div>
         </div>
     </div>
@@ -470,6 +449,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                                 "</div>" + "</th>";
                             list += "<th>" + "<button class='btn btn-warning' data-toggle='modal' data-target='myModal1'>管理</button>" + "</th>";
                             list += "<th>" + '<a class="btn btn-primary upimgbtn">' + "贴图上传" + "</a>" + "</th>";
+                            list += "<th>" + "<button class='btn btn-info preview'>预览</button>" + "</th>"
                         }
                         list += "</tr>";
                     }
@@ -483,15 +463,22 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                     $('#li2').after(goods);
                     $('.list').empty();
                     $('#table').append(list);
+                    $('.preview').each(function () {
+                        $(this).click(function () {
+                            var cate_id = $(this).parent('th').prev().prev().prev().prev().prev().html();
+                            $.post("/yzzh/ytsoft.php?s=/Home/Virtuality/preview", {cate_id: cate_id}, function (data) {
+
+                            })
+                        })
+                    })
                     $('.ssi-upload1').ssi_uploader({
                         url: '/yzzh/ytsoft.php?s=/Home/Virtuality/upload',
                         dropZone: false,
                         maxFileSize: 100,
-                        allowed: ['obj','mtl']
+                        allowed: ['obj', 'mtl']
                     });
                     $('.btn-warning').each(function () {
                         $(this).click(function () {
-                            $('#attrlist1').empty();
                             var cate_id = $(this).parents('th').prev().prev().prev().html();
                             $.ajax({
                                 url: '/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo',
@@ -551,7 +538,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                                                     cache: false,
                                                     async: false,
                                                     success: function (mes) {
-                                                        alert(mes);
+//                                                        alert('gua');
                                                     }
                                                 });
                                             }
@@ -569,23 +556,23 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                                 if (mes) {
                                     var list1 = "<tbody>";
                                     var s = 0;
-                                        for (var i = 0; i < mes.length; i++) {
-                                            var me = mes[i];
-                                            if (me != null) {
-                                                s++;
-                                                list1 += "<tr class='list1'><th>" + s + "</th>";
-                                                list1 += "<th>" + me.attr + "</th>";
-                                                list1 += "<th>" + me.value + "</th>";
-                                                list1 += "<th style='display: none'>" + me.id + "</th>"
-                                                list1 += "<th style='display: none'>" + me.cate_id + "</th>";
-                                                list1 += "<th>" + "<div>" +
-                                                    "<div>" +
-                                                    "<input type='file' multiple class='ssi-upload'/>" +
-                                                    "</div>" +
-                                                    "</div>" + "</th>";
-                                            }
-                                            list1 += "</tr>";
+                                    for (var i = 0; i < mes.length; i++) {
+                                        var me = mes[i];
+                                        if (me != null) {
+                                            s++;
+                                            list1 += "<tr class='list1'><th>" + s + "</th>";
+                                            list1 += "<th>" + me.attr + "</th>";
+                                            list1 += "<th>" + me.value + "</th>";
+                                            list1 += "<th style='display: none'>" + me.id + "</th>"
+                                            list1 += "<th style='display: none'>" + me.cate_id + "</th>";
+                                            list1 += "<th>" + "<div>" +
+                                                "<div>" +
+                                                "<input type='file' multiple class='ssi-upload'/>" +
+                                                "</div>" +
+                                                "</div>" + "</th>";
                                         }
+                                        list1 += "</tr>";
+                                    }
                                     list1 += "</tbody>";
                                     $('.list1').empty();
                                     $('#table1').append(list1);
@@ -595,7 +582,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                                         maxFileSize: 60,
                                         dropZone: false,
                                         allowed: ['jpg', 'gif', 'png', 'jpeg'],
-                                        data:{id:id}
+                                        data: {id: id}
                                     });
                                 } else {
                                     alert('请先在该商品下添加字段和值！');
@@ -608,188 +595,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
         });
     });
 </script>
-<script>
-
-    var container = document.getElementById('canvas-frame');
-    var width = document.getElementById('canvas-frame').clientWidth;
-    var height = document.getElementById('canvas-frame').clientHeight;
-    var camera, scene, renderer;
-    var STATS_ENABLED = false;
-    var directionalLight, pointLight;
-    var mouse = new THREE.Vector2();
-    var windowHalfX = window.innerWidth / 2;
-    var windowHalfY = window.innerHeight / 2;
-    var model;
-    var mtlLoader;
-
-    init();
-
-    function init() {
-
-        camera = new THREE.PerspectiveCamera(70, width / height, 1, 100000);
-        camera.position.z = 200;
-        camera.position.y = 100;
-        camera.target = new THREE.Vector3();
-
-        //场景
-        var textureCube = new THREE.CubeTextureLoader()
-            .setPath('public/textures/cube/Bridge2/')
-            .load(['posx.jpg', 'negx.jpg', 'posy.jpg', 'negy.jpg', 'posz.jpg', 'negz.jpg']);
-        scene = new THREE.Scene();
-        scene.background = textureCube;
-
-        if (STATS_ENABLED) {
-
-            stats = new Stats();
-            container.appendChild(stats.dom);
-
-        }
-        //model
-        THREE.Loader.Handlers.add(/\.dds$/i, new THREE.DDSLoader());
-
-        mtlLoader = new THREE.MTLLoader();
-        loadObj();
-
-        // 渲染器
-        renderer = new THREE.WebGLRenderer();
-        renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setSize(width, height);
-        renderer.setFaceCulling(THREE.CullFaceNone);
-        container.appendChild(renderer.domElement);
-
-        window.addEventListener('resize', onWindowResize, false);
-
-        //鼠标
-        controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.minDistance = 50;
-        controls.maxDistance = 200;
-
-        mouseHelper = new THREE.Geometry(new THREE.BoxGeometry(1, 1, 10), new THREE.MeshNormalMaterial());
-
-        mouseHelper.visible = false;
-
-        scene.add(mouseHelper);
-
-        window.addEventListener('resize', onWindowResize, false);
-
-        var moved = false;
-
-        controls.addEventListener('change', function () {
-            moved = true;
-        });
-
-        window.addEventListener('mousemove', onTouchMove);
-        window.addEventListener('touchmove', onTouchMove);
-
-
-    }
-
-    function loadObj(obj, mtl) {
-        if (mtl) {
-            mtlLoader.load(mtl, function (materials) {
-
-                var ambient = new THREE.AmbientLight(0x050505);
-                scene.add(ambient);
-
-                //平行光
-                directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-                directionalLight.position.set(2, 1.2, 10).normalize();
-                scene.add(directionalLight);
-
-                directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-                directionalLight.position.set(-2, 1.2, -10).normalize();
-                scene.add(directionalLight);
-                //点光
-                pointLight = new THREE.PointLight(0xffaa00, 2);
-                pointLight.position.set(2000, 1200, 10000);
-                scene.add(pointLight);
-                materials.preload();
-
-                var objLoader = new THREE.OBJLoader();
-                objLoader.setMaterials(materials);
-                if (obj) {
-                    objLoader.load(obj, function (object) {
-
-                        object.position.y = -70;
-                        object.scale.x = 0.1;
-                        object.scale.y = 0.1;
-                        object.scale.z = 0.1;
-                        scene.add(object);
-                        model = object;
-                        animate();
-                        object.preload();
-                    }, onProgress, onError);
-                }
-            });
-
-
-            var onProgress = function (xhr) {
-                if (xhr.lengthComputable) {
-                    var percentComplete = xhr.loaded / xhr.total * 100;
-                    console.log(Math.round(percentComplete, 2) + '% downloaded');
-                }
-            };
-
-            var onError = function (xhr) {
-            };
-        }
-    }
-
-
-    function onTouchMove(event) {
-
-        if (event.changedTouches) {
-
-            x = event.changedTouches[0].pageX;
-            y = event.changedTouches[0].pageY;
-
-        } else {
-
-            x = event.clientX;
-            y = event.clientY;
-
-        }
-
-        mouse.x = ( x / width ) * 2 - 1;
-        mouse.y = -( y / height ) * 2 + 1;
-    }
-
-    function onWindowResize() {
-
-        windowHalfX = width / 2;
-        windowHalfY = height / 2;
-
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
-
-        renderer.setSize(width, height);
-
-    }
-
-    var id;
-
-    function animate() {
-        model.rotateY(0.01);
-        renderer.render(scene, camera);
-        id = requestAnimationFrame(animate);
-
-    }
-
-
-    function stop() {
-        if (id !== null) {
-            cancelAnimationFrame(id);
-            id = null;
-        }
-    }
-
-    function start() {
-        if (id == null) {
-            id = requestAnimationFrame(animate);
-        }
-    }
-</script>
-
 <script>
     jQuery(document).ready(function () {
         App.initnocheckboxes();

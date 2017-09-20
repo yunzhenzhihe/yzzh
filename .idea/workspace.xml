@@ -8,43 +8,39 @@
     <bookmark url="file://$PROJECT_DIR$/Public/js/ssi-uploader.js" line="705" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a41d15c-9256-47e8-9469-e97ff46a8c95" name="默认的" comment="wxl第一版">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/002.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505802709_485053502.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505802872_1910072605.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505803008_1513513584.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505809887_1226045021.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505810313_223112468.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505810873_431400343.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505810967_1534061234.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505811191_1362779545.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505811242_1916657566.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505811656_441675791.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505811870_239593461.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505812228_1477419146.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505812373_356492935.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/17_08_15.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_17.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_18.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_19.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505803117_90603065.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505803757_1941401171.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505807398_990374966.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505810370_1203909346.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505810879_360126962.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505811663_326050593.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505811874_1314362239.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505812233_238782713.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-19/1505812380_941858474.mtl" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_15.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+    <list default="true" id="9a41d15c-9256-47e8-9469-e97ff46a8c95" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870288_666860938.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870574_1852439615.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870802_1294052005.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870858_1950689574.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871044_372874757.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871199_1634365727.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871778_1970600336.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871878_464391854.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871930_558923279.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871991_1459531622.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_20.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870292_800098311.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870579_2142310615.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870806_1392463617.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505870862_698908140.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871049_1015375950.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871205_610820813.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871782_1006335738.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871882_620653371.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871934_373959857.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Uploads/thumb/2017-09-20/1505871995_944833724.mtl" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_19.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_list.html" afterPath="$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Setsoftinfo/softinfo.html" afterPath="$PROJECT_DIR$/Application/Home/View/Setsoftinfo/softinfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1dc09fa7f8d3a2e2c59b84b6f5d63060.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1dc09fa7f8d3a2e2c59b84b6f5d63060.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/f5e51f962bc430014aae468007f845bb.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/f5e51f962bc430014aae468007f845bb.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/js/ssi-uploader.js" afterPath="$PROJECT_DIR$/Public/js/ssi-uploader.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,60 +73,49 @@
       <file leaf-file-name="VirtualityController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1210">
-              <caret line="133" column="17" lean-forward="true" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
+            <state relative-caret-position="1111">
+              <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="17_09_19.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_19.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="416" column="26" lean-forward="false" selection-start-line="416" selection-start-column="26" selection-end-line="416" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ssi-uploader.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ssi-uploader.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="200" column="9" lean-forward="true" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
+            <state relative-caret-position="649">
+              <caret line="645" column="53" lean-forward="true" selection-start-line="645" selection-start-column="53" selection-end-line="645" selection-end-column="53" />
               <folding>
-                <marker date="1505807293152" expanded="true" signature="1509:1515" ph=" " />
-                <marker date="1505807293152" expanded="true" signature="24458:24471" ph="..." />
-                <marker date="1505807293152" expanded="true" signature="44299:45702" ph="{...}" />
+                <marker date="1505872035186" expanded="true" signature="1509:1515" ph=" " />
+                <marker date="1505872035186" expanded="true" signature="44426:45829" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6270">
-              <caret line="469" column="38" lean-forward="false" selection-start-line="469" selection-start-column="38" selection-end-line="469" selection-end-column="38" />
+            <state relative-caret-position="330">
+              <caret line="110" column="86" lean-forward="false" selection-start-line="110" selection-start-column="86" selection-end-line="110" selection-end-column="86" />
               <folding>
-                <marker date="1505811827298" expanded="true" signature="7382:7403" ph="..." />
-                <marker date="1505811827298" expanded="true" signature="7476:7489" ph="..." />
-                <marker date="1505811827298" expanded="true" signature="8536:8552" ph="..." />
-                <marker date="1505811827298" expanded="true" signature="10112:10126" ph="..." />
-                <marker date="1505811827298" expanded="true" signature="10128:10134" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10134:10140" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10140:10146" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10146:10152" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10152:10158" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10158:10164" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10175:10181" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10182:10188" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10189:10195" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="10196:10202" ph=" " />
-                <marker date="1505811827298" expanded="true" signature="11241:11254" ph="..." />
-                <marker date="1505811827298" expanded="true" signature="14734:14747" ph="..." />
-                <marker date="1505811827298" expanded="true" signature="14838:14851" ph="..." />
+                <marker date="1505874147145" expanded="true" signature="6448:6469" ph="..." />
+                <marker date="1505874147145" expanded="true" signature="6542:6555" ph="..." />
+                <marker date="1505874147145" expanded="true" signature="7708:7724" ph="..." />
+                <marker date="1505874147145" expanded="true" signature="9617:9631" ph="..." />
+                <marker date="1505874147145" expanded="true" signature="9633:9639" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9639:9645" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9645:9651" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9651:9657" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9657:9663" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9663:9669" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9680:9686" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9687:9693" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9694:9700" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="9701:9707" ph=" " />
+                <marker date="1505874147145" expanded="true" signature="10746:10759" ph="..." />
+                <marker date="1505874147145" expanded="true" signature="14211:14224" ph="..." />
+                <marker date="1505874147145" expanded="true" signature="14311:14324" ph="..." />
               </folding>
             </state>
           </provider>
@@ -139,8 +124,8 @@
       <file leaf-file-name="defaultfields_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="6644">
+              <caret line="302" column="7" lean-forward="false" selection-start-line="302" selection-start-column="7" selection-end-line="302" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -149,8 +134,8 @@
       <file leaf-file-name="softinfo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Setsoftinfo/softinfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1760">
-              <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="79" />
+            <state relative-caret-position="2090">
+              <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -167,7 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$this-&gt;error('操作失败，请退出重试');</find>
       <find>url</find>
       <find>$uploadBtn</find>
       <find>html</find>
@@ -197,6 +181,7 @@
       <find>$.ajax</find>
       <find>append</find>
       <find>obj</find>
+      <find>scale</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,8 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Home/View/Setdefaultfields/goods_add.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/GoodsController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Model/YzgoodsinfoModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_08_18.log" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/PublicController.class.php" />
@@ -228,7 +211,6 @@
         <option value="$PROJECT_DIR$/Application/Home/Model/GoodsModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/SetgoodsController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_list.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/SetdefaultfieldsController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Framefile/yt_header_two.html" />
         <option value="E:/下载/Anja_0.icls" />
@@ -255,9 +237,12 @@
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_18.log" />
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/Upload.class.php" />
-        <option value="$PROJECT_DIR$/Public/js/ssi-uploader.js" />
         <option value="$PROJECT_DIR$/../../bin/apache/apache2.4.23/bin/php.ini" />
         <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_19.log" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Setsoftinfo/softinfo.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_list.html" />
+        <option value="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_20.log" />
+        <option value="$PROJECT_DIR$/Public/js/ssi-uploader.js" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Virtuality/index.html" />
       </list>
@@ -322,6 +307,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -412,7 +398,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -542,6 +527,7 @@
       <workItem from="1505763355853" duration="2035000" />
       <workItem from="1505800084021" duration="3869000" />
       <workItem from="1505804151163" duration="69000" />
+      <workItem from="1505868594296" duration="6412000" />
     </task>
     <task id="LOCAL-00001" summary="wxl第一版">
       <created>1505455822430</created>
@@ -606,16 +592,23 @@
       <option name="project" value="LOCAL" />
       <updated>1505697184209</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wxl第一版">
+      <created>1505812553988</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1505812553988</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437687000" />
+    <option name="totallyTimeSpent" value="445823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15565032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -626,27 +619,17 @@
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="数据库" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32675907" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,13 +656,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_08_14.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Log/Driver/File.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
@@ -877,22 +853,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/ImgInput20160917/index.html" />
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Setsoftinfo/softinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_16.log" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/360zip$Temp/360$0/KADXMM.txt" />
     <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_18.log">
@@ -914,6 +874,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="797" column="25" lean-forward="false" selection-start-line="797" selection-start-column="25" selection-end-line="797" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Setsoftinfo/softinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Setdefaultfields/defaultfields_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6644">
+          <caret line="302" column="7" lean-forward="false" selection-start-line="302" selection-start-column="7" selection-end-line="302" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -922,52 +897,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="416" column="26" lean-forward="false" selection-start-line="416" selection-start-column="26" selection-end-line="416" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/Home/17_09_20.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="645" column="53" lean-forward="true" selection-start-line="645" selection-start-column="53" selection-end-line="645" selection-end-column="53" />
+          <folding>
+            <marker date="1505872035186" expanded="true" signature="1509:1515" ph=" " />
+            <marker date="1505872035186" expanded="true" signature="44426:45829" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/VirtualityController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1210">
-          <caret line="133" column="17" lean-forward="true" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
+        <state relative-caret-position="1111">
+          <caret line="299" column="0" lean-forward="true" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Virtuality/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6270">
-          <caret line="469" column="38" lean-forward="false" selection-start-line="469" selection-start-column="38" selection-end-line="469" selection-end-column="38" />
+        <state relative-caret-position="330">
+          <caret line="110" column="86" lean-forward="false" selection-start-line="110" selection-start-column="86" selection-end-line="110" selection-end-column="86" />
           <folding>
-            <marker date="1505811827298" expanded="true" signature="7382:7403" ph="..." />
-            <marker date="1505811827298" expanded="true" signature="7476:7489" ph="..." />
-            <marker date="1505811827298" expanded="true" signature="8536:8552" ph="..." />
-            <marker date="1505811827298" expanded="true" signature="10112:10126" ph="..." />
-            <marker date="1505811827298" expanded="true" signature="10128:10134" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10134:10140" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10140:10146" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10146:10152" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10152:10158" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10158:10164" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10175:10181" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10182:10188" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10189:10195" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="10196:10202" ph=" " />
-            <marker date="1505811827298" expanded="true" signature="11241:11254" ph="..." />
-            <marker date="1505811827298" expanded="true" signature="14734:14747" ph="..." />
-            <marker date="1505811827298" expanded="true" signature="14838:14851" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/js/ssi-uploader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="200" column="9" lean-forward="true" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
-          <folding>
-            <marker date="1505807293152" expanded="true" signature="1509:1515" ph=" " />
-            <marker date="1505807293152" expanded="true" signature="24458:24471" ph="..." />
-            <marker date="1505807293152" expanded="true" signature="44299:45702" ph="{...}" />
+            <marker date="1505874147145" expanded="true" signature="6448:6469" ph="..." />
+            <marker date="1505874147145" expanded="true" signature="6542:6555" ph="..." />
+            <marker date="1505874147145" expanded="true" signature="7708:7724" ph="..." />
+            <marker date="1505874147145" expanded="true" signature="9617:9631" ph="..." />
+            <marker date="1505874147145" expanded="true" signature="9633:9639" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9639:9645" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9645:9651" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9651:9657" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9657:9663" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9663:9669" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9680:9686" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9687:9693" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9694:9700" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="9701:9707" ph=" " />
+            <marker date="1505874147145" expanded="true" signature="10746:10759" ph="..." />
+            <marker date="1505874147145" expanded="true" signature="14211:14224" ph="..." />
+            <marker date="1505874147145" expanded="true" signature="14311:14324" ph="..." />
           </folding>
         </state>
       </provider>

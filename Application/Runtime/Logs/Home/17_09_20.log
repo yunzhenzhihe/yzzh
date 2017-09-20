@@ -1,0 +1,429 @@
+[ 2017-09-20T09:41:22+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+
+[ 2017-09-20T09:41:23+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+ERR: µ˜ ‘µƒ$attr£∫[]
+[ 2017-09-20T09:41:23+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+ERR: µ˜ ‘µƒ$mtl_title£∫[{"id":"1","mtl_title":"CMan0002_M3_Head"},{"id":"2","mtl_title":"CMan0002_M3_Body"},{"id":"3","mtl_title":"CMan0002_M3_Hair"}]
+[ 2017-09-20T09:41:23+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001786s ]
+
+[ 2017-09-20T09:42:27+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+
+[ 2017-09-20T09:42:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+ERR: µ˜ ‘µƒ$attr£∫[{"id":"1","attr":"\u8863\u670d\u989c\u8272"}]
+[ 2017-09-20T09:42:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+ERR: µ˜ ‘µƒ$mtl_title£∫[{"id":"1","mtl_title":"CMan0002_M3_Head"},{"id":"2","mtl_title":"CMan0002_M3_Body"},{"id":"3","mtl_title":"CMan0002_M3_Hair"}]
+[ 2017-09-20T09:42:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+
+[ 2017-09-20T09:42:36+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001601s ]
+
+[ 2017-09-20T09:42:55+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+
+[ 2017-09-20T09:42:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002141s ]
+
+[ 2017-09-20T09:42:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: Ë∞ÉËØïÁöÑ$_FILESÔºö{"files":{"name":["man.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php5469.tmp"],"error":[0],"size":[668569]}}
+[ 2017-09-20T09:42:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002163s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 175 Ë°å.
+
+[ 2017-09-20T09:43:01+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002333s ]
+
+[ 2017-09-20T09:43:02+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: Ë∞ÉËØïÁöÑ$_FILESÔºö{"files":{"name":["man.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php636E.tmp"],"error":[0],"size":[965]}}
+[ 2017-09-20T09:43:02+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001852s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 175 Ë°å.
+
+[ 2017-09-20T09:43:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+ERR: µ˜ ‘µƒ$attr£∫[{"id":"1","attr":"\u8863\u670d\u989c\u8272"}]
+[ 2017-09-20T09:43:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+ERR: µ˜ ‘µƒ$mtl_title£∫[{"id":"1","mtl_title":"CMan0002_M3_Head"}]
+[ 2017-09-20T09:43:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003857s ]
+
+[ 2017-09-20T09:43:15+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+ERR: µ˜ ‘µƒ$attr£∫[{"id":"1","attr":"\u8863\u670d\u989c\u8272"}]
+[ 2017-09-20T09:43:15+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+ERR: µ˜ ‘µƒ$mtl_title£∫[{"id":"1","mtl_title":"CMan0002_M3_Head"},{"id":"2","mtl_title":"CMan0002_M3_Body"},{"id":"3","mtl_title":"CMan0002_M3_Hair"}]
+[ 2017-09-20T09:43:15+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+
+[ 2017-09-20T09:44:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+
+[ 2017-09-20T09:44:37+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+
+[ 2017-09-20T09:44:38+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: Ë∞ÉËØïÁöÑ$_FILESÔºö{"files":{"name":["man.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\phpDA6F.tmp"],"error":[0],"size":[668569]}}
+[ 2017-09-20T09:44:38+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 175 Ë°å.
+
+[ 2017-09-20T09:44:41+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002619s ]
+
+[ 2017-09-20T09:44:42+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: Ë∞ÉËØïÁöÑ$_FILESÔºö{"files":{"name":["man.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\phpE8E7.tmp"],"error":[0],"size":[965]}}
+[ 2017-09-20T09:44:42+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 175 Ë°å.
+
+[ 2017-09-20T09:44:43+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002075s ]
+
+[ 2017-09-20T09:45:25+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+
+[ 2017-09-20T09:45:29+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001643s ]
+
+[ 2017-09-20T09:45:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: Ë∞ÉËØïÁöÑ$_FILESÔºö{"files":{"name":["man.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\phpA42A.tmp"],"error":[0],"size":[668569]}}
+[ 2017-09-20T09:45:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 175 Ë°å.
+
+[ 2017-09-20T09:45:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001618s ]
+
+[ 2017-09-20T09:45:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: Ë∞ÉËØïÁöÑ$_FILESÔºö{"files":{"name":["man.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\phpB39C.tmp"],"error":[0],"size":[965]}}
+[ 2017-09-20T09:45:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 175 Ë°å.
+
+[ 2017-09-20T09:45:35+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+
+[ 2017-09-20T09:45:52+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+
+[ 2017-09-20T09:46:18+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001759s ]
+
+[ 2017-09-20T09:46:28+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+
+[ 2017-09-20T09:46:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001657s ]
+
+[ 2017-09-20T09:46:31+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: Ë∞ÉËØïÁöÑ$_FILESÔºö{"files":{"name":["man.obj"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\php93CB.tmp"],"error":[0],"size":[668569]}}
+[ 2017-09-20T09:46:31+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 175 Ë°å.
+
+[ 2017-09-20T09:46:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+
+[ 2017-09-20T09:46:35+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+ERR: Ë∞ÉËØïÁöÑ$_FILESÔºö{"files":{"name":["man.mtl"],"type":["application\/octet-stream"],"tmp_name":["F:\\wamp64\\tmp\\phpA282.tmp"],"error":[0],"size":[965]}}
+[ 2017-09-20T09:46:35+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Upload.class.php Á¨¨ 175 Ë°å.
+
+[ 2017-09-20T09:46:36+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+
+[ 2017-09-20T09:49:00+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001713s ]
+
+[ 2017-09-20T09:49:05+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/related
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002454s ]
+
+[ 2017-09-20T09:53:16+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002057s ]
+
+[ 2017-09-20T09:53:17+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001815s ]
+
+[ 2017-09-20T09:53:20+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/related
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002362s ]
+
+[ 2017-09-20T09:54:11+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/preview
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-09-20T09:57:57+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Setdefaultfields/ajaxedit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002666s ]
+
+[ 2017-09-20T09:58:10+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Setdefaultfields/ajaxsave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+NOTIC: [8] Undefined index: validate F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+
+[ 2017-09-20T10:05:49+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Setdefaultfields/ajaxinsert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+NOTIC: [8] Undefined index: validate F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+
+[ 2017-09-20T10:06:03+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Setdefaultfields/ajaxinsert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004071s ]
+NOTIC: [8] Undefined index: validate F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+
+[ 2017-09-20T10:06:10+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Setdefaultfields/ajaxedit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+
+[ 2017-09-20T10:06:53+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Setdefaultfields/ajaxsave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+NOTIC: [8] Undefined index: validate F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+
+[ 2017-09-20T10:06:58+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Setdefaultfields/ajaxedit
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-09-20T10:07:20+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Setdefaultfields/ajaxsave
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003284s ]
+NOTIC: [8] Undefined index: validate F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto F:\wamp64\www\yzzh\ThinkPHP\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+
+[ 2017-09-20T10:07:30+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+
+[ 2017-09-20T10:07:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001868s ]
+
+[ 2017-09-20T10:07:38+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/related
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+
+[ 2017-09-20T10:07:41+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/related
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003209s ]
+
+[ 2017-09-20T10:07:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/related
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001843s ]
+
+[ 2017-09-20T10:13:22+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+
+[ 2017-09-20T10:13:24+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+
+[ 2017-09-20T10:13:28+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002158s ]
+
+[ 2017-09-20T10:13:28+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/modelmap
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+
+[ 2017-09-20T10:17:10+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/preview
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2017-09-20T10:22:06+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+
+[ 2017-09-20T10:22:34+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+
+[ 2017-09-20T10:22:35+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+
+[ 2017-09-20T10:22:37+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+
+[ 2017-09-20T10:26:33+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/preview
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+ERR: ÈùûÊ≥ïÊìç‰Ωú:preview
+
+[ 2017-09-20T10:36:45+08:00 ] ::1 /yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+

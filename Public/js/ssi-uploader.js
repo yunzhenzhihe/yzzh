@@ -204,7 +204,7 @@ var flag;//开关
             var file = files[i],
                 ext = file.name.getExtension();// 获取文件的后缀
             var id = $uploadBtn.parents('th').prev().prev().html();
-            if(ext == "obj" || ext == "mtl") {
+            if (ext == "obj" || ext == "mtl") {
                 if (ext == "obj") {
                     $.ajax({
                         data: {id: id, ext: 'obj'},
@@ -483,40 +483,40 @@ var flag;//开关
             ajaxLoopRequest(formData, i);// make the request
         }
 
-        function mtluploadsucc(cate_id, mtl_id) {//mtl文件上传成功后将属性和mtl中的title关联
-            $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo', {cate_id: cate_id, mtl_id: mtl_id}, function (res) {
-                if (res.status) {
-
-                    opt = "<select class='form-control border-radius' id='mtl_select'>";//拼接select框
-                    for (var a = 0; a < res.info.length; a++) {
-                        var mtl = res.info[a];
-
-                        if (mtl.mtl_title != null) {
-                            opt += '<option value=' + '"' + mtl.id + '"' + '>' + mtl.mtl_title + "</option>";
-                        }
-                    }
-                    opt += "</select>";
-
-                    //拼接table表格
-                    attrlist = "<tbody id='attrlist'>";
-                    for (var i = 0; i < res.data.length; i++) {
-                        var attr = res.data[i];
-                        if (attr.attr != null) {
-                            var num = i + 1;
-                            attrlist += "<tr class='list2'><th>" + num + "</th>";
-                            attrlist += "<th style='display: none' id='cateid'>" + attr.id + "</th>";
-                            attrlist += "<th id='cate'>" + attr.attr + "</th>";
-                            attrlist += "<th>" + opt + "</th>";
-                        }
-                        attrlist += "</tr>";
-                    }
-                    attrlist += "</tbody>";
-                }
-                $('#attrlist').empty();
-                $('#table2').append(attrlist);
-            });
-            $('#myModal1').modal('toggle');
-        }
+        // function mtluploadsucc(cate_id, mtl_id) {//mtl文件上传成功后将属性和mtl中的title关联
+        //     $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo', {cate_id: cate_id, mtl_id: mtl_id}, function (res) {
+        //         if (res.status) {
+        //
+        //             opt = "<select class='form-control border-radius' id='mtl_select'>";//拼接select框
+        //             for (var a = 0; a < res.info.length; a++) {
+        //                 var mtl = res.info[a];
+        //
+        //                 if (mtl.mtl_title != null) {
+        //                     opt += '<option value=' + '"' + mtl.id + '"' + '>' + mtl.mtl_title + "</option>";
+        //                 }
+        //             }
+        //             opt += "</select>";
+        //
+        //             //拼接table表格
+        //             attrlist = "<tbody id='attrlist'>";
+        //             for (var i = 0; i < res.data.length; i++) {
+        //                 var attr = res.data[i];
+        //                 if (attr.attr != null) {
+        //                     var num = i + 1;
+        //                     attrlist += "<tr class='list2'><th>" + num + "</th>";
+        //                     attrlist += "<th style='display: none' id='cateid'>" + attr.id + "</th>";
+        //                     attrlist += "<th id='cate'>" + attr.attr + "</th>";
+        //                     attrlist += "<th>" + opt + "</th>";
+        //                 }
+        //                 attrlist += "</tr>";
+        //             }
+        //             attrlist += "</tbody>";
+        //         }
+        //         $('#attrlist').empty();
+        //         $('#table2').append(attrlist);
+        //     });
+        //     $('#myModal1').modal('toggle');
+        // }
 
         //--------------开始ajax请求-----------------------
         function ajaxLoopRequest(formData, ii) {
@@ -642,7 +642,7 @@ var flag;//开关
                         if (data.status == '1') {
                             alert('Mtl file upload successfully!');
                             window.mtlfiel = data.data.path;//mtl文件路径
-                            mtluploadsucc(data.data.cate_id, data.data.id);
+                            // mtluploadsucc(data.data.cate_id, data.data.id);
                             if (mtlfiel && objfiel) {
                                 loadObj(objfiel, mtlfiel);
                             }
