@@ -1,8 +1,8 @@
 <?php
 return array(
 	//'配置项' =>'配置值'
-	'MODULE_ALLOW_LIST' =>    array('Home','Admin',),
-	'DEFAULT_MODULE'    =>    'Home',  // 默认模块	
+	'MODULE_ALLOW_LIST' =>    array('Admin','Admin',),
+	'DEFAULT_MODULE'    =>    'Admin',  // 默认模块
 	'SHOW_PAGE_TRACE'   =>  true, 
 //	'LOAD_EXT_CONFIG'   => 'db,wechat,oauth', 
 	'URL_CASE_INSENSITIVE'  =>  true,  //url不区分大小写
@@ -29,7 +29,7 @@ return array(
     'LANG_LIST'        => 'zh-cn,en-us', // 允许切换的语言列表 用逗号分隔
     'VAR_LANGUAGE'     => 'l', // 默认语言切换变量
     TMPL_PARSE_STRING	=> array(
-        '__HOME__' => '/Public/Home',
+        '__HOME__' => '/Public/Admin',
         '__ADMIN__' => './Public/Admin'
     ),
 	

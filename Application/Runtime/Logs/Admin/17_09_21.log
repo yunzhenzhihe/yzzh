@@ -1,0 +1,25 @@
+[ 2017-09-21T09:07:59+08:00 ] ::1 /yzzh/ytsoft.php?s=/Admin/User/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+NOTIC: [8] Use of undefined constant __PUBLIC__ - assumed '__PUBLIC__' F:\wamp64\www\yzzh\Application\Admin\Controller\UserController.class.php 第 585 行.
+
+[ 2017-09-21T09:08:43+08:00 ] ::1 /yzzh/ytsoft.php?s=/Admin/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+
+[ 2017-09-21T09:08:44+08:00 ] ::1 /yzzh/ytsoft.php?s=/Admin/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001649s ]
+
+[ 2017-09-21T09:08:45+08:00 ] ::1 /yzzh/ytsoft.php?s=/Admin/Virtuality/goodscatelist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+

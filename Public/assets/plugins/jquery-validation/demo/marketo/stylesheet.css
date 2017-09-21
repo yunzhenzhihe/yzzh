@@ -379,7 +379,7 @@ div.action-bottom a span.shadow {
 	margin: 8px 25px 20px 0;
 }
 
-/* s4.0 - Home Hero Area */
+/* s4.0 - Admin Hero Area */
 .hero-background {
 	position: relative;
 	width: 880px;
@@ -414,7 +414,7 @@ div.action-bottom a span.shadow {
 	margin: 5px 0px 13px 10px
 }
 
-/* s4.1 - Home Left Header tab */
+/* s4.1 - Admin Left Header tab */
 .col-left-header-tab {
 	position: relative; /* ie6 fix */
 	background: url(images/tab_green.gif) 0 0 no-repeat;
@@ -443,7 +443,7 @@ div.action-bottom a span.shadow {
 	line-height: 1.4em;
 }
 
-/* s4.2 - Home Left Quote */
+/* s4.2 - Admin Left Quote */
 .callout-tan {
 	color: #666666;
 }

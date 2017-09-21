@@ -571,7 +571,7 @@ DPGlobal.footTemplate+'</table>'+'</div>'+'</div>';$.fn.datetimepicker.DPGlobal=
  *
  * Version:  1.5.0pre
  * Released:
- * Home:   http://github.com/appendto/jquery-mockjax
+ * Admin:   http://github.com/appendto/jquery-mockjax
  * Author:   Jonathan Sharp (http://jdsharp.com)
  * License:  MIT,GPL
  *

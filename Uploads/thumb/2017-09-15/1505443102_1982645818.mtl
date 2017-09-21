@@ -1,0 +1,45 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# 创建的文件:06.09.2017 10:50:08
+
+newmtl CMan0002_M3_Head
+	Ns 30.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0900 0.0900 0.0900
+	Ke 0.0000 0.0000 0.0000
+	map_Ka CMan0002-M3-Head-D.jpg
+	map_Kd CMan0002-M3-Head-D.jpg
+
+newmtl CMan0002_M3_Body
+	Ns 30.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0180 0.0180 0.0180
+	Ke 0.0000 0.0000 0.0000
+	map_Ka CMan0002-M3-Body-D.jpg
+	map_Kd CMan0002-M3-Body-D.jpg
+
+newmtl CMan0002_M3_Hair
+	Ns 30.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+	map_Ka CMan0002-M3-Hair-D.tif
+	map_Kd CMan0002-M3-Hair-D.tif
+	map_d CMan0002-M3-Hair-D.tif

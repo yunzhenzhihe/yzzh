@@ -32,7 +32,7 @@ var flag;//开关
             .after(this.$element = $('<div class="ssi-uploader">'));
         var $chooseBtn = $('' +
             '<span class="ssi-InputLabel">' +
-            '<button class="ssi-button success ssi-InputLabel_btn">' + this.language.chooseFiles + '</button>' +
+            '<button class="ssi-button success ssi-InputLabel_btn btn-sm">' + this.language.chooseFiles + '</button>' +
             '</span>').append(element);
         var $uploadBtn = $('<button id="ssi-uploadBtn" class="ssi-button success ssi-hidden" >' +
             '<span class="ssi-btnIn">' + this.language.upload + '&nbsp;</span>' +
@@ -209,7 +209,7 @@ var flag;//开关
                     $.ajax({
                         data: {id: id, ext: 'obj'},
                         type: "post",
-                        url: "/yzzh/ytsoft.php?s=/Home/Virtuality/check",
+                        url: "/yzzh/ytsoft.php?s=/Admin/Virtuality/check",
                         cache: false,
                         async: false,
                         dataType: "json",
@@ -224,7 +224,7 @@ var flag;//开关
                     $.ajax({
                         data: {id: id, ext: 'mtl'},
                         type: "post",
-                        url: "/yzzh/ytsoft.php?s=/Home/Virtuality/check",
+                        url: "/yzzh/ytsoft.php?s=/Admin/Virtuality/check",
                         cache: false,
                         async: false,
                         dataType: "json",
@@ -484,7 +484,7 @@ var flag;//开关
         }
 
         function mtluploadsucc(cate_id, mtl_id) {//mtl文件上传成功后将属性和mtl中的title关联
-            $.post('/yzzh/ytsoft.php?s=/Home/Virtuality/mtlinfo', {cate_id: cate_id, mtl_id: mtl_id}, function (res) {
+            $.post('/yzzh/ytsoft.php?s=/Admin/Virtuality/mtlinfo', {cate_id: cate_id, mtl_id: mtl_id}, function (res) {
                 if (res.status) {
 
                     opt = "<select class='form-control border-radius' id='mtl_select'>";//拼接select框

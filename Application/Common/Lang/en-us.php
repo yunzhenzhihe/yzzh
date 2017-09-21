@@ -15,7 +15,7 @@
 return array(
     /* core language package */ 
 	
-	'_INDEXMENU_'     => 'Home',   //首页
+	'_INDEXMENU_'     => 'Admin',   //首页
 	'_SETUP_'     => 'Setup',  //参数设置
 	'_DEFAULTFIELDS_'     => 'Setup',  //自定义字段设置
 	

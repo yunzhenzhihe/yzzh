@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-<style>
+<?php if (!defined('THINK_PATH')) exit();?><style>
     .page {
         height: 18px;
         padding-top: 20px;
@@ -331,6 +330,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                         <th>模型文件上传</th>
                         <th>属性管理</th>
                         <th>贴图</th>
+                        <th>操作</th>
                     </tr>
                     </thead>
                 </table>
@@ -446,8 +446,9 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                                 "<input type='file' multiple class='ssi-upload1'/>" +
                                 "</div>" +
                                 "</div>" + "</th>";
-                            list += "<th>" + "<button class='btn btn-warning' data-toggle='modal' data-target='myModal1'>关联</button>" + "</th>";
-                            list += "<th>" + '<a class="btn btn-primary upimgbtn">' + "贴图上传" + "</a>" + "</th>";
+                            list += "<th>" + "<button class='btn btn-warning btn-sm' data-toggle='modal' data-target='myModal1'>关联</button>" + "</th>";
+                            list += "<th>" + '<a class="btn btn-primary upimgbtn btn-sm" title="上传模型可替换部位的贴图">' + "贴图上传" + "</a>" + "</th>";
+                            list += "<th>" + '<button class="btn btn-info btn-sm" title="预览商品模型效果">' + "预览" + "</button>" + "&nbsp;&nbsp;&nbsp;" +"<button class='btn btn-danger btn-sm btn-delete' title='删除此商品下的模型相关文件'>删除</button>" + "</th>";
                         }
                         list += "</tr>";
                     }
@@ -466,6 +467,28 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
                         dropZone: false,
                         maxFileSize: 100,
                         allowed: ['obj', 'mtl']
+                    });
+                    //删除模型文件以及与其关联的数据
+                    $('.btn-delete').each(function () {
+                        $(this).click(function () {
+                            var cate_id = $(this).parent('th').prev().prev().prev().prev().prev().html();
+                            var cate = $(this).parent('th').prev().prev().prev().prev().html();
+                            var message = "确认要将"  + cate + "下的模型文件删除吗？";
+                            var bol = confirm(message);
+                            if(bol){
+                             $.ajax({
+                                 url: "/yzzh/ytsoft.php?s=/Home/Virtuality/delete",
+                                 data: {cate_id:cate_id},
+                                 dateType : 'json',
+                                 type: "post",
+                                 cache: false,
+                                 async: false,
+                                 success: function (mes) {
+                                    console.log(mes);
+                                 }
+                             });
+                            }
+                        })
                     });
                     $('.btn-warning').each(function () {
                         $(this).click(function () {
@@ -584,7 +607,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
         });
     });
 </script>
-
 <script>
     jQuery(document).ready(function () {
         App.initnocheckboxes();
